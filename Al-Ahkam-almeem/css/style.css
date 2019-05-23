@@ -1,0 +1,631 @@
+@font-face {
+    font-family: 'Droid Arabic Kufi';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/DroidKufi-Regular.eot);
+    src: url(../fonts/DroidKufi-Regulard41d.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/DroidKufi-Regular.html) format('woff2'),
+    url(../fonts/DroidKufi-Regular.woff) format('woff'),
+    url(../fonts/DroidKufi-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Droid Arabic Kufi';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/DroidKufi-Bold.eot);
+    src: url(../fonts/DroidKufi-Boldd41d.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/DroidKufi-Bold.html) format('woff2'),
+    url(../fonts/DroidKufi-Bold.woff) format('woff'),
+    url(../fonts/DroidKufi-Bold.ttf) format('truetype');
+}
+
+.floating-right
+{
+    float: right;
+}
+.floating-left
+{
+    float: left;
+}
+.text-right
+{
+    text-align: right;
+}
+.text-left
+{
+    text-align: left;
+}
+.text-center
+{
+    text-align: center;
+}
+.display-block
+{
+    display: block;
+    overflow: hidden;
+}
+.display-inline-block
+{
+    display: inline-block;
+    overflow: hidden;
+}
+.clear
+{
+    clear: both;
+}
+a
+{
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+*,a,
+a:focus {
+    outline: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-family: 'Droid Arabic Kufi';
+    text-align: center;
+}
+.main-container
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/bg.jpg") no-repeat center;
+    background-size: 100% 100%;
+}
+.inner-container
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.inner-app
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.home-btn
+{
+    display: none;
+    overflow: hidden;
+    width: 5.762%;
+    height: 5.34%;
+    position: absolute;
+    top: 4.688%;
+    left: 6.836%;
+    background: url("../images/home.svg") no-repeat center;
+    background-size: 100% 100%;
+    z-index: 9999;
+}
+.title-logo
+{
+    display: block;
+    overflow: hidden;
+    width: 18.946%;
+    height: 18.36%;
+    position: absolute;
+    top: 4%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-logo.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-button-next,
+.swiper-button-prev
+{
+    display: block;
+    overflow: hidden;
+    width: 7.833%;
+    height: 6.54%;
+    position: absolute;
+    bottom: -11.2%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-button-next
+{
+    right: auto !important;
+    top: auto !important;
+    left: 38.658% !important;
+    background-image: url("../images/prev.svg") !important;
+}
+.swiper-button-prev
+{
+    left: auto !important;
+    top: auto !important;
+    right: 38.658% !important;
+    background-image: url("../images/next.svg") !important;
+}
+.slider-container,
+.slider-container-a
+{
+    display: block;
+    overflow: visible;
+    width: 85.547%;
+    height: 72.527%;
+    position: absolute;
+    top: 13.6%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.introduction-container,.alakhfa-container,
+.alaidgham-container,.alaizhar-container
+{
+    display: block;
+    overflow: visible;
+    width: 99.5%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.alakhfa-container,
+.alaidgham-container,.alaizhar-container
+{
+    display: none;
+    overflow: visible;
+    width: 99.5%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.poweredBy
+{
+    display: block;
+    overflow: hidden;
+    width: 15.333%;
+    height: 4.297%;
+    position: absolute;
+    bottom: 2%;
+    left: 2.344%;
+    background: url(../images/poweredBy.svg) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 99999999;
+}
+
+.introduction-container-a,
+.introduction-container-b,
+.introduction-container-c,
+.introduction-container-d
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.introduction-container .title-1
+{
+    display: block;
+    overflow: hidden;
+    width: 22.478%;
+    height: 9.336%;
+    position: absolute;
+    top: 22.083%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-1.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.introduction-container .title-2
+{
+    display: block;
+    overflow: hidden;
+    width: 62.5%;
+    height: 12.747%;
+    position: absolute;
+    top: 21.185%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-2.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.introduction-container .title-3
+{
+    display: block;
+    overflow: hidden;
+    width: 25.918%;
+    height: 6.105%;
+    position: absolute;
+    top: 20.826%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-3.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.introduction-container .title-4
+{
+    display: block;
+    overflow: hidden;
+    width: 20.184%;
+    height: 12.57%;
+    position: absolute;
+    top: 17.415%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-4.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.introduction-container .text-1
+{
+    display: block;
+    overflow: hidden;
+    width: 79.473%;
+    height: 15.8%;
+    position: absolute;
+    top: 37.882%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/text-1.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.introduction-container .text-2
+{
+    display: block;
+    overflow: hidden;
+    width: 74.656%;
+    height: 16.34%;
+    position: absolute;
+    top: 40.036%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/text-2.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.introduction-container .text-3
+{
+    display: block;
+    overflow: hidden;
+    width: 68.005%;
+    height: 49.552%;
+    position: absolute;
+    top: 33.035%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/text-3.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.type-container
+{
+    display: block;
+    overflow: hidden;
+    width: 85.895%;
+    height: 31.6%;
+    position: absolute;
+    top: 38.421%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.type-container .type-a,
+.type-container .type-b,
+.type-container .type-c
+{
+    display: block;
+    overflow: hidden;
+    width: 31.242%;
+    height: 100%;
+    margin: 0 0 0 3.13%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.type-container .type-a
+{
+    background-image: url("../images/type-a.svg");
+}
+.type-container .type-b
+{
+    background-image: url("../images/type-b.svg");
+}
+.type-container .type-c
+{
+    background-image: url("../images/type-c.svg");
+    margin: 0;
+}
+
+.alakhfa-container .title
+{
+    display: block;
+    overflow: hidden;
+    width: 27.765%;
+    height: 10.054%;
+    position: absolute;
+    top: 19.211%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-alakhfa.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alakhfa-container .text-1
+{
+    display: block;
+    overflow: hidden;
+    width: 73.657%;
+    height: 15.98%;
+    position: absolute;
+    top: 33.932%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/text-a-alakhfa.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alakhfa-container .letter
+{
+    display: block;
+    overflow: hidden;
+    width: 12.85%;
+    height: 22.084%;
+    position: absolute;
+    top: 54.76%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/letter-alakhfa.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alakhfa-container .text-2
+{
+    display: block;
+    overflow: hidden;
+    width: 43.598%;
+    height: 6.464%;
+    position: absolute;
+    top: 81.868%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/text-b-alakhfa.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.alaidgham-container .title
+{
+    display: block;
+    overflow: hidden;
+    width: 28.224%;
+    height: 10.054%;
+    position: absolute;
+    top: 19.031%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-alaidgham.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .text-1
+{
+    display: block;
+    overflow: hidden;
+    width: 73.428%;
+    height: 15.44%;
+    position: absolute;
+    top: 34.83%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/text-a-alaidgham.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .text-2
+{
+    display: block;
+    overflow: hidden;
+    width: 18.357%;
+    height: 7.002%;
+    position: absolute;
+    top: 57.451%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/text-b-alaidgham.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .letter-container
+{
+    display: block;
+    overflow: hidden;
+    width: 43.942%;
+    height: 15.081%;
+    position: absolute;
+    top: 66.43%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.alaidgham-container .letter-container .letter-a,
+.alaidgham-container .letter-container .letter-b,
+.alaidgham-container .letter-container .letter-c
+{
+    display: block;
+    overflow: hidden;
+    width: 29.243%;
+    height: 100%;
+    margin: 0 0 0 6.13%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .letter-container .letter-a
+{
+    background-image: url("../images/letter-a-alaidgham.svg");
+}
+.alaidgham-container .letter-container .letter-b
+{
+    background-image: url("../images/letter-b-alaidgham.svg");
+}
+.alaidgham-container .letter-container .letter-c
+{
+    background-image: url("../images/letter-c-alaidgham.svg");
+    margin: 0;
+}
+.alaidgham-container .text-3
+{
+    display: block;
+    overflow: hidden;
+    width: 55.645%;
+    height: 6.284%;
+    position: absolute;
+    top: 83.663%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/text-c-alaidgham.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaizhar-container .title
+{
+    display: block;
+    overflow: hidden;
+    width: 28.224%;
+    height: 10.054%;
+    position: absolute;
+    top: 16.697%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-alaizhar.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaizhar-container .text-1
+{
+    display: block;
+    overflow: hidden;
+    width: 72.51%;
+    height: 15.8%;
+    position: absolute;
+    top: 32.676%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/text-a-alaizhar.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaizhar-container .text-2
+{
+    display: block;
+    overflow: hidden;
+    width: 61.84%;
+    height: 8.977%;
+    position: absolute;
+    top: 53.501%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/text-b-alaizhar.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaizhar-container .text-3
+{
+    display: block;
+    overflow: hidden;
+    width: 61.037%;
+    height: 13.286%;
+    position: absolute;
+    top: 67.325%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/text-c-alaizhar.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaizhar-container .text-4
+{
+    display: block;
+    overflow: hidden;
+    width: 61.84%;
+    height: 8.977%;
+    position: absolute;
+    top: 84.74%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/text-d-alaizhar.svg") no-repeat center;
+    background-size: 100% 100%;
+}

@@ -1,0 +1,3280 @@
+@font-face {
+    font-family: 'Droid Arabic Kufi';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/DroidKufi-Regular.eot);
+    src: url(../fonts/DroidKufi-Regulard41d.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/DroidKufi-Regular.html) format('woff2'),
+    url(../fonts/DroidKufi-Regular.woff) format('woff'),
+    url(../fonts/DroidKufi-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Droid Arabic Kufi';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/DroidKufi-Bold.eot);
+    src: url(../fonts/DroidKufi-Boldd41d.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/DroidKufi-Bold.html) format('woff2'),
+    url(../fonts/DroidKufi-Bold.woff) format('woff'),
+    url(../fonts/DroidKufi-Bold.ttf) format('truetype');
+}
+
+.floating-right
+{
+    float: right;
+}
+.floating-left
+{
+    float: left;
+}
+.text-right
+{
+    text-align: right;
+}
+.text-left
+{
+    text-align: left;
+}
+.text-center
+{
+    text-align: center;
+}
+.display-block
+{
+    display: block;
+    overflow: hidden;
+}
+.display-inline-block
+{
+    display: inline-block;
+    overflow: hidden;
+}
+.clear
+{
+    clear: both;
+}
+a
+{
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+*,a,
+a:focus {
+    outline: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-family: 'Droid Arabic Kufi';
+    text-align: center;
+}
+a.poweredBy {}
+.main-container
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/bg.jpg") no-repeat center;
+    background-size: 100% 100%;
+}
+.inner-container
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/*.logo-loader*/
+/*{*/
+/*display: block;*/
+/*overflow: hidden;*/
+/*width: 73.0469%;*/
+/*height: 70%;*/
+/*position: absolute;*/
+/*top: 0;*/
+/*bottom: 0;*/
+/*left: 0;*/
+/*right: 0;*/
+/*margin: auto;*/
+/*background: url("../images/logo-loader.svg") no-repeat center;*/
+/*background-size: 100% 100%;*/
+/*}*/
+.inner-app
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.introduction-container
+{
+    display: block;
+    overflow: hidden;
+    width: 92.383%;
+    height: 86.85%;
+    position: absolute;
+    top: 7.162%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/introduction-bg.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.inner-introduction-container
+{
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#introductionApp
+{
+    display: none;
+    overflow: hidden;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.introduction-page-a,
+.introduction-page-b,
+.introduction-page-c
+{
+    display: block;
+    overflow: hidden;
+    width: 33.3334%;
+    height: 100%;
+    position: relative;
+}
+.ahkam-alnoon-container,
+.ahkam-altnoen-container
+{
+    display: block;
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.ahkam-alnoon-container
+{
+    right: 0;
+}
+.ahkam-altnoen-container
+{
+    left: 0;
+}
+.text-a-a
+{
+    display: block;
+    overflow: hidden;
+    width: 36.576%;
+    height: 4.2%;
+    position: absolute;
+    top: 19.791%;
+    right: 18.702%;
+    background: url("../images/introduction-text-a-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-a-b
+{
+    display: block;
+    overflow: hidden;
+    width: 74.842%;
+    height: 16.792%;
+    position: absolute;
+    top: 25.938%;
+    right: 17.702%;
+    background: url("../images/introduction-text-a-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-a-c
+{
+    display: block;
+    overflow: hidden;
+    width: 20.931%;
+    height: 3.15%;
+    position: absolute;
+    top: 52.374%;
+    right: 23.256%;
+    background: url("../images/introduction-text-a-c.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-a-d
+{
+    display: block;
+    overflow: hidden;
+    width: 59.831%;
+    height: 10.645%;
+    position: absolute;
+    top: 56.272%;
+    right: 23.256%;
+    background: url("../images/introduction-text-a-d.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-a-e
+{
+    display: block;
+    overflow: hidden;
+    width: 61.734%;
+    height: 10.795%;
+    position: absolute;
+    top: 66.5%;
+    right: 23.256%;
+    background: url("../images/introduction-text-a-e.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-b-a
+{
+    display: block;
+    overflow: hidden;
+    width: 25.793%;
+    height: 4.948%;
+    position: absolute;
+    top: 19.791%;
+    left: 66.597%;
+    background: url("../images/introduction-text-b-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-b-b
+{
+    display: block;
+    overflow: hidden;
+    width: 72.73%;
+    height: 10.495%;
+    position: absolute;
+    top: 25.338%;
+    left: 19.662%;
+    background: url("../images/introduction-text-b-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-b-c
+{
+    display: block;
+    overflow: hidden;
+    width: 11.206%;
+    height: 3.9%;
+    position: absolute;
+    top: 52.074%;
+    left: 74.842%;
+    background: url("../images/introduction-text-b-c.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-b-d
+{
+    display: block;
+    overflow: hidden;
+    width: 61.311%;
+    height: 20.54%;
+    position: absolute;
+    top: 56.872%;
+    left: 24.313%;
+    background: url("../images/introduction-text-b-d.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.start-btn
+{
+    display: block;
+    overflow: hidden;
+    width: 6.739%;
+    height: 5.34%;
+    position: absolute;
+    bottom: 4.516%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/start.svg") no-repeat center;
+    background-size: 100% 100%;
+    z-index: 999;
+}
+
+.poweredBy
+{
+    display: block;
+    overflow: hidden;
+    width: 15.333%;
+    height: 4.297%;
+    position: absolute;
+    bottom: 2%;
+    left: 2.344%;
+    background: url("../images/poweredBy.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.introduction-container-a,
+.introduction-container-b
+{
+    display: block;
+    overflow: hidden;
+    width: 86.036%;
+    height: 72.917%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/bg-inner.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.introduction-container-c
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.next-btn,.prev-btn,
+.swiper-button-prev,
+.swiper-button-next
+{
+    display: none;
+    overflow: hidden;
+    width: 6.739%;
+    height: 5.34%;
+    position: absolute;
+    bottom: 4.516%;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    z-index: 9999999;
+}
+.prev-btn,.swiper-button-prev
+{
+    background-image: url("../images/next.svg") !important;
+    right: 40.258% !important;
+}
+.next-btn,.swiper-button-next
+{
+    background-image: url("../images/prev.svg") !important;
+    left: 40.258% !important;
+}
+.swiper-button-next,
+.swiper-button-prev
+{
+    display: block;
+    overflow: hidden;
+    width: 7.833%;
+    height: 6.54%;
+    position: absolute;
+    bottom: -11.2%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-button-next
+{
+    right: auto !important;
+    top: auto !important;
+    left: 38.658% !important;
+}
+.swiper-button-prev
+{
+    left: auto !important;
+    top: auto !important;
+    right: 38.658% !important;
+}
+
+.difference-title
+{
+    display: block;
+    overflow: hidden;
+    width: 56.981%;
+    height: 11.43%;
+    position: absolute;
+    top: 11.43%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-difference.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.difference-alnoon-container
+{
+    display: block;
+    overflow: hidden;
+    width: 36.323%;
+    height: 54.643%;
+    position: absolute;
+    top: 28.93%;
+    right: 12.26%;
+}
+.difference-altnoen-container
+{
+    display: block;
+    overflow: hidden;
+    width: 27.13%;
+    height: 53.75%;
+    position: absolute;
+    top: 30%;
+    left: 12.713%;
+}
+.title-alnoon
+{
+    display: block;
+    overflow: hidden;
+    width: 44.375%;
+    height: 13.072%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../images/title-alnoon.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-alnoon-a
+{
+    display: block;
+    overflow: hidden;
+    width: 45.313%;
+    height: 14.38%;
+    position: absolute;
+    top: 20.92%;
+    right: 0;
+    background: url("../images/text-alnoon-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-alnoon-b
+{
+    display: block;
+    overflow: hidden;
+    width: 65.94%;
+    height: 13.072%;
+    position: absolute;
+    top: 38.24%;
+    right: 0;
+    background: url("../images/text-alnoon-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-alnoon-c
+{
+    display: block;
+    overflow: hidden;
+    width: 71.875%;
+    height: 12.42%;
+    position: absolute;
+    top: 54.902%;
+    right: 0;
+    background: url("../images/text-alnoon-c.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-alnoon-d
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 14.38%;
+    position: absolute;
+    top: 68.955%;
+    right: 0;
+    background: url("../images/text-alnoon-d.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-alnoon-e
+{
+    display: block;
+    overflow: hidden;
+    width: 79.69%;
+    height: 12.75%;
+    position: absolute;
+    top: 87.582%;
+    right: 0;
+    background: url("../images/text-alnoon-e.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.title-altnoen
+{
+    display: block;
+    overflow: hidden;
+    width: 31.8%;
+    height: 12.293%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../images/title-altnoon.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-altnoen-a
+{
+    display: block;
+    overflow: hidden;
+    width: 56.91%;
+    height: 13.622%;
+    position: absolute;
+    top: 19.934%;
+    right: 0;
+    background: url("../images/text-altnoon-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-altnoen-b
+{
+    display: block;
+    overflow: hidden;
+    width: 81.172%;
+    height: 12.96%;
+    position: absolute;
+    top: 36.213%;
+    right: 0;
+    background: url("../images/text-altnoon-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-altnoen-c
+{
+    display: block;
+    overflow: hidden;
+    width: 84.94%;
+    height: 12.625%;
+    position: absolute;
+    top: 53.821%;
+    right: 0;
+    background: url("../images/text-altnoon-c.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-altnoen-d
+{
+    display: block;
+    overflow: hidden;
+    width: 83.27%;
+    height: 14.62%;
+    position: absolute;
+    top: 68.44%;
+    right: 0;
+    background: url("../images/text-altnoon-d.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-altnoen-e
+{
+    display: block;
+    overflow: hidden;
+    width: 99.164%;
+    height: 12.96%;
+    position: absolute;
+    top: 86.711%;
+    right: 0;
+    background: url("../images/text-altnoon-e.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.poetry-title
+{
+    display: block;
+    overflow: hidden;
+    width: 26.788%;
+    height: 13.036%;
+    position: absolute;
+    top: 11.965%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/poetry-title.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.poetry-text-a,.poetry-text-b,
+.poetry-text-c,.poetry-text-d
+{
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.poetry-text-a
+{
+    width: 32.237%;
+    height: 7.68%;
+    top: 33.393%;
+    background-image: url("../images/poetry-text-a.svg");
+}
+.poetry-text-b
+{
+    width: 57.662%;
+    height: 9.108%;
+    top: 42.68%;
+    background-image: url("../images/poetry-text-b.svg");
+}
+.poetry-text-c
+{
+    width: 21%;
+    height: 6.965%;
+    top: 63.75%;
+    background-image: url("../images/poetry-text-c.svg");
+}
+.poetry-text-d
+{
+    width: 56.414%;
+    height: 8.215%;
+    top: 71.965%;
+    background-image: url("../images/poetry-text-d.svg");
+}
+
+.title-type
+{
+    display: block;
+    overflow: hidden;
+    width: 49.805%;
+    height: 10.547%;
+    position: absolute;
+    top: 9.896%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-type.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-type-a,.text-type-b,
+.text-type-c,.text-type-d
+{
+    display: block;
+    overflow: hidden;
+    width: 25.391%;
+    height: 24.61%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.text-type-a
+{
+    top: 28.646%;
+    right: 16.211%;
+    background-image: url("../images/type-a.svg");
+}
+.text-type-b
+{
+    top: 28.646%;
+    left: 15.821%;
+    background-image: url("../images/type-b.svg");
+}
+.text-type-c
+{
+    top: 61.33%;
+    right: 16.211%;
+    background-image: url("../images/type-c.svg");
+}
+.text-type-d
+{
+    top: 61.33%;
+    left: 15.821%;
+    background-image: url("../images/type-d.svg");
+}
+
+.text-type-a.selected
+{
+    top: 28.646%;
+    right: 16.211%;
+    background-image: url("../images/type-a-selected.svg");
+}
+.text-type-b.selected
+{
+    top: 28.646%;
+    left: 15.821%;
+    background-image: url("../images/type-b-selected.svg");
+}
+.text-type-c.selected
+{
+    top: 61.33%;
+    right: 16.211%;
+    background-image: url("../images/type-c-selected.svg");
+}
+.text-type-d.selected
+{
+    top: 61.33%;
+    left: 15.821%;
+    background-image: url("../images/type-d-selected.svg");
+}
+.ahkam-alnoon-inner-container
+{
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.home-btn
+{
+    display: block;
+    overflow: hidden;
+    width: 5.762%;
+    height: 5.34%;
+    position: absolute;
+    top: 4.688%;
+    left: 6.934%;
+    background: url("../images/home.svg") no-repeat center;
+    background-size: 100% 100%;
+    z-index: 99;
+}
+.alaizhar-container,
+.alaidgham-container,
+.alqalb-container,
+.alakhfa-container
+{
+    display: none;
+    overflow: visible;
+    width: 86.036%;
+    height: 81.641%;
+    position: absolute;
+    top: 4.818%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.alaizhar-main-container,
+.alaidgham-main-container,
+.alqalb-main-container,
+.alakhfa-main-container
+{
+    display: block;
+    overflow: visible;
+    width: 100%;
+    height: 89.315%;
+    position: absolute;
+    top: 10.367%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/bg-inner.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaizhar-logo,.alaidgham-logo,
+.alqalb-logo,.alakhfa-logo
+{
+    display: block;
+    overflow: hidden;
+    width: 22.355%;
+    height: 25%;
+    position: absolute;
+    top: -1.908%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    z-index: 999;
+}
+.alaizhar-logo
+{
+    background-image: url("../images/alaizhar-logo.svg");
+}
+.alaidgham-logo
+{
+    background-image: url("../images/alaidgham-logo.svg");
+}
+.alqalb-logo
+{
+    background-image: url("../images/alqalb-logo.svg");
+}
+.alakhfa-logo
+{
+    background-image: url("../images/alakhfa-logo.svg");
+}
+.alaizhar-ineer-container,
+.alaidgham-ineer-container,
+.alqalb-ineer-container,
+.alakhfa-ineer-container
+{
+    display: block;
+    overflow: visible;
+    width: 98%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.page-a,.page-b,.page-c,.page-d,.page-e,.page-f,
+.page-g,.page-h,.page-i,.page-j,.page-k,.page-l
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/*============ alaizhar start ==================*/
+.alaizhar-container .page-a .title-a
+{
+    display: block;
+    overflow: hidden;
+    width: 31.982%;
+    height: 10.05%;
+    position: absolute;
+    top: 25.52%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/0/title-1-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaizhar-container .page-a .text-a
+{
+    display: block;
+    overflow: hidden;
+    width: 43.247%;
+    height: 5.902%;
+    position: absolute;
+    top: 39.235%;
+    right: 5.562%;
+    margin: auto;
+    background: url("../media/0/text-1-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaizhar-container .page-a .text-b
+{
+    display: block;
+    overflow: hidden;
+    width: 88.65%;
+    height: 13.876%;
+    position: absolute;
+    top: 47.847%;
+    right: 5.562%;
+    margin: auto;
+    background: url("../media/0/text-1-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaizhar-container .page-a .text-c
+{
+    display: block;
+    overflow: hidden;
+    width: 28.037%;
+    height: 6.221%;
+    position: absolute;
+    top: 81.82%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/0/text-1-c.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaizhar-container .page-a .title-b
+{
+    display: block;
+    overflow: hidden;
+    width: 49.49%;
+    height: 12.122%;
+    position: absolute;
+    top: 66.827%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/0/title-1-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaizhar-container .page-b .title
+{
+    display: block;
+    overflow: hidden;
+    width: 48.695%;
+    height: 10.208%;
+    position: absolute;
+    top: 26.316%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/0/title-2-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaizhar-container .page-b .letter-container
+{
+    display: block;
+    overflow: hidden;
+    width: 89.444%;
+    height: 20.096%;
+    position: absolute;
+    top: 44.5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /* direction:  ltr; */
+}
+.alaizhar-container .page-b .letter-a,.alaizhar-container .page-b .letter-b,.alaizhar-container .page-b .letter-c,
+.alaizhar-container .page-b .letter-d,.alaizhar-container .page-b .letter-e,.alaizhar-container .page-b .letter-f
+{
+    display: block;
+    overflow: hidden;
+    width: 14.468%;
+    height: 100%;
+    margin: 0 0 0 2.62%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.alaizhar-container .page-b .letter-a
+{
+    background-image: url("../media/0/letter-2-a.svg");
+}
+.alaizhar-container .page-b .letter-b
+{
+    background-image: url("../media/0/letter-2-b.svg");
+}
+.alaizhar-container .page-b .letter-c
+{
+    background-image: url("../media/0/letter-2-c.svg");
+}
+.alaizhar-container .page-b .letter-d
+{
+    background-image: url("../media/0/letter-2-d.svg");
+}
+.alaizhar-container .page-b .letter-e
+{
+    background-image: url("../media/0/letter-2-e.svg");
+}
+.alaizhar-container .page-b .letter-f
+{
+    margin-left: 0;
+    background-image: url("../media/0/letter-2-f.svg");
+}
+.alaizhar-container .page-b .text-a
+{
+    display: block;
+    overflow: hidden;
+    width: 30.307%;
+    height: 6.86%;
+    position: absolute;
+    top: 71.292%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/0/text-2-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaizhar-container .page-b .text-b
+{
+    display: block;
+    overflow: hidden;
+    width: 51.987%;
+    height: 7.975%;
+    position: absolute;
+    top: 81.98%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/0/text-2-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaizhar-container .page-c .title
+{
+    display: block;
+    overflow: hidden;
+    width: 26.902%;
+    height: 11.803%;
+    position: absolute;
+    top: 28.23%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/0/title-3-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaizhar-container .page-c .text-a
+{
+    display: block;
+    overflow: hidden;
+    width: 25.653%;
+    height: 6.38%;
+    position: absolute;
+    top: 43.222%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/0/text-3-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaizhar-container .page-c .text-b
+{
+    display: block;
+    overflow: hidden;
+    width: 70.262%;
+    height: 17.066%;
+    position: absolute;
+    top: 52.473%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/0/text-3-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaizhar-container .page-d .title-a
+{
+    display: block;
+    overflow: hidden;
+    width: 29.058%;
+    height: 8.453%;
+    position: absolute;
+    top: 28.71%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/0/title-4-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaizhar-container .page-d .text-a
+{
+    display: block;
+    overflow: hidden;
+    width: 82.747%;
+    height: 14.195%;
+    position: absolute;
+    top: 40.351%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/0/text-4-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaizhar-container .page-d .text-b
+{
+    display: block;
+    overflow: hidden;
+    width: 82.974%;
+    height: 22.967%;
+    position: absolute;
+    top: 72.887%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/0/text-4-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaizhar-container .page-d .title-b
+{
+    display: block;
+    overflow: hidden;
+    width: 31.329%;
+    height: 10.367%;
+    position: absolute;
+    top: 60.288%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/0/title-4-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaizhar-container .page-e .title
+{
+    display: block;
+    overflow: hidden;
+    width: 20%;
+    height: 9.73%;
+    position: absolute;
+    top: 24.562%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/0/title-5-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaizhar-container .page-e .example-table-container
+{
+    display: block;
+    overflow: hidden;
+    width: 90.693%;
+    height: 58.1%;
+    position: absolute;
+    top: 37.162%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 22px;
+}
+.alaizhar-container .page-e .example-table-row
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 14.3%;
+    border-bottom: 1px solid #cccccc;
+}
+.alaizhar-container .page-e .example-table-row:last-child
+{
+    border-bottom: 0;
+}
+.alaizhar-container .page-e .example-table-cell
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.alaizhar-container .page-e .example-table-cell.cell-a
+{
+    width: 10.388%;
+}
+.alaizhar-container .page-e .example-table-cell.cell-b
+{
+    width: 39.05%;
+}
+.alaizhar-container .page-e .example-table-cell.cell-c
+{
+    width: 50.56%;
+    border-left: 0;
+}
+.alaizhar-container .page-e .example-table-cell.table-title-a
+{
+    background-image: url("../media/0/title-5-b.svg");
+}
+.alaizhar-container .page-e .example-table-cell.table-title-b
+{
+    background-image: url("../media/0/title-5-c.svg");
+}
+.alaizhar-container .page-e .example-table-cell.table-title-c
+{
+    background-image: url("../media/0/title-5-d.svg");
+}
+.alaizhar-container .page-e .example-table-cell.table-text-a
+{
+    background-image: url("../media/0/text-5-a.svg");
+}
+.alaizhar-container .page-e .example-table-cell.table-text-b
+{
+    background-image: url("../media/0/text-5-b.svg");
+}
+.alaizhar-container .page-e .example-table-cell.table-text-c
+{
+    background-image: url("../media/0/text-5-c.svg");
+}
+.alaizhar-container .page-e .example-table-cell.table-text-d
+{
+    background-image: url("../media/0/text-5-d.svg");
+}
+.alaizhar-container .page-e .example-table-cell.table-text-e
+{
+    background-image: url("../media/0/text-5-e.svg");
+}
+.alaizhar-container .page-e .example-table-cell.table-text-f
+{
+    background-image: url("../media/0/text-5-f.svg");
+}
+.alaizhar-container .page-e .example-table-cell.table-text-g
+{
+    background-image: url("../media/0/text-5-g.svg");
+}
+.alaizhar-container .page-e .example-table-cell.table-text-h
+{
+    background-image: url("../media/0/text-5-h.svg");
+}
+.alaizhar-container .page-e .example-table-cell.table-text-i
+{
+    background-image: url("../media/0/text-5-i.svg");
+}
+.alaizhar-container .page-e .example-table-cell.table-text-j
+{
+    background-image: url("../media/0/text-5-j.svg");
+}
+.alaizhar-container .page-e .example-table-cell.table-text-k
+{
+    background-image: url("../media/0/text-5-k.svg");
+}
+.alaizhar-container .page-e .example-table-cell.table-text-l
+{
+    background-image: url("../media/0/text-5-l.svg");
+}
+.alaizhar-container .page-e .example-table-cell.table-text-m
+{
+    background-image: url("../media/0/text-5-m.svg");
+}
+.alaizhar-container .page-e .example-table-cell.table-text-n
+{
+    background-image: url("../media/0/text-5-n.svg");
+}
+.alaizhar-container .page-e .example-table-cell.table-text-o
+{
+    background-image: url("../media/0/text-5-o.svg");
+}
+.alaizhar-container .page-e .example-table-cell.table-text-p
+{
+    background-image: url("../media/0/text-5-p.svg");
+}
+.alaizhar-container .page-e .example-table-cell.table-text-q
+{
+    background-image: url("../media/0/text-5-q.svg");
+}
+.alaizhar-container .page-e .example-table-cell.table-text-r
+{
+    background-image: url("../media/0/text-5-r.svg");
+}
+
+/*============ alaizhar end ==================*/
+
+/*============ alaidgham start ==================*/
+
+.alaidgham-container .page-a .text-a
+{
+    display: block;
+    overflow: hidden;
+    width: 25.2%;
+    height: 5.104%;
+    position: absolute;
+    top: 27.273%;
+    right: 12.146%;
+    background: url("../media/1/text-1-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-a .text-b
+{
+    display: block;
+    overflow: hidden;
+    width: 75.596%;
+    height: 6.38%;
+    position: absolute;
+    top: 34.93%;
+    right: 12.146%;
+    background: url("../media/1/text-1-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-a .text-c
+{
+    display: block;
+    overflow: hidden;
+    width: 45.063%;
+    height: 5.902%;
+    position: absolute;
+    top: 84.371%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/1/text-1-c.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-a .title-a
+{
+    display: block;
+    overflow: hidden;
+    width: 33.94%;
+    height: 8.613%;
+    position: absolute;
+    top: 44.977%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/1/title-1-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-a .letter-container
+{
+    display: block;
+    overflow: hidden;
+    width: 87.515%;
+    height: 20.096%;
+    position: absolute;
+    top: 58.533%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.alaidgham-container .page-a .letter-a,.alaidgham-container .page-a .letter-b,.alaidgham-container .page-a .letter-c,
+.alaidgham-container .page-a .letter-d,.alaidgham-container .page-a .letter-e,.alaidgham-container .page-a .letter-f
+{
+    display: block;
+    overflow: hidden;
+    width: 14.527%;
+    height: 100%;
+    margin: 0 0 0 2.56%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-a .letter-a
+{
+    background-image: url("../media/1/letter-1-a.svg");
+}
+.alaidgham-container .page-a .letter-b
+{
+    background-image: url("../media/1/letter-1-b.svg");
+}
+.alaidgham-container .page-a .letter-c
+{
+    background-image: url("../media/1/letter-1-c.svg");
+}
+.alaidgham-container .page-a .letter-d
+{
+    background-image: url("../media/1/letter-1-d.svg");
+}
+.alaidgham-container .page-a .letter-e
+{
+    background-image: url("../media/1/letter-1-e.svg");
+}
+.alaidgham-container .page-a .letter-f
+{
+    margin-left: 0;
+    background-image: url("../media/1/letter-1-f.svg");
+}
+.alaidgham-container .page-b .title-a
+{
+    display: block;
+    overflow: hidden;
+    width: 27.13%;
+    height: 11.803%;
+    position: absolute;
+    top: 25.2%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/1/title-2-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-b .text-a
+{
+    display: block;
+    overflow: hidden;
+    width: 70.262%;
+    height: 41.15%;
+    position: absolute;
+    top: 42.425%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/1/text-2-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-c .title-a
+{
+    display: block;
+    overflow: hidden;
+    width: 31.329%;
+    height: 10.208%;
+    position: absolute;
+    top: 32.855%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/1/title-3-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-c .text-a
+{
+    display: block;
+    overflow: hidden;
+    width: 74.007%;
+    height: 6.38%;
+    position: absolute;
+    top: 48.964%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/1/text-3-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-d .title-a
+{
+    display: block;
+    overflow: hidden;
+    width: 31.329%;
+    height: 11.165%;
+    position: absolute;
+    top: 28.071%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/1/title-4-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-d .text-a
+{
+    display: block;
+    overflow: hidden;
+    width: 40.296%;
+    height: 5.583%;
+    position: absolute;
+    top: 42.106%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/1/text-4-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-d .type-container
+{
+    display: block;
+    overflow: hidden;
+    width: 85.245%;
+    height: 36.683%;
+    position: absolute;
+    top: 54.386%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.alaidgham-container .page-d .type-a,
+.alaidgham-container .page-d .type-b,
+.alaidgham-container .page-d .type-c
+{
+    display: block;
+    overflow: hidden;
+    width: 30.094%;
+    height: 100%;
+    margin: 0 0 0 4.8%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-d .type-a
+{
+    background-image: url("../media/1/type-4-a.svg");
+}
+.alaidgham-container .page-d .type-b
+{
+    background-image: url("../media/1/type-4-b.svg");
+}
+.alaidgham-container .page-d .type-c
+{
+    margin-left: 0;
+    background-image: url("../media/1/type-4-c.svg");
+}
+
+.alaidgham-container .page-d .type-a.selected
+{
+    background-image: url("../media/1/type-4-a-selected.svg");
+}
+.alaidgham-container .page-d .type-b.selected
+{
+    background-image: url("../media/1/type-4-b-selected.svg");
+}
+.alaidgham-container .page-d .type-c.selected
+{
+    margin-left: 0;
+    background-image: url("../media/1/type-4-c-selected.svg");
+}
+.alaidgham-container .page-e .title-a
+{
+    display: block;
+    overflow: hidden;
+    width: 38.82%;
+    height: 13.717%;
+    position: absolute;
+    top: 28.23%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/1/title-5-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-e .number,
+.alaidgham-container .page-f .number,
+.alaidgham-container .page-g .number
+{
+    display: block;
+    overflow: hidden;
+    width: 6.357%;
+    height: 8.932%;
+    position: absolute;
+    top: 15.471%;
+    left: 2.838%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-e .number
+{
+    background-image: url("../media/1/number-1.svg");
+}
+.alaidgham-container .page-f .number
+{
+    background-image: url("../media/1/number-2.svg");
+}
+.alaidgham-container .page-g .number
+{
+    background-image: url("../media/1/number-3.svg");
+}
+.alaidgham-container .page-e .text-a
+{
+    display: block;
+    overflow: hidden;
+    width: 89.104%;
+    height: 6.221%;
+    position: absolute;
+    top: 46.412%;
+    right: 4.768%;
+    background: url("../media/1/text-5-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-e .text-b
+{
+    display: block;
+    overflow: hidden;
+    width: 15.21%;
+    height: 6.061%;
+    position: absolute;
+    top: 62.042%;
+    right: 4.768%;
+    background: url("../media/1/text-5-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-e .text-c
+{
+    display: block;
+    overflow: hidden;
+    width: 83.996%;
+    height: 6.221%;
+    position: absolute;
+    top: 70.335%;
+    right: 8.514%;
+    background: url("../media/1/text-5-c.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-e .text-d
+{
+    display: block;
+    overflow: hidden;
+    width: 86.267%;
+    height: 6.54%;
+    position: absolute;
+    top: 78.79%;
+    right: 8.4%;
+    background: url("../media/1/text-5-d.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-f .title-a
+{
+    display: block;
+    overflow: hidden;
+    width: 50.057%;
+    height: 13.717%;
+    position: absolute;
+    top: 25.68%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/1/title-6-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-f .text-a
+{
+    display: block;
+    overflow: hidden;
+    width: 17.708%;
+    height: 5.423%;
+    position: absolute;
+    top: 41.15%;
+    right: 4.087%;
+    background: url("../media/1/text-6-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-f .text-b
+{
+    display: block;
+    overflow: hidden;
+    width: 78.321%;
+    height: 12.76%;
+    position: absolute;
+    top: 47.37%;
+    right: 8.514%;
+    background: url("../media/1/text-6-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-f .text-c
+{
+    display: block;
+    overflow: hidden;
+    width: 18.275%;
+    height: 4.945%;
+    position: absolute;
+    top: 63.477%;
+    right: 4.087%;
+    background: url("../media/1/text-6-c.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-f .text-d
+{
+    display: block;
+    overflow: hidden;
+    width: 58.116%;
+    height: 11.962%;
+    position: absolute;
+    top: 69.538%;
+    right: 8.4%;
+    background: url("../media/1/text-6-d.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-f .text-e
+{
+    display: block;
+    overflow: hidden;
+    width: 88.196%;
+    height: 5.104%;
+    position: absolute;
+    top: 85.01%;
+    right: 8.4%;
+    background: url("../media/1/text-6-e.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-g .title-a
+{
+    display: block;
+    overflow: hidden;
+    width: 57.55%;
+    height: 13.717%;
+    position: absolute;
+    top: 26.476%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/1/title-7-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-g .text-a
+{
+    display: block;
+    overflow: hidden;
+    width: 49.49%;
+    height: 5.742%;
+    position: absolute;
+    top: 53.27%;
+    right: 25.54%;
+    background: url("../media/1/text-7-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-g .text-b
+{
+    display: block;
+    overflow: hidden;
+    width: 48.241%;
+    height: 6.221%;
+    position: absolute;
+    top: 62.84%;
+    right: 25.54%;
+    background: url("../media/1/text-7-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-g .text-c
+{
+    display: block;
+    overflow: hidden;
+    width: 48.695%;
+    height: 5.423%;
+    position: absolute;
+    top: 72.887%;
+    right: 25.54%;
+    background: url("../media/1/text-7-c.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-h .title-a
+{
+    display: block;
+    overflow: hidden;
+    width: 42.225%;
+    height: 10.527%;
+    position: absolute;
+    top: 27.273%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/1/title-8-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-h .text-a
+{
+    display: block;
+    overflow: hidden;
+    width: 14.87%;
+    height: 5.583%;
+    position: absolute;
+    top: 39.873%;
+    right: 4.087%;
+    background: url("../media/1/text-8-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-h .text-b
+{
+    display: block;
+    overflow: hidden;
+    width: 87.401%;
+    height: 15.312%;
+    position: absolute;
+    top: 49.283%;
+    right: 8.514%;
+    background: url("../media/1/text-8-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-h .text-c
+{
+    display: block;
+    overflow: hidden;
+    width: 13.054%;
+    height: 4.626%;
+    position: absolute;
+    top: 68.581%;
+    right: 4.087%;
+    background: url("../media/1/text-8-c.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-h .text-d
+{
+    display: block;
+    overflow: hidden;
+    width: 78.321%;
+    height: 14.993%;
+    position: absolute;
+    top: 78.15%;
+    right: 8.514%;
+    background: url("../media/1/text-8-d.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.alaidgham-container .page-i .title
+{
+    display: block;
+    overflow: hidden;
+    width: 19.978%;
+    height: 10.05%;
+    position: absolute;
+    top: 24.562%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/1/title-9.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-i .example-table-container
+{
+    display: block;
+    overflow: hidden;
+    width: 90.693%;
+    height: 58.055%;
+    position: absolute;
+    top: 37.162%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 22px;
+}
+.alaidgham-container .page-i .example-table-row
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 13.19%;
+    border-bottom: 1px solid #cccccc;
+}
+.alaidgham-container .page-i .example-table-row:nth-child(4)
+{
+    height: 21%;
+}
+.alaidgham-container .page-i .example-table-row:last-child
+{
+    border-bottom: 0;
+}
+.alaidgham-container .page-i .example-table-cell
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-i .example-table-cell.cell-a
+{
+    width: 10.388%;
+}
+.alaidgham-container .page-i .example-table-cell.cell-b
+{
+    width: 42.804%;
+}
+.alaidgham-container .page-i .example-table-cell.cell-c
+{
+    width: 46.81%;
+    border-left: 0;
+}
+.alaidgham-container .page-i .example-table-cell.table-text-a
+{
+    background-image: url("../media/1/text-9-a.svg");
+}
+.alaidgham-container .page-i .example-table-cell.table-text-b
+{
+    background-image: url("../media/1/text-9-b.svg");
+}
+.alaidgham-container .page-i .example-table-cell.table-text-c
+{
+    background-image: url("../media/1/text-9-c.svg");
+}
+.alaidgham-container .page-i .example-table-cell.table-text-d
+{
+    background-image: url("../media/1/text-9-d.svg");
+}
+.alaidgham-container .page-i .example-table-cell.table-text-e
+{
+    background-image: url("../media/1/text-9-e.svg");
+}
+.alaidgham-container .page-i .example-table-cell.table-text-f
+{
+    background-image: url("../media/1/text-9-f.svg");
+}
+.alaidgham-container .page-i .example-table-cell.table-text-g
+{
+    background-image: url("../media/1/text-9-g.svg");
+}
+.alaidgham-container .page-i .example-table-cell.table-text-h
+{
+    background-image: url("../media/1/text-9-h.svg");
+}
+.alaidgham-container .page-i .example-table-cell.table-text-i
+{
+    background-image: url("../media/1/text-9-i.svg");
+}
+.alaidgham-container .page-i .example-table-cell.table-text-j
+{
+    background-image: url("../media/1/text-9-j.svg");
+}
+.alaidgham-container .page-i .example-table-cell.table-text-k
+{
+    background-image: url("../media/1/text-9-k.svg");
+}
+.alaidgham-container .page-i .example-table-cell.table-text-l
+{
+    background-image: url("../media/1/text-9-l.svg");
+}
+.alaidgham-container .page-i .example-table-cell.table-text-m
+{
+    background-image: url("../media/1/text-9-m.svg");
+}
+.alaidgham-container .page-i .example-table-cell.table-text-n
+{
+    background-image: url("../media/1/text-9-n.svg");
+}
+.alaidgham-container .page-i .example-table-cell.table-text-o
+{
+    background-image: url("../media/1/text-9-o.svg");
+}
+.alaidgham-container .page-i .example-table-cell.table-text-p
+{
+    background-image: url("../media/1/text-9-p.svg");
+}
+.alaidgham-container .page-i .example-table-cell.table-text-q
+{
+    background-image: url("../media/1/text-9-q.svg");
+}
+.alaidgham-container .page-i .example-table-cell.table-text-r
+{
+    background-image: url("../media/1/text-9-r.svg");
+}
+.alaidgham-container .page-i .example-table-cell.table-text-s
+{
+    background-image: url("../media/1/text-9-s.svg");
+}
+.alaidgham-container .page-i .example-table-cell.table-text-t
+{
+    background-image: url("../media/1/text-9-t.svg");
+}
+.alaidgham-container .page-i .example-table-cell.table-text-u
+{
+    background-image: url("../media/1/text-9-u.svg");
+}
+
+
+.alaidgham-container .page-j .title
+{
+    display: block;
+    overflow: hidden;
+    width: 69.808%;
+    height: 9.57%;
+    position: absolute;
+    top: 25.52%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/1/title-10.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-j .text-a
+{
+    display: block;
+    overflow: hidden;
+    width: 82.18%;
+    height: 11.484%;
+    position: absolute;
+    top: 37.321%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/1/text-10-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-j .text-b
+{
+    display: block;
+    overflow: hidden;
+    width: 70.602%;
+    height: 5.902%;
+    position: absolute;
+    top: 89.953%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/1/text-10-j.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-j .example-table-container
+{
+    display: block;
+    overflow: hidden;
+    width: 90.693%;
+    height: 34.131%;
+    position: absolute;
+    top: 52.792%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 22px;
+}
+.alaidgham-container .page-j .example-table-row
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 25%;
+    border-bottom: 1px solid #cccccc;
+}
+.alaidgham-container .page-j .example-table-row:last-child
+{
+    border-bottom: 0;
+}
+.alaidgham-container .page-j .example-table-cell
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-j .example-table-cell.cell-a
+{
+    width: 29.412%;
+}
+.alaidgham-container .page-j .example-table-cell.cell-b
+{
+    width: 70.5%;
+    border-left: 0;
+}
+.alaidgham-container .page-j .example-table-cell.table-text-a
+{
+    background-image: url("../media/1/text-10-b.svg");
+}
+.alaidgham-container .page-j .example-table-cell.table-text-b
+{
+    background-image: url("../media/1/text-10-c.svg");
+}
+.alaidgham-container .page-j .example-table-cell.table-text-c
+{
+    background-image: url("../media/1/text-10-d.svg");
+}
+.alaidgham-container .page-j .example-table-cell.table-text-d
+{
+    background-image: url("../media/1/text-10-e.svg");
+}
+.alaidgham-container .page-j .example-table-cell.table-text-e
+{
+    background-image: url("../media/1/text-10-f.svg");
+}
+.alaidgham-container .page-j .example-table-cell.table-text-f
+{
+    background-image: url("../media/1/text-10-g.svg");
+}
+.alaidgham-container .page-j .example-table-cell.table-text-h
+{
+    background-image: url("../media/1/text-10-h.svg");
+}
+.alaidgham-container .page-j .example-table-cell.table-text-i
+{
+    background-image: url("../media/1/text-10-i.svg");
+}
+
+.alaidgham-container .page-k .text-a
+{
+    display: block;
+    overflow: hidden;
+    width: 37.912%;
+    height: 5.583%;
+    position: absolute;
+    top: 32.217%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/1/text-11-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-k .text-b
+{
+    display: block;
+    overflow: hidden;
+    width: 53.008%;
+    height: 14.355%;
+    position: absolute;
+    top: 70.973%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/1/text-11-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-k .example-table-container
+{
+    display: block;
+    overflow: hidden;
+    width: 46.993%;
+    height: 17.225%;
+    position: absolute;
+    top: 46.093%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 22px;
+}
+.alaidgham-container .page-k .example-table-row
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px solid #cccccc;
+}
+.alaidgham-container .page-k .example-table-row:last-child
+{
+    border-bottom: 0;
+}
+.alaidgham-container .page-k .example-table-cell
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-k .example-table-cell.table-text-a
+{
+    background-image: url("../media/1/text-table-11-a.svg");
+}
+.alaidgham-container .page-k .example-table-cell.table-text-b
+{
+    background-image: url("../media/1/text-table-11-b.svg");
+}
+
+.alaidgham-container .page-l .text-a
+{
+    display: block;
+    overflow: hidden;
+    width: 42.225%;
+    height: 6.221%;
+    position: absolute;
+    top: 31.26%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/1/text-12-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alaidgham-container .page-l .text-b
+{
+    display: block;
+    overflow: hidden;
+    width: 37.004%;
+    height: 21.851%;
+    position: absolute;
+    top: 49.442%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/1/text-12-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+
+
+/*============ alaidgham end ==================*/
+
+/*============ alqalb start ==================*/
+.alqalb-container .page-a .text-a
+{
+    display: block;
+    overflow: hidden;
+    width: 22.93%;
+    height: 4.945%;
+    position: absolute;
+    top: 27.592%;
+    right: 5.45%;
+    background: url("../media/2/text-1-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alqalb-container .page-a .text-b
+{
+    display: block;
+    overflow: hidden;
+    width: 90.012%;
+    height: 6.221%;
+    position: absolute;
+    top: 35.248%;
+    right: 5.45%;
+    background: url("../media/2/text-1-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alqalb-container .page-a .text-c
+{
+    display: block;
+    overflow: hidden;
+    width: 72.418%;
+    height: 14.355%;
+    position: absolute;
+    top: 46.252%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/2/text-1-c.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alqalb-container .page-a .title
+{
+    display: block;
+    overflow: hidden;
+    width: 15.778%;
+    height: 7.497%;
+    position: absolute;
+    top: 65.391%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/2/title-1.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alqalb-container .page-a .letter
+{
+    display: block;
+    overflow: hidden;
+    width: 12.713%;
+    height: 19.777%;
+    position: absolute;
+    top: 76.237%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/2/letter-1.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alqalb-container .page-b .title
+{
+    display: block;
+    overflow: hidden;
+    width: 26.788%;
+    height: 11.324%;
+    position: absolute;
+    top: 25.52%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/2/title-2.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alqalb-container .page-b .text-a
+{
+    display: block;
+    overflow: hidden;
+    width: 26.448%;
+    height: 8.772%;
+    position: absolute;
+    top: 41.627%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/2/text-2-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alqalb-container .page-b .text-b
+{
+    display: block;
+    overflow: hidden;
+    width: 70.148%;
+    height: 7.337%;
+    position: absolute;
+    top: 58.214%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/2/text-2-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alqalb-container .page-c .title
+{
+    display: block;
+    overflow: hidden;
+    width: 31.329%;
+    height: 10.208%;
+    position: absolute;
+    top: 31.42%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/2/title-3.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alqalb-container .page-c .text-a
+{
+    display: block;
+    overflow: hidden;
+    width: 82.066%;
+    height: 12.6%;
+    position: absolute;
+    top: 46.093%;
+    right: 8.06%;
+    background: url("../media/2/text-3-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alqalb-container .page-c .text-b
+{
+    display: block;
+    overflow: hidden;
+    width: 25.88%;
+    height: 5.902%;
+    position: absolute;
+    top: 62.68%;
+    right: 8.06%;
+    background: url("../media/2/text-3-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alqalb-container .page-c .text-c
+{
+    display: block;
+    overflow: hidden;
+    width: 60.273%;
+    height: 12.441%;
+    position: absolute;
+    top: 72.887%;
+    right: 8.06%;
+    background: url("../media/2/text-3-c.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alqalb-container .page-d .title
+{
+    display: block;
+    overflow: hidden;
+    width: 27.47%;
+    height: 9.89%;
+    position: absolute;
+    top: 29.506%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/2/title-4.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alqalb-container .page-d .text
+{
+    display: block;
+    overflow: hidden;
+    width: 81.726%;
+    height: 26.157%;
+    position: absolute;
+    top: 44.5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/2/text-4.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alqalb-container .page-e .title
+{
+    display: block;
+    overflow: hidden;
+    width: 19.978%;
+    height: 10.05%;
+    position: absolute;
+    top: 26.157%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/2/title-5.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.alqalb-container .page-e .example-table-container
+{
+    display: block;
+    overflow: hidden;
+    width: 90.693%;
+    height: 57.417%;
+    position: absolute;
+    top: 38.756%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 22px;
+}
+.alqalb-container .page-e .example-table-row
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 25%;
+    border-bottom: 1px solid #cccccc;
+}
+.alqalb-container .page-e .example-table-row:last-child
+{
+    border-bottom: 0;
+}
+.alqalb-container .page-e .example-table-cell
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.alqalb-container .page-e .example-table-cell.cell-a
+{
+    width: 49.938%;
+    border-left: 1px solid #cccccc;
+}
+.alqalb-container .page-e .example-table-cell.cell-b
+{
+    width: 50%;
+}
+.alqalb-container .page-e .example-table-cell.cell-c
+{
+    height: 50%;
+    border-bottom: 1px solid #cccccc;
+}
+.alqalb-container .page-e .example-table-cell.cell-c:last-child
+{
+    border-bottom: 0;
+}
+.alqalb-container .page-e .example-table-cell.table-text-a
+{
+    background-image: url("../media/2/text-5-a.svg");
+}
+.alqalb-container .page-e .example-table-cell.table-text-b
+{
+    background-image: url("../media/2/text-5-e.svg");
+}
+.alqalb-container .page-e .example-table-cell.table-text-c
+{
+    background-image: url("../media/2/text-5-f.svg");
+}
+.alqalb-container .page-e .example-table-cell.table-text-d
+{
+    background-image: url("../media/2/text-5-b.svg");
+}
+.alqalb-container .page-e .example-table-cell.table-text-e
+{
+    background-image: url("../media/2/text-5-f.svg");
+}
+.alqalb-container .page-e .example-table-cell.table-text-f
+{
+    background-image: url("../media/2/text-5-g.svg");
+}
+.alqalb-container .page-e .example-table-cell.table-text-g
+{
+    background-image: url("../media/2/text-5-c.svg");
+}
+.alqalb-container .page-e .example-table-cell.table-text-h
+{
+    background-image: url("../media/2/text-5-h.svg");
+}
+.alqalb-container .page-e .example-table-cell.table-text-i
+{
+    background-image: url("../media/2/text-5-i.svg");
+}
+.alqalb-container .page-e .example-table-cell.table-text-j
+{
+    background-image: url("../media/2/text-5-d.svg");
+}
+.alqalb-container .page-e .example-table-cell.table-text-k
+{
+    background-image: url("../media/2/text-5-k.svg");
+}
+/*============ alqalb end ==================*/
+
+/*============ alakhfa start ==================*/
+.alakhfa-container .page-a .text-a
+{
+    display: block;
+    overflow: hidden;
+    width: 20.205%;
+    height: 4.785%;
+    position: absolute;
+    top: 27.433%;
+    right: 5.45%;
+    background: url("../media/3/text-1-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alakhfa-container .page-a .text-b
+{
+    display: block;
+    overflow: hidden;
+    width: 80.477%;
+    height: 7.178%;
+    position: absolute;
+    top: 35.09%;
+    right: 5.45%;
+    background: url("../media/3/text-1-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alakhfa-container .page-a .title
+{
+    display: block;
+    overflow: hidden;
+    width: 26.788%;
+    height: 11.803%;
+    position: absolute;
+    top: 51.037%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/3/title-1.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alakhfa-container .page-a .text-c
+{
+    display: block;
+    overflow: hidden;
+    width: 43.474%;
+    height: 5.583%;
+    position: absolute;
+    top: 64.913%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/3/text-1-c.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alakhfa-container .page-a .text-d
+{
+    display: block;
+    overflow: hidden;
+    width: 81.726%;
+    height: 7.497%;
+    position: absolute;
+    top: 74.961%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/3/text-1-d.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alakhfa-container .page-b .title
+{
+    display: block;
+    overflow: hidden;
+    width: 26.448%;
+    height: 8.134%;
+    position: absolute;
+    top: 25.997%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/3/title-2.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alakhfa-container .page-b .letter-container
+{
+    display: block;
+    overflow: hidden;
+    width: 90.466%;
+    height: 61.882%;
+    position: absolute;
+    top: 36.205%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.alakhfa-container .page-b .letter-line
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 30.413%;
+}
+.alakhfa-container .page-b .letter-line:first-child
+{
+    margin-bottom: 4.3%;
+}
+.alakhfa-container .page-b .letter-line:last-child
+{
+    direction: rtl;
+}
+.alakhfa-container .page-b .letter-a, .alakhfa-container .page-b .letter-b, .alakhfa-container .page-b .letter-c,
+.alakhfa-container .page-b .letter-d, .alakhfa-container .page-b .letter-d, .alakhfa-container .page-b .letter-e,
+.alakhfa-container .page-b .letter-f, .alakhfa-container .page-b .letter-g, .alakhfa-container .page-b .letter-h,
+.alakhfa-container .page-b .letter-i, .alakhfa-container .page-b .letter-j, .alakhfa-container .page-b .letter-k,
+.alakhfa-container .page-b .letter-l, .alakhfa-container .page-b .letter-m, .alakhfa-container .page-b .letter-n,
+.alakhfa-container .page-b .letter-o
+{
+    display: block;
+    overflow: hidden;
+    width: 14.053%;
+    height: 100%;
+    margin: 0 0 0 3.137%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.alakhfa-container .page-b .letter-a
+{
+    background-image: url("../media/3/letter-a.svg");
+}
+.alakhfa-container .page-b .letter-b
+{
+    background-image: url("../media/3/letter-b.svg");
+}
+.alakhfa-container .page-b .letter-c
+{
+    background-image: url("../media/3/letter-c.svg");
+}
+.alakhfa-container .page-b .letter-d
+{
+    background-image: url("../media/3/letter-d.svg");
+}
+.alakhfa-container .page-b .letter-e
+{
+    background-image: url("../media/3/letter-e.svg");
+}
+.alakhfa-container .page-b .letter-f
+{
+    background-image: url("../media/3/letter-f.svg");
+    margin-left: 0;
+}
+.alakhfa-container .page-b .letter-g
+{
+    background-image: url("../media/3/letter-g.svg");
+}
+.alakhfa-container .page-b .letter-h
+{
+    background-image: url("../media/3/letter-h.svg");
+}
+.alakhfa-container .page-b .letter-i
+{
+    background-image: url("../media/3/letter-i.svg");
+}
+.alakhfa-container .page-b .letter-j
+{
+    background-image: url("../media/3/letter-j.svg");
+}
+.alakhfa-container .page-b .letter-k
+{
+    background-image: url("../media/3/letter-k.svg");
+}
+.alakhfa-container .page-b .letter-l
+{
+    background-image: url("../media/3/letter-l.svg");
+    margin-left: 0;
+}
+.alakhfa-container .page-b .letter-m
+{
+    display: inline-block;
+    background-image: url("../media/3/letter-m.svg");
+}
+.alakhfa-container .page-b .letter-n
+{
+    display: inline-block;
+    background-image: url("../media/3/letter-n.svg");
+}
+.alakhfa-container .page-b .letter-o
+{
+    display: inline-block;
+    background-image: url("../media/3/letter-o.svg");
+    margin-left: 0;
+}
+.alakhfa-container .page-c .title
+{
+    display: block;
+    overflow: hidden;
+    width: 31.329%;
+    height: 10.367%;
+    position: absolute;
+    top: 29.028%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/3/title-3.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alakhfa-container .page-c .text
+{
+    display: block;
+    overflow: hidden;
+    width: 80.477%;
+    height: 30.304%;
+    position: absolute;
+    top: 43.063%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/3/text-3.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alakhfa-container .page-d .text-a
+{
+    display: block;
+    overflow: hidden;
+    width: 47.56%;
+    height: 12.281%;
+    position: absolute;
+    top: 33.334%;
+    right: 6.016%;
+    background: url("../media/3/text-4-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alakhfa-container .page-d .image-container
+{
+    display: block;
+    overflow: hidden;
+    width: 31.102%;
+    height: 47.05%;
+    position: absolute;
+    top: 29.825%;
+    left: 7.265%;
+}
+.alakhfa-container .page-d .image-container img
+{
+    display: block;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.alakhfa-container .page-d .text-b
+{
+    display: block;
+    overflow: hidden;
+    width: 12.146%;
+    height: 6.86%;
+    position: absolute;
+    top: 78.5%;
+    left: 16.46%;
+    background: url("../media/3/text-4-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alakhfa-container .page-e .text-a
+{
+    display: block;
+    overflow: hidden;
+    width: 48.128%;
+    height: 19.46%;
+    position: absolute;
+    top: 31.26%;
+    right: 6.016%;
+    background: url("../media/3/text-5-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alakhfa-container .page-e .image-container
+{
+    display: block;
+    overflow: hidden;
+    width: 31.102%;
+    height: 47.05%;
+    position: absolute;
+    top: 27.911%;
+    left: 7.265%;
+}
+.alakhfa-container .page-e .image-container img
+{
+    display: block;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.alakhfa-container .page-e .text-b
+{
+    display: block;
+    overflow: hidden;
+    width: 12.486%;
+    height: 6.7%;
+    position: absolute;
+    top: 77.5%;
+    left: 16.46%;
+    background: url("../media/3/text-5-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.alakhfa-container .page-f .title
+{
+    display: block;
+    overflow: hidden;
+    width: 32.01%;
+    height: 8.613%;
+    position: absolute;
+    top: 27.114%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/3/title-6.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alakhfa-container .page-f .text-a
+{
+    display: block;
+    overflow: hidden;
+    width: 17.254%;
+    height: 7.337%;
+    position: absolute;
+    top: 39.075%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/3/text-6-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alakhfa-container .page-f .text-b
+{
+    display: block;
+    overflow: hidden;
+    width: 43.814%;
+    height: 6.86%;
+    position: absolute;
+    top: 51.994%;
+    right: 16.119%;
+    margin: auto;
+    background: url("../media/3/text-6-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alakhfa-container .page-f .text-c
+{
+    display: block;
+    overflow: hidden;
+    width: 67.197%;
+    height: 6.86%;
+    position: absolute;
+    top: 61.563%;
+    right: 16.119%;
+    margin: auto;
+    background: url("../media/3/text-6-c.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alakhfa-container .page-f .text-d
+{
+    display: block;
+    overflow: hidden;
+    width: 59.024%;
+    height: 6.86%;
+    position: absolute;
+    top: 71.133%;
+    right: 16.119%;
+    margin: auto;
+    background: url("../media/3/text-6-d.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alakhfa-container .page-f .text-e
+{
+    display: block;
+    overflow: hidden;
+    width: 58.797%;
+    height: 6.86%;
+    position: absolute;
+    top: 80.702%;
+    right: 16.119%;
+    margin: auto;
+    background: url("../media/3/text-6-e.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alakhfa-container .page-g .title
+{
+    display: block;
+    overflow: hidden;
+    width: 26.334%;
+    height: 5.583%;
+    position: absolute;
+    top: 27.752%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/3/title-7.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alakhfa-container .page-g .text-a
+{
+    display: block;
+    overflow: hidden;
+    width: 86.947%;
+    height: 16.27%;
+    position: absolute;
+    top: 41.468%;
+    right: 8.06%;
+    margin: auto;
+    background: url("../media/3/text-7-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alakhfa-container .page-g .text-b
+{
+    display: block;
+    overflow: hidden;
+    width: 86.947%;
+    height: 16.11%;
+    position: absolute;
+    top: 62.84%;
+    right: 8.06%;
+    margin: auto;
+    background: url("../media/3/text-7-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alakhfa-container .page-h .title,
+.alakhfa-container .page-i .title,
+.alakhfa-container .page-j .title
+{
+    display: block;
+    overflow: hidden;
+    width: 19.978%;
+    height: 10.05%;
+    position: absolute;
+    top: 25.997%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/3/title-8.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.alakhfa-container .page-h .example-table-container,
+.alakhfa-container .page-i .example-table-container,
+.alakhfa-container .page-j .example-table-container
+{
+    display: block;
+    overflow: hidden;
+    width: 90.693%;
+    height: 56.62%;
+    position: absolute;
+    top: 38.916%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 22px;
+}
+.alakhfa-container .page-h .example-table-row,
+.alakhfa-container .page-i .example-table-row,
+.alakhfa-container .page-j .example-table-row
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 17.75%;
+    border-bottom: 1px solid #cccccc;
+}
+.alakhfa-container .page-h .example-table-row:first-child,
+.alakhfa-container .page-i .example-table-row:first-child,
+.alakhfa-container .page-j .example-table-row:first-child
+{
+    height: 10.99%;
+}
+.alakhfa-container .page-h .example-table-row:last-child,
+.alakhfa-container .page-i .example-table-row:last-child,
+.alakhfa-container .page-j .example-table-row:last-child
+{
+    border-bottom: 0;
+}
+.alakhfa-container .page-h .example-table-cell,
+.alakhfa-container .page-i .example-table-cell,
+.alakhfa-container .page-j .example-table-cell
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    border-left: 1px solid #cccccc;
+}
+.alakhfa-container .page-h .example-table-cell.cell-a,
+.alakhfa-container .page-i .example-table-cell.cell-a,
+.alakhfa-container .page-j .example-table-cell.cell-a
+{
+    width: 8.386%;
+}
+.alakhfa-container .page-h .example-table-cell.cell-b,
+.alakhfa-container .page-h .example-table-cell.cell-c,
+.alakhfa-container .page-h .example-table-cell.cell-d,
+.alakhfa-container .page-i .example-table-cell.cell-b,
+.alakhfa-container .page-i .example-table-cell.cell-c,
+.alakhfa-container .page-i .example-table-cell.cell-d,
+.alakhfa-container .page-j .example-table-cell.cell-b,
+.alakhfa-container .page-j .example-table-cell.cell-c,
+.alakhfa-container .page-j .example-table-cell.cell-d
+{
+    width: 30.5%;
+}
+
+.alakhfa-container .page-h .example-table-cell.cell-c:last-child,
+.alakhfa-container .page-i .example-table-cell.cell-c:last-child,
+.alakhfa-container .page-j .example-table-cell.cell-c:last-child
+{
+    border-left: 0;
+}
+.alakhfa-container .page-h .example-table-cell.table-title-a,
+.alakhfa-container .page-i .example-table-cell.table-title-a,
+.alakhfa-container .page-j .example-table-cell.table-title-a
+{
+    background-image: url("../media/3/title-8-table-a.svg");
+}
+.alakhfa-container .page-h .example-table-cell.table-title-b,
+.alakhfa-container .page-i .example-table-cell.table-title-b,
+.alakhfa-container .page-j .example-table-cell.table-title-b
+{
+    background-image: url("../media/3/title-8-table-b.svg");
+}
+.alakhfa-container .page-h .example-table-cell.table-title-c,
+.alakhfa-container .page-i .example-table-cell.table-title-c,
+.alakhfa-container .page-j .example-table-cell.table-title-c
+{
+    background-image: url("../media/3/title-8-table-c.svg");
+}
+.alakhfa-container .page-h .example-table-cell.table-title-d,
+.alakhfa-container .page-i .example-table-cell.table-title-d,
+.alakhfa-container .page-j .example-table-cell.table-title-d
+{
+    background-image: url("../media/3/title-8-table-d.svg");
+}
+.alakhfa-container .page-h .example-table-cell.table-text-a
+{
+    background-image: url("../media/3/text-8-table-1.svg");
+}
+.alakhfa-container .page-h .example-table-cell.table-text-b
+{
+    background-image: url("../media/3/text-8-table-2.svg");
+}
+.alakhfa-container .page-h .example-table-cell.table-text-c
+{
+    background-image: url("../media/3/text-8-table-3.svg");
+}
+.alakhfa-container .page-h .example-table-cell.table-text-d
+{
+    background-image: url("../media/3/text-8-table-4.svg");
+}
+.alakhfa-container .page-h .example-table-cell.table-text-e
+{
+    background-image: url("../media/3/text-8-table-5.svg");
+}
+.alakhfa-container .page-h .example-table-cell.table-text-f
+{
+    background-image: url("../media/3/text-8-table-6.svg");
+}
+.alakhfa-container .page-h .example-table-cell.table-text-g
+{
+    background-image: url("../media/3/text-8-table-7.svg");
+}
+.alakhfa-container .page-h .example-table-cell.table-text-h
+{
+    background-image: url("../media/3/text-8-table-8.svg");
+}
+.alakhfa-container .page-h .example-table-cell.table-text-i
+{
+    background-image: url("../media/3/text-8-table-9.svg");
+}
+.alakhfa-container .page-h .example-table-cell.table-text-j
+{
+    background-image: url("../media/3/text-8-table-10.svg");
+}
+.alakhfa-container .page-h .example-table-cell.table-text-k
+{
+    background-image: url("../media/3/text-8-table-11.svg");
+}
+.alakhfa-container .page-h .example-table-cell.table-text-l
+{
+    background-image: url("../media/3/text-8-table-12.svg");
+}
+.alakhfa-container .page-h .example-table-cell.table-text-m
+{
+    background-image: url("../media/3/text-8-table-13.svg");
+}
+.alakhfa-container .page-h .example-table-cell.table-text-n
+{
+    background-image: url("../media/3/text-8-table-14.svg");
+}
+.alakhfa-container .page-h .example-table-cell.table-text-o
+{
+    background-image: url("../media/3/text-8-table-15.svg");
+}
+.alakhfa-container .page-h .example-table-cell.table-text-p
+{
+    background-image: url("../media/3/text-8-table-16.svg");
+}
+.alakhfa-container .page-h .example-table-cell.table-text-q
+{
+    background-image: url("../media/3/text-8-table-17.svg");
+}
+.alakhfa-container .page-h .example-table-cell.table-text-r
+{
+    background-image: url("../media/3/text-8-table-18.svg");
+}
+.alakhfa-container .page-h .example-table-cell.table-text-s
+{
+    background-image: url("../media/3/text-8-table-19.svg");
+}
+.alakhfa-container .page-h .example-table-cell.table-text-t
+{
+    background-image: url("../media/3/text-8-table-20.svg");
+}
+
+
+.alakhfa-container .page-i .example-table-cell.table-text-a
+{
+    background-image: url("../media/3/text-9-table-1.svg");
+}
+.alakhfa-container .page-i .example-table-cell.table-text-b
+{
+    background-image: url("../media/3/text-9-table-2.svg");
+}
+.alakhfa-container .page-i .example-table-cell.table-text-c
+{
+    background-image: url("../media/3/text-9-table-3.svg");
+}
+.alakhfa-container .page-i .example-table-cell.table-text-d
+{
+    background-image: url("../media/3/text-9-table-4.svg");
+}
+.alakhfa-container .page-i .example-table-cell.table-text-e
+{
+    background-image: url("../media/3/text-9-table-5.svg");
+}
+.alakhfa-container .page-i .example-table-cell.table-text-f
+{
+    background-image: url("../media/3/text-9-table-6.svg");
+}
+.alakhfa-container .page-i .example-table-cell.table-text-g
+{
+    background-image: url("../media/3/text-9-table-7.svg");
+}
+.alakhfa-container .page-i .example-table-cell.table-text-h
+{
+    background-image: url("../media/3/text-9-table-8.svg");
+}
+.alakhfa-container .page-i .example-table-cell.table-text-i
+{
+    background-image: url("../media/3/text-9-table-9.svg");
+}
+.alakhfa-container .page-i .example-table-cell.table-text-j
+{
+    background-image: url("../media/3/text-9-table-10.svg");
+}
+.alakhfa-container .page-i .example-table-cell.table-text-k
+{
+    background-image: url("../media/3/text-9-table-11.svg");
+}
+.alakhfa-container .page-i .example-table-cell.table-text-l
+{
+    background-image: url("../media/3/text-9-table-12.svg");
+}
+.alakhfa-container .page-i .example-table-cell.table-text-m
+{
+    background-image: url("../media/3/text-9-table-13.svg");
+}
+.alakhfa-container .page-i .example-table-cell.table-text-n
+{
+    background-image: url("../media/3/text-9-table-14.svg");
+}
+.alakhfa-container .page-i .example-table-cell.table-text-o
+{
+    background-image: url("../media/3/text-9-table-15.svg");
+}
+.alakhfa-container .page-i .example-table-cell.table-text-p
+{
+    background-image: url("../media/3/text-9-table-16.svg");
+}
+.alakhfa-container .page-i .example-table-cell.table-text-q
+{
+    background-image: url("../media/3/text-9-table-17.svg");
+}
+.alakhfa-container .page-i .example-table-cell.table-text-r
+{
+    background-image: url("../media/3/text-9-table-18.svg");
+}
+.alakhfa-container .page-i .example-table-cell.table-text-s
+{
+    background-image: url("../media/3/text-9-table-19.svg");
+}
+.alakhfa-container .page-i .example-table-cell.table-text-t
+{
+    background-image: url("../media/3/text-9-table-20.svg");
+}
+
+
+
+
+
+.alakhfa-container .page-j .example-table-cell.table-text-a
+{
+    background-image: url("../media/3/text-10-table-1.svg");
+}
+.alakhfa-container .page-j .example-table-cell.table-text-b
+{
+    background-image: url("../media/3/text-10-table-2.svg");
+}
+.alakhfa-container .page-j .example-table-cell.table-text-c
+{
+    background-image: url("../media/3/text-10-table-3.svg");
+}
+.alakhfa-container .page-j .example-table-cell.table-text-d
+{
+    background-image: url("../media/3/text-10-table-4.svg");
+}
+.alakhfa-container .page-j .example-table-cell.table-text-e
+{
+    background-image: url("../media/3/text-10-table-5.svg");
+}
+.alakhfa-container .page-j .example-table-cell.table-text-f
+{
+    background-image: url("../media/3/text-10-table-6.svg");
+}
+.alakhfa-container .page-j .example-table-cell.table-text-g
+{
+    background-image: url("../media/3/text-10-table-7.svg");
+}
+.alakhfa-container .page-j .example-table-cell.table-text-h
+{
+    background-image: url("../media/3/text-10-table-8.svg");
+}
+.alakhfa-container .page-j .example-table-cell.table-text-i
+{
+    background-image: url("../media/3/text-10-table-9.svg");
+}
+.alakhfa-container .page-j .example-table-cell.table-text-j
+{
+    background-image: url("../media/3/text-10-table-10.svg");
+}
+.alakhfa-container .page-j .example-table-cell.table-text-k
+{
+    background-image: url("../media/3/text-10-table-11.svg");
+}
+.alakhfa-container .page-j .example-table-cell.table-text-l
+{
+    background-image: url("../media/3/text-10-table-12.svg");
+}
+.alakhfa-container .page-j .example-table-cell.table-text-m
+{
+    background-image: url("../media/3/text-10-table-13.svg");
+}
+.alakhfa-container .page-j .example-table-cell.table-text-n
+{
+    background-image: url("../media/3/text-10-table-14.svg");
+}
+.alakhfa-container .page-j .example-table-cell.table-text-o
+{
+    background-image: url("../media/3/text-10-table-15.svg");
+}
+.alakhfa-container .page-j .example-table-cell.table-text-p
+{
+    background-image: url("../media/3/text-10-table-16.svg");
+}
+.alakhfa-container .page-j .example-table-cell.table-text-q
+{
+    background-image: url("../media/3/text-10-table-17.svg");
+}
+.alakhfa-container .page-j .example-table-cell.table-text-r
+{
+    background-image: url("../media/3/text-10-table-18.svg");
+}
+.alakhfa-container .page-j .example-table-cell.table-text-s
+{
+    background-image: url("../media/3/text-10-table-19.svg");
+}
+.alakhfa-container .page-j .example-table-cell.table-text-t
+{
+    background-image: url("../media/3/text-10-table-20.svg");
+}
+/*============ alakhfa end ==================*/

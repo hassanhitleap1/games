@@ -1,0 +1,5220 @@
+@font-face {
+    font-family: 'Droid Arabic Kufi';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/DroidKufi-Regular.eot);
+    src: url(../fonts/DroidKufi-Regulard41d.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/DroidKufi-Regular.html) format('woff2'),
+    url(../fonts/DroidKufi-Regular.woff) format('woff'),
+    url(../fonts/DroidKufi-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Droid Arabic Kufi';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/DroidKufi-Bold.eot);
+    src: url(../fonts/DroidKufi-Boldd41d.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/DroidKufi-Bold.html) format('woff2'),
+    url(../fonts/DroidKufi-Bold.woff) format('woff'),
+    url(../fonts/DroidKufi-Bold.ttf) format('truetype');
+}
+.floating-right
+{
+    float: right;
+}
+.floating-left
+{
+    float: left;
+}
+.text-right
+{
+    text-align: right;
+}
+.text-left
+{
+    text-align: left;
+}
+.text-center
+{
+    text-align: center;
+}
+.display-block
+{
+    display: block;
+    overflow: hidden;
+}
+.display-inline-block
+{
+    display: inline-block;
+    overflow: hidden;
+}
+.clear
+{
+    clear: both;
+}
+a
+{
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+*,a,
+a:focus {
+    outline: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-family: open_sans;
+    text-align: center;
+}
+.main-container
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #f3ecdc;
+}
+.inner-container
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.game-container
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.title-container
+{
+    display: block;
+    overflow: hidden;
+    width: 93.75%;
+    height: 10.678%;
+    position: absolute;
+    top: 4.297%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #cc4a6c;
+    border-radius: 10px;
+}
+.title-container span
+{
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.main-title
+{
+    width: 27.709%;
+    height: 75.61%;
+    background-image: url("../images/main-title.svg");
+}
+.main-title-letter
+{
+    width: 27.709%;
+    height: 75.61%;
+    background-image: url("../images/main-title-letter.svg");
+}
+.main-title-verb
+{
+    width: 9.792%;
+    height: 52.44%;
+    background-image: url("../images/main-title-verb.svg");
+}
+.main-title-name
+{
+    width: 9.792%;
+    height: 52.44%;
+    background-image: url("../images/main-title-name.svg");
+}
+.border-container
+{
+    display: block;
+    overflow: hidden;
+    width: 93.75%;
+    height: 75.391%;
+    position: absolute;
+    top: 17.318%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 1px dashed #b5afa0;
+    border-radius: 10px;
+}
+.pin-left,
+.pin-right
+{
+    display: block;
+    overflow: hidden;
+    width: 0.782%;
+    height: 4.818%;
+    position: absolute;
+    top: 13.672%;
+    background: url("../images/title-icon.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.pin-left
+{
+    left: 12.793%;
+}
+.pin-right
+{
+    right: 12.793%;
+}
+.word-typ-container
+{
+    display: block;
+    overflow: hidden;
+    width: 95.93%;
+    height: 92.55%;
+    position: absolute;
+    top: 5.546%;
+    right: 1.984%;
+}
+.Letter-container,
+.verb-container,
+.name-container
+{
+    display: none;
+    overflow: hidden;
+    width: 96.347%;
+    height: 93.59%;
+    position: absolute;
+    top: 3.64%;
+    right: 1.984%;
+    overflow: visible;
+}
+.word-typ
+{
+    display: block;
+    overflow: hidden;
+    width: 31.121%;
+    height: 100%;
+    margin: 0 0 0 3.3%;
+    position: relative;
+}
+.word-typ:last-child
+{
+    margin: 0;
+}
+.typ-title
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 9.364%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.typ-title.name
+{
+    background-image: url("../images/type-title-a.svg");
+}
+.typ-title.name.selected
+{
+    background-image: url("../images/type-title-a-selected.svg");
+}
+.typ-title.verb
+{
+    background-image: url("../images/type-title-b.svg");
+}
+.typ-title.verb.selected
+{
+    background-image: url("../images/type-title-b-selected.svg");
+}
+.typ-title.Letter
+{
+    background-image: url("../images/type-title-c.svg");
+}
+.typ-title.Letter.selected
+{
+    background-image: url("../images/type-title-c-selected.svg");
+}
+.inner-typ-container
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 86.143%;
+    background: #faf7f0;
+}
+.name-typ
+{
+    display: block;
+    overflow: hidden;
+    width: 48%;
+    height: 100.48%;
+    position: relative;
+}
+.verb-typ
+{
+    display: block;
+    overflow: hidden;
+    width: 33%;
+    height: 100.261%;
+    position: relative;
+}
+.Letter-typ
+{
+    display: block;
+    overflow: hidden;
+    width: 33%;
+    height: 49.783%;
+    position: relative;
+}
+.line-yellow
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 0.435%;
+    background: #fde09f;
+}
+
+.name-typ-a,.name-typ-b,
+.verb-typ-a,.verb-typ-b,.verb-typ-c,
+.Letter-typ-a,.Letter-typ-b,.Letter-typ-c,.Letter-typ-d,.Letter-typ-e
+{
+    display: block;
+    overflow: hidden;
+    width: 46.154%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.name-typ-a,.name-typ-b
+{
+    width: 40%;
+    height: 27.803%;
+}
+.verb-typ-a,.verb-typ-b,.verb-typ-c
+{
+    height: 40.53%;
+}
+.Letter-typ-a,.Letter-typ-b,.Letter-typ-c,.Letter-typ-d,.Letter-typ-e
+{
+    height: 68.14%;
+}
+.name-typ-a
+{
+    background-image: url("../images/name-type-a.svg");
+}
+.name-typ-a.selected
+{
+    background-image: url("../images/name-type-a-selected.html");
+}
+.name-typ-b
+{
+    background-image: url("../images/name-type-b.svg");
+}
+.name-typ-b.selected
+{
+    background-image: url("../images/name-type-b-selected.html");
+}
+
+
+.verb-typ-a
+{
+    background-image: url("../images/verb-type-a.svg");
+}
+.verb-typ-a.selected
+{
+    background-image: url("../images/verb-type-a-selected.html");
+}
+.verb-typ-b
+{
+    background-image: url("../images/verb-type-b.svg");
+}
+.verb-typ-b.selected
+{
+    background-image: url("../images/verb-type-b-selected.html");
+}
+.verb-typ-c
+{
+    background-image: url("../images/verb-type-c.svg");
+}
+.verb-typ-c.selected
+{
+    background-image: url("../images/verb-type-c-selected.html");
+}
+.Letter-typ-a
+{
+    background-image: url("../images/Letter-type-a.svg");
+}
+.Letter-typ-a.selected
+{
+    background-image: url("../images/Letter-type-a-selected.html");
+}
+.Letter-typ-b
+{
+    background-image: url("../images/Letter-type-b.svg");
+}
+.Letter-typ-b.selected
+{
+    background-image: url("../images/Letter-type-b-selected.html");
+}
+.Letter-typ-c
+{
+    background-image: url("../images/Letter-type-c.svg");
+}
+.Letter-typ-c.selected
+{
+    background-image: url("../images/Letter-type-c-selected.html");
+}
+.Letter-typ-d
+{
+    background-image: url("../images/Letter-type-d.svg");
+}
+.Letter-typ-d.selected
+{
+    background-image: url("../images/Letter-type-d-selected.html");
+}
+.Letter-typ-e
+{
+    background-image: url("../images/Letter-type-e.svg");
+}
+.Letter-typ-e.selected
+{
+    background-image: url("../images/Letter-type-e-selected.html");
+}
+.shadow-type
+{
+    display: inline-block;
+    overflow: hidden;
+    width: 92.31%;
+    height: 5.057%;
+    margin: auto;
+    background: url("../images/shadow.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+
+/*===================start letter tabs===========*/
+#tabs-container,
+#tabs-containerLetter,
+#tabs-containerVerb,
+#tabs-containerName
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+.tabs-menu,
+.letter-tabs-menu,
+.verb-tabs-menu,
+.name-tabs-menu
+{
+    width: 95.342%;
+    height: 10.186%;
+    clear: both;
+    list-style: none;
+    position: absolute;
+    top: 0.1%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: visible;
+}
+.tabs-menu li,
+.letter-tabs-menu li,
+.verb-tabs-menu li,
+.name-tabs-menu li
+{
+    height: 100%;
+    width: 19.091%;
+    float: right;
+    margin-left: 10px;
+    background-color: rgba(255,255,255,0.5);
+    border-top: 1px solid #b5afa0;
+    border-right: 1px solid #b5afa0;
+    border-left: 1px solid #b5afa0;
+    border-bottom: 1px solid #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+}
+.tabs-menu li:last-child,
+.letter-tabs-menu li:last-child,
+.verb-tabs-menu li:last-child,
+.name-tabs-menu li:last-child
+{
+    margin-left: 0;
+}
+
+.tabs-menu li.current,
+.letter-tabs-menu li.current,
+.verb-tabs-menu li.current,
+.name-tabs-menu li.current
+{
+    position: relative;
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+    z-index: 5;
+    border-top: 1px solid #097b70;
+    border-right: 1px solid #097b70;
+    border-left: 1px solid #097b70;
+    box-shadow: 0px -3px 4px rgba(0,0,0,0.1);
+}
+
+.tabs-menu li a,
+.letter-tabs-menu li a,
+.verb-tabs-menu li a,
+.name-tabs-menu li a
+{
+    display: block;
+    overflow:  hidden;
+    height: 100%;
+    width: 100%;
+}
+.tabs-menu li.current a,
+.letter-tabs-menu li.current a,
+.verb-tabs-menu li.current a,
+.name-tabs-menu li.current a
+{
+    pointer-events: none;
+}
+.tabs-menu li a i,
+.letter-tabs-menu li a i,
+.verb-tabs-menu li a i,
+.name-tabs-menu li a i
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.tabs-menu li:nth-child(1) a i
+{
+    background-image: url("../images/tabs-1.svg");
+}
+.tabs-menu li:nth-child(2) a i
+{
+    background-image: url("../images/tabs-2.svg");
+}
+.tabs-menu li:nth-child(3) a i
+{
+    background-image: url("../images/tabs-3.svg");
+}
+
+.letter-tabs-menu li:nth-child(1) a i
+{
+    background-image: url("../images/letter-tabs-1.svg");
+}
+.letter-tabs-menu li:nth-child(2) a i
+{
+    background-image: url("../images/letter-tabs-2.svg");
+}
+.letter-tabs-menu li:nth-child(3) a i
+{
+    background-image: url("../images/letter-tabs-3.svg");
+}
+.letter-tabs-menu li:nth-child(4) a i
+{
+    background-image: url("../images/letter-tabs-4.svg");
+}
+.letter-tabs-menu li:nth-child(5) a i
+{
+    background-image: url("../images/letter-tabs-5.svg");
+}
+
+.verb-tabs-menu li:nth-child(1) a i
+{
+    background-image: url("../images/verb-tabs-1.svg");
+}
+.verb-tabs-menu li:nth-child(2) a i
+{
+    background-image: url("../images/verb-tabs-2.svg");
+}
+.verb-tabs-menu li:nth-child(3) a i
+{
+    background-image: url("../images/verb-tabs-3.svg");
+}
+.name-tabs-menu li:nth-child(1) a i
+{
+    background-image: url("../images/name-tabs-1.svg");
+}
+.name-tabs-menu li:nth-child(2) a i
+{
+    background-image: url("../images/name-tabs-2.svg");
+}
+
+.tabs-menu li:nth-child(1).current a i
+{
+    background-image: url("../images/tabs-1-selected.svg");
+}
+.tabs-menu li:nth-child(2).current a i
+{
+    background-image: url("../images/tabs-2-selected.svg");
+}
+.tabs-menu li:nth-child(3).current a i
+{
+    background-image: url("../images/tabs-3-selected.svg");
+}
+
+.letter-tabs-menu li:nth-child(1).current a i
+{
+    background-image: url("../images/letter-tabs-1-selected.svg");
+}
+.letter-tabs-menu li:nth-child(2).current a i
+{
+    background-image: url("../images/letter-tabs-2-selected.svg");
+}
+.letter-tabs-menu li:nth-child(3).current a i
+{
+    background-image: url("../images/letter-tabs-3-selected.svg");
+}
+.letter-tabs-menu li:nth-child(4).current a i
+{
+    background-image: url("../images/letter-tabs-4-selected.svg");
+}
+.letter-tabs-menu li:nth-child(5).current a i
+{
+    background-image: url("../images/letter-tabs-5-selected.svg");
+}
+
+.verb-tabs-menu li:nth-child(1).current a i
+{
+    background-image: url("../images/verb-tabs-1-selected.svg");
+}
+.verb-tabs-menu li:nth-child(2).current a i
+{
+    background-image: url("../images/verb-tabs-2-selected.svg");
+}
+.verb-tabs-menu li:nth-child(3).current a i
+{
+    background-image: url("../images/verb-tabs-3-selected.svg");
+}
+.name-tabs-menu li:nth-child(1).current a i
+{
+    background-image: url("../images/name-tabs-1-selected.svg");
+}
+.name-tabs-menu li:nth-child(2).current a i
+{
+    background-image: url("../images/name-tabs-2-selected.svg");
+}
+
+.tab {
+    /* border: 1px solid #097b70; */
+    background-color: #fff;
+    width: 99%;
+    height: 88.9%;
+    position: absolute;
+    top: 10.186%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 9px rgba(0,0,0,0.2);
+}
+
+.tab-content {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.poweredBy
+{
+    display: block;
+    overflow: hidden;
+    width: 15.333%;
+    height: 4.297%;
+    position: absolute;
+    bottom: 1.1%;
+    left: 1.954%;
+    background: url("../images/poweredBy.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.home-icon
+{
+    display: none;
+    overflow: hidden;
+    width: 4.2%;
+    height: 5.21%;
+    position: absolute;
+    bottom: 1%;
+    right: 2.5%;
+    background: url("../images/home.svg") no-repeat center;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+/*===================end letter tabs===========*/
+
+/*===================start letter alatf===========*/
+.title-letter-a
+{
+    display: block;
+    overflow: hidden;
+    width: 37.243%;
+    height: 9.9%;
+    position: absolute;
+    top: 12.411%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/letter/1/title-letter-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+#tab-1 .example-table-container
+{
+    display: block;
+    overflow: hidden;
+    width: 86.863%;
+    height: 56.47%;
+    position: absolute;
+    top: 26.89%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+#tab-1 .example-table-row
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 20.6%;
+    border-bottom: 1px solid #cccccc;
+}
+#tab-1 .example-table-row:first-child
+{
+    height: 18.082%;
+}
+#tab-1 .example-table-row:last-child
+{
+    border-bottom: 0;
+}
+#tab-1 .example-table-cell
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+#tab-1 .example-table-cell.cell-a,
+#tab-1 .example-table-cell.cell-c
+{
+    width: 11.404%;
+}
+#tab-1 .example-table-cell.cell-b,
+#tab-1 .example-table-cell.cell-d
+{
+    width: 38.59%;
+}
+#tab-1 .example-table-cell.cell-d
+{
+    border-left: 0;
+}
+#tab-1 .example-table-cell.table-text-a,
+#tab-1 .example-table-cell.table-text-c
+{
+    background-image: url("../media/letter/1/text-tab-1-a.svg");
+}
+#tab-1 .example-table-cell.table-text-b,
+#tab-1 .example-table-cell.table-text-d
+{
+    background-image: url("../media/letter/1/text-tab-1-b.svg");
+}
+#tab-1 .example-table-cell.table-text-e
+{
+    background-image: url("../media/letter/1/text-tab-1-c.svg");
+}
+#tab-1 .example-table-cell.table-text-f
+{
+    background-image: url("../media/letter/1/text-tab-1-d.svg");
+}
+#tab-1 .example-table-cell.table-text-g
+{
+    background-image: url("../media/letter/1/text-tab-1-e.svg");
+}
+#tab-1 .example-table-cell.table-text-h
+{
+    background-image: url("../media/letter/1/text-tab-1-f.svg");
+}
+#tab-1 .example-table-cell.table-text-i
+{
+    background-image: url("../media/letter/1/text-tab-1-g.svg");
+}
+#tab-1 .example-table-cell.table-text-j
+{
+    background-image: url("../media/letter/1/text-tab-1-h.svg");
+}
+#tab-1 .example-table-cell.table-text-k
+{
+    background-image: url("../media/letter/1/text-tab-1-i.svg");
+}
+#tab-1 .example-table-cell.table-text-l
+{
+    background-image: url("../media/letter/1/text-tab-1-j.svg");
+}
+#tab-1 .example-table-cell.table-text-m
+{
+    background-image: url("../media/letter/1/text-tab-1-k.svg");
+}
+#tab-1 .example-table-cell.table-text-n
+{
+    background-image: url("../media/letter/1/text-tab-1-l.svg");
+}
+#tab-1 .example-table-cell.table-text-o
+{
+    background-image: url("../media/letter/1/text-tab-1-m.svg");
+}
+#tab-1 .example-table-cell.table-text-p
+{
+    background-image: url("../media/letter/1/text-tab-1-n.svg");
+}
+#tab-1 .example-table-cell.table-text-q
+{
+    background-image: url("../media/letter/1/text-tab-1-o.svg");
+}
+#tab-1 .example-table-cell.table-text-r
+{
+    background-image: url("../media/letter/1/text-tab-1-p.svg");
+}
+#tab-1 .example-table-cell.table-text-s
+{
+    background-image: url("../media/letter/1/text-tab-1-q.svg");
+}
+#tab-1 .example-table-cell.table-text-t
+{
+    background-image: url("../media/letter/1/text-tab-1-r.svg");
+}
+/*===================end letter alatf===========*/
+
+/*===================start letter aljar===========*/
+.title-letter-b
+{
+    display: block;
+    overflow: hidden;
+    width: 32.684%;
+    height: 10.041%;
+    position: absolute;
+    top: 2.975%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/letter/2/title-letter-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+#tab-2 .example-table-container
+{
+    display: block;
+    overflow: hidden;
+    width: 86.863%;
+    height: 79.91%;
+    position: absolute;
+    top: 15.89%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+#tab-2 .example-table-row
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 14.5%;
+    border-bottom: 1px solid #cccccc;
+}
+#tab-2 .example-table-row:first-child
+{
+    height: 12.895%;
+}
+#tab-2 .example-table-row:last-child
+{
+    border-bottom: 0;
+}
+#tab-2 .example-table-cell
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+#tab-2 .example-table-cell.cell-a,
+#tab-2 .example-table-cell.cell-c
+{
+    width: 11.404%;
+}
+#tab-2 .example-table-cell.cell-b,
+#tab-2 .example-table-cell.cell-d
+{
+    width: 38.59%;
+}
+#tab-2 .example-table-cell.cell-d
+{
+    border-left: 0;
+}
+#tab-2 .example-table-cell.table-text-a,
+#tab-2 .example-table-cell.table-text-c
+{
+    background-image: url("../media/letter/1/text-tab-1-a.svg");
+}
+#tab-2 .example-table-cell.table-text-b,
+#tab-2 .example-table-cell.table-text-d
+{
+    background-image: url("../media/letter/1/text-tab-1-b.svg");
+}
+#tab-2 .example-table-cell.table-text-e
+{
+    background-image: url("../media/letter/2/text-tab-2-a.svg");
+}
+#tab-2 .example-table-cell.table-text-f
+{
+    background-image: url("../media/letter/2/text-tab-2-b.svg");
+}
+#tab-2 .example-table-cell.table-text-g
+{
+    background-image: url("../media/letter/2/text-tab-2-c.svg");
+}
+#tab-2 .example-table-cell.table-text-h
+{
+    background-image: url("../media/letter/2/text-tab-2-d.svg");
+}
+#tab-2 .example-table-cell.table-text-i
+{
+    background-image: url("../media/letter/2/text-tab-2-e.svg");
+}
+#tab-2 .example-table-cell.table-text-j
+{
+    background-image: url("../media/letter/2/text-tab-2-f.svg");
+}
+#tab-2 .example-table-cell.table-text-k
+{
+    background-image: url("../media/letter/2/text-tab-2-g.svg");
+}
+#tab-2 .example-table-cell.table-text-l
+{
+    background-image: url("../media/letter/2/text-tab-2-h.svg");
+}
+#tab-2 .example-table-cell.table-text-m
+{
+    background-image: url("../media/letter/2/text-tab-2-i.svg");
+}
+#tab-2 .example-table-cell.table-text-n
+{
+    background-image: url("../media/letter/2/text-tab-2-j.svg");
+}
+#tab-2 .example-table-cell.table-text-o
+{
+    background-image: url("../media/letter/2/text-tab-2-k.svg");
+}
+#tab-2 .example-table-cell.table-text-p
+{
+    background-image: url("../media/letter/2/text-tab-2-l.svg");
+}
+#tab-2 .example-table-cell.table-text-q
+{
+    background-image: url("../media/letter/2/text-tab-2-m.svg");
+}
+#tab-2 .example-table-cell.table-text-r
+{
+    background-image: url("../media/letter/2/text-tab-2-n.svg");
+}
+#tab-2 .example-table-cell.table-text-s
+{
+    background-image: url("../media/letter/2/text-tab-2-o.svg");
+}
+#tab-2 .example-table-cell.table-text-t
+{
+    background-image: url("../media/letter/2/text-tab-2-p.svg");
+}
+#tab-2 .example-table-cell.table-text-u
+{
+    background-image: url("../media/letter/2/text-tab-2-q.svg");
+}
+#tab-2 .example-table-cell.table-text-w
+{
+    background-image: url("../media/letter/2/text-tab-2-r.svg");
+}
+#tab-2 .example-table-cell.table-text-x
+{
+    background-image: url("../media/letter/2/text-tab-2-s.svg");
+}
+#tab-2 .example-table-cell.table-text-y
+{
+    background-image: url("../media/letter/2/text-tab-2-t.svg");
+}
+#tab-2 .example-table-cell.table-text-z
+{
+    background-image: url("../media/letter/2/text-tab-2-u.svg");
+}
+#tab-2 .example-table-cell.table-text-aa
+{
+    background-image: url("../media/letter/2/text-tab-2-w.svg");
+}
+/*===================end letter aljar===========*/
+
+/*===================start letter alnsab===========*/
+.title-letter-c
+{
+    display: block;
+    overflow: hidden;
+    width: 36.852%;
+    height: 11.506%;
+    position: absolute;
+    top: 14.016%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/letter/3/title-letter-c.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+#tab-3 .example-table-container
+{
+    display: block;
+    overflow: hidden;
+    width: 87.852%;
+    height: 57.11%;
+    position: absolute;
+    top: 32%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+#tab-3 .example-table-row
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 20.4%;
+    border-bottom: 1px solid #cccccc;
+}
+#tab-3 .example-table-row:first-child
+{
+    height: 18.451%;
+}
+#tab-3 .example-table-row:last-child
+{
+    border-bottom: 0;
+}
+#tab-3 .example-table-cell
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+#tab-3 .example-table-cell.cell-a,
+#tab-3 .example-table-cell.cell-c
+{
+    width: 10.388%;
+}
+#tab-3 .example-table-cell.cell-b,
+#tab-3 .example-table-cell.cell-d
+{
+    width: 39.6%;
+}
+#tab-3 .example-table-cell.cell-d
+{
+    border-left: 0;
+}
+#tab-3 .example-table-cell.table-text-a,
+#tab-3 .example-table-cell.table-text-c
+{
+    background-image: url("../media/letter/1/text-tab-1-a.svg");
+}
+#tab-3 .example-table-cell.table-text-b,
+#tab-3 .example-table-cell.table-text-d
+{
+    background-image: url("../media/letter/1/text-tab-1-b.svg");
+}
+#tab-3 .example-table-cell.table-text-e
+{
+    background-image: url("../media/letter/3/text-tab-3-a.svg");
+}
+#tab-3 .example-table-cell.table-text-f
+{
+    background-image: url("../media/letter/3/text-tab-3-b.svg");
+}
+#tab-3 .example-table-cell.table-text-g
+{
+    background-image: url("../media/letter/3/text-tab-3-c.svg");
+}
+#tab-3 .example-table-cell.table-text-h
+{
+    background-image: url("../media/letter/3/text-tab-3-d.svg");
+}
+#tab-3 .example-table-cell.table-text-i
+{
+    background-image: url("../media/letter/3/text-tab-3-e.svg");
+}
+#tab-3 .example-table-cell.table-text-j
+{
+    background-image: url("../media/letter/3/text-tab-3-f.svg");
+}
+#tab-3 .example-table-cell.table-text-k
+{
+    background-image: url("../media/letter/3/text-tab-3-g.svg");
+}
+#tab-3 .example-table-cell.table-text-l
+{
+    background-image: url("../media/letter/3/text-tab-3-h.svg");
+}
+#tab-3 .example-table-cell.table-text-m
+{
+    background-image: url("../media/letter/3/text-tab-3-i.svg");
+}
+#tab-3 .example-table-cell.table-text-n
+{
+    background-image: url("../media/letter/3/text-tab-3-j.svg");
+}
+#tab-3 .example-table-cell.table-text-o
+{
+    background-image: url("../media/letter/3/text-tab-3-k.svg");
+}
+#tab-3 .example-table-cell.table-text-p
+{
+    background-image: url("../media/letter/3/text-tab-3-l.svg");
+}
+#tab-3 .example-table-cell.table-text-q
+{
+    background-image: url("../media/letter/3/text-tab-3-m.svg");
+}
+#tab-3 .example-table-cell.table-text-r
+{
+    background-image: url("../media/letter/3/text-tab-3-n.svg");
+}
+#tab-3 .example-table-cell.table-text-s
+{
+    background-image: url("../media/letter/3/text-tab-3-o.svg");
+}
+#tab-3 .example-table-cell.table-text-t
+{
+    background-image: url("../media/letter/3/text-tab-3-p.svg");
+}
+
+/*===================end letter alnsab===========*/
+
+/*===================start letter aljazem===========*/
+.title-letter-d
+{
+    display: block;
+    overflow: hidden;
+    width: 34.44%;
+    height: 11.924%;
+    position: absolute;
+    top: 15.69%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/letter/4/title-letter-d.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+#tab-4 .example-table-container
+{
+    display: block;
+    overflow: hidden;
+    width: 87.852%;
+    height: 45.812%;
+    position: absolute;
+    top: 37%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+#tab-4 .example-table-row
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 25.81%;
+    border-bottom: 1px solid #cccccc;
+}
+#tab-4 .example-table-row:first-child
+{
+    height: 23.042%;
+}
+#tab-4 .example-table-row:last-child
+{
+    border-bottom: 0;
+}
+#tab-4 .example-table-cell
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+#tab-4 .example-table-cell.cell-a,
+#tab-4 .example-table-cell.cell-c
+{
+    width: 10.388%;
+}
+#tab-4 .example-table-cell.cell-b,
+#tab-4 .example-table-cell.cell-d
+{
+    width: 39.6%;
+}
+#tab-4 .example-table-cell.cell-d
+{
+    border-left: 0;
+}
+#tab-4 .example-table-cell.table-text-a,
+#tab-4 .example-table-cell.table-text-c
+{
+    background-image: url("../media/letter/1/text-tab-1-a.svg");
+}
+#tab-4 .example-table-cell.table-text-b,
+#tab-4 .example-table-cell.table-text-d
+{
+    background-image: url("../media/letter/1/text-tab-1-b.svg");
+}
+#tab-4 .example-table-cell.table-text-e
+{
+    background-image: url("../media/letter/4/text-tab-4-a.svg");
+}
+#tab-4 .example-table-cell.table-text-f
+{
+    background-image: url("../media/letter/4/text-tab-4-b.svg");
+}
+#tab-4 .example-table-cell.table-text-g
+{
+    background-image: url("../media/letter/4/text-tab-4-c.svg");
+}
+#tab-4 .example-table-cell.table-text-h
+{
+    background-image: url("../media/letter/4/text-tab-4-d.svg");
+}
+#tab-4 .example-table-cell.table-text-i
+{
+    background-image: url("../media/letter/4/text-tab-4-e.svg");
+}
+#tab-4 .example-table-cell.table-text-j
+{
+    background-image: url("../media/letter/4/text-tab-4-f.svg");
+}
+#tab-4 .example-table-cell.table-text-k
+{
+    background-image: url("../media/letter/4/text-tab-4-g.svg");
+}
+#tab-4 .example-table-cell.table-text-l
+{
+    background-image: url("../media/letter/4/text-tab-4-h.svg");
+}
+#tab-4 .example-table-cell.table-text-m
+{
+    background-image: url("../media/letter/4/text-tab-4-i.svg");
+    width: 22.904%;
+}
+#tab-4 .example-table-cell.table-text-n
+{
+    background-image: url("../media/letter/4/text-tab-4-j.svg");
+    width: 77.09%;
+}
+
+/*===================end letter aljazem===========*/
+
+/*===================start letter throof aljar===========*/
+.title-letter-e
+{
+    display: block;
+    overflow: hidden;
+    width: 44.859%;
+    height: 10.041%;
+    position: absolute;
+    top: 10.88%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../media/letter/5/title-letter-e.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+#tab-5 .example-table-container
+{
+    display: block;
+    overflow: hidden;
+    width: 98.6%;
+    height: 68.822%;
+    position: absolute;
+    top: 26.36%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+#tab-5 .example-table-row
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 16.98%;
+    border-bottom: 1px solid #cccccc;
+}
+#tab-5 .example-table-row:first-child
+{
+    height: 15.291%;
+}
+#tab-5 .example-table-row:last-child
+{
+    border-bottom: 0;
+}
+#tab-5 .example-table-cell
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+#tab-5 .example-table-cell.cell-a,
+#tab-5 .example-table-cell.cell-c
+{
+    width: 9.588%;
+}
+#tab-5 .example-table-cell.cell-b
+{
+    width: 48.718%;
+}
+#tab-5 .example-table-cell.cell-d
+{
+    width: 32.1%;
+    border-left: 0;
+}
+#tab-5 .example-table-cell.table-text-a,
+#tab-5 .example-table-cell.table-text-c
+{
+    background-image: url("../media/letter/1/text-tab-1-a.svg");
+}
+#tab-5 .example-table-cell.table-text-b,
+#tab-5 .example-table-cell.table-text-d
+{
+    background-image: url("../media/letter/1/text-tab-1-b.svg");
+}
+#tab-5 .example-table-cell.table-text-e
+{
+    background-image: url("../media/letter/5/text-tab-5-a.svg");
+}
+#tab-5 .example-table-cell.table-text-f
+{
+    background-image: url("../media/letter/5/text-tab-5-b.svg");
+}
+#tab-5 .example-table-cell.table-text-g
+{
+    background-image: url("../media/letter/5/text-tab-5-c.svg");
+}
+#tab-5 .example-table-cell.table-text-h
+{
+    background-image: url("../media/letter/5/text-tab-5-d.svg");
+}
+#tab-5 .example-table-cell.table-text-i
+{
+    background-image: url("../media/letter/5/text-tab-5-e.svg");
+}
+#tab-5 .example-table-cell.table-text-j
+{
+    background-image: url("../media/letter/5/text-tab-5-f.svg");
+}
+#tab-5 .example-table-cell.table-text-k
+{
+    background-image: url("../media/letter/5/text-tab-5-g.svg");
+}
+#tab-5 .example-table-cell.table-text-l
+{
+    background-image: url("../media/letter/5/text-tab-5-h.svg");
+}
+#tab-5 .example-table-cell.table-text-m
+{
+    background-image: url("../media/letter/5/text-tab-5-i.svg");
+}
+#tab-5 .example-table-cell.table-text-n
+{
+    background-image: url("../media/letter/5/text-tab-5-j.svg");
+}
+#tab-5 .example-table-cell.table-text-o
+{
+    background-image: url("../media/letter/5/text-tab-5-k.svg");
+}
+#tab-5 .example-table-cell.table-text-p
+{
+    background-image: url("../media/letter/5/text-tab-5-l.svg");
+}
+#tab-5 .example-table-cell.table-text-q
+{
+    background-image: url("../media/letter/5/text-tab-5-m.svg");
+}
+#tab-5 .example-table-cell.table-text-r
+{
+    background-image: url("../media/letter/5/text-tab-5-n.svg");
+}
+#tab-5 .example-table-cell.table-text-s
+{
+    background-image: url("../media/letter/5/text-tab-5-o.svg");
+}
+#tab-5 .example-table-cell.table-text-t
+{
+    background-image: url("../media/letter/5/text-tab-5-p.svg");
+}
+#tab-5 .example-table-cell.table-text-u
+{
+    background-image: url("../media/letter/5/text-tab-5-q.svg");
+}
+#tab-5 .example-table-cell.table-text-w
+{
+    background-image: url("../media/letter/5/text-tab-5-r.svg");
+}
+#tab-5 .example-table-cell.table-text-x
+{
+    background-image: url("../media/letter/5/text-tab-5-t.svg");
+}
+#tab-5 .example-table-cell.table-text-y
+{
+    background-image: url("../media/letter/5/text-tab-5-u.svg");
+}
+/*===================end letter throof aljar===========*/
+/*===================start verb ===========*/
+.accordion-container
+{
+    display: block;
+    overflow: hidden;
+    width: 95.42%;
+    height: 94%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.accordion {
+    /*background-color: #f1eada;*/
+    color: #542c0b;
+    cursor: pointer;
+    width: 100%;
+    height: 42px;
+    height: 9.35%;
+    outline: none;
+    font-size: 24px;
+    transition: 0.4s;
+    text-align: center;
+    border: 0.5px solid #e0d0a8;
+    border-top: 0;
+    background-image: -moz-linear-gradient( 90deg, rgb(242,238,231) 0%, rgb(249,248,242) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(242,238,231) 0%, rgb(249,248,242) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(242,238,231) 0%, rgb(249,248,242) 100%);
+    -webkit-box-shadow: 0px 3px 0px 0px rgba(17, 17, 17, 0.2);
+    -moz-box-shadow:    0px 3px 0px 0px rgba(17, 17, 17, 0.2);
+    box-shadow:         0px 3px 0px 0px rgba(17, 17, 17, 0.2);
+    z-index: 9999999999999999999999;
+    position: relative;
+    margin-bottom: 0.34%;
+}
+.accordion:first-child
+{
+    border-top: 0.5px solid #e0d0a8;
+}
+.active {
+    /*background-color: #ca4a6c;*/
+    color: #fff;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+    border-style: solid;
+    border-width: 1px;
+    background-image: -moz-linear-gradient( 90deg, rgb(204,74,108) 0%, rgb(219,86,121) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(204,74,108) 0%, rgb(219,86,121) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(204,74,108) 0%, rgb(219,86,121) 100%);
+    /* margin-bottom: 0; */
+}
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    height: 60%;
+    border-left: 1px solid #eee4ce;
+    border-right: 1px solid #eee4ce;
+    border-bottom: 1px solid #eee4ce;
+    overflow: hidden;
+    position: relative;
+}
+
+/*=============start verb past==========*/
+.example-table-container-verb-a-a
+{
+    display: block;
+    overflow: hidden;
+    width: 83.794%;
+    height: 89.204%;
+    position: absolute;
+    top: 6.5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-row-verb-a-a
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-verb-a-a:first-child
+{
+    /* height: 25.775%; */
+}
+.example-table-row-verb-a-a:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-verb-a-a
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-verb-a-a.cell-a,
+.example-table-cell-verb-a-a.cell-b
+{
+    width: 50%;
+}
+.example-table-cell-verb-a-a.cell-b
+{
+    border-left: 0;
+}
+.example-table-cell-verb-a-a.table-text-a
+{
+    background-image: url("../media/verb/1/1/text-tab-1-a.svg");
+}
+.example-table-cell-verb-a-a.table-text-b
+{
+    background-image: url("../media/verb/1/1/text-tab-1-b.svg");
+}
+.example-table-cell-verb-a-a.table-text-c
+{
+    background-image: url("../media/verb/1/1/text-tab-1-c.svg");
+}
+.example-table-cell-verb-a-a.table-text-d
+{
+    background-image: url("../media/verb/1/1/text-tab-1-d.svg");
+}
+.example-table-cell-verb-a-a.table-text-e
+{
+    background-image: url("../media/verb/1/1/text-tab-1-e.svg");
+}
+.example-table-cell-verb-a-a.table-text-f
+{
+    background-image: url("../media/verb/1/1/text-tab-1-f.svg");
+}
+.example-table-cell-verb-a-a.table-text-g
+{
+    background-image: url("../media/verb/1/1/text-tab-1-g.svg");
+}
+.example-table-cell-verb-a-a.table-text-h
+{
+    background-image: url("../media/verb/1/1/text-tab-1-h.svg");
+}
+.example-table-cell-verb-a-a.table-text-i
+{
+    background-image: url("../media/verb/1/1/text-tab-1-i.svg");
+}
+.example-table-cell-verb-a-a.table-text-j
+{
+    background-image: url("../media/verb/1/1/text-tab-1-j.svg");
+}
+.example-table-container-verb-a-b
+{
+    display: block;
+    overflow: hidden;
+    width: 83.794%;
+    height: 44.6%;
+    position: absolute;
+    top: 26.89%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-row-verb-a-b
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 43.4%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-verb-a-b:first-child
+{
+    height: 57.26%;
+}
+.example-table-row-verb-a-b:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-verb-a-b
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-verb-a-b.cell-a,
+.example-table-cell-verb-a-b.cell-b
+{
+    width: 50%;
+}
+.example-table-cell-verb-a-b.cell-b
+{
+    border-left: 0;
+}
+.example-table-cell-verb-a-b.table-text-a
+{
+    background-image: url("../media/verb/1/2/text-tab-1-a.svg");
+}
+.example-table-cell-verb-a-b.table-text-b
+{
+    background-image: url("../media/verb/1/2/text-tab-1-b.svg");
+}
+.example-table-cell-verb-a-b.table-text-c
+{
+    background-image: url("../media/verb/1/2/text-tab-1-c.svg");
+}
+.example-table-cell-verb-a-b.table-text-d
+{
+    background-image: url("../media/verb/1/2/text-tab-1-d.svg");
+}
+
+.example-table-container-verb-a-c
+{
+    display: block;
+    overflow: hidden;
+    width: 83.794%;
+    height: 88.863%;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-row-verb-a-c
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 19%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-verb-a-c:first-child
+{
+    height: 43.45%;
+}
+.example-table-row-verb-a-c:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-verb-a-c
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-verb-a-c.cell-a,
+.example-table-cell-verb-a-c.cell-b
+{
+    width: 50%;
+}
+.example-table-cell-verb-a-c.cell-b
+{
+    border-left: 0;
+}
+.example-table-cell-verb-a-c.table-text-a
+{
+    background-image: url("../media/verb/1/3/text-tab-1-a.svg");
+}
+.example-table-cell-verb-a-c.table-text-b
+{
+    background-image: url("../media/verb/1/3/text-tab-1-b.svg");
+}
+.example-table-cell-verb-a-c.table-text-c
+{
+    background-image: url("../media/verb/1/3/text-tab-1-c.svg");
+}
+.example-table-cell-verb-a-c.table-text-d
+{
+    background-image: url("../media/verb/1/3/text-tab-1-d.svg");
+}
+.example-table-cell-verb-a-c.table-text-e
+{
+    background-image: url("../media/verb/1/3/text-tab-1-e.svg");
+}
+.example-table-cell-verb-a-c.table-text-f
+{
+    background-image: url("../media/verb/1/3/text-tab-1-f.svg");
+}
+.example-table-cell-verb-a-c.table-text-g
+{
+    background-image: url("../media/verb/1/3/text-tab-1-g.svg");
+}
+.example-table-cell-verb-c-a.table-text-h
+{
+    background-image: url("../media/verb/1/3/text-tab-1-h.svg");
+}
+/*=============end verb past==========*/
+/*=============start verb Present==========*/
+.verb-link
+{
+    display: block;
+    overflow: hidden;
+    width: 15.136%;
+    height: 76.84%;
+    margin: 1% 2.195% 0 0;
+    background: #fafafa;
+    position: relative;
+}
+.verb-link:first-child
+{
+    margin-right: 0.878%;
+}
+.verb-link-a,.verb-link-b
+{
+    display: block;
+    overflow: hidden;
+    width: 95.66%;
+    height: 89.66%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.verb-link-a
+{
+    background-image: url("../images/verb-type-b-a.svg");
+}
+.verb-link-b
+{
+    background-image: url("../images/verb-type-b-b.svg");
+}
+.verb-link-a.selected
+{
+    background-image: url("../images/verb-type-b-a-selected.svg");
+    pointer-events: none;
+}
+.verb-link-b.selected
+{
+    background-image: url("../images/verb-type-b-b-selected.svg");
+    pointer-events: none;
+}
+.inner-tab-verb
+{
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    height: 80.39%;
+    position: absolute;
+    top: 17%;
+}
+.accordion-container
+{
+    display: block;
+    overflow: hidden;
+    width: 95.42%;
+    height: 94%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.inner-tab-verb .accordion {
+    /*background-color: #f1eada;*/
+    color: #542c0b;
+    cursor: pointer;
+    width: 100%;
+    height: 42px;
+    height: 11.63%;
+    outline: none;
+    font-size: 24px;
+    transition: 0.4s;
+    text-align: center;
+    border: 0.5px solid #e0d0a8;
+    border-top: 0;
+    background-image: -moz-linear-gradient( 90deg, rgb(242,238,231) 0%, rgb(249,248,242) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(242,238,231) 0%, rgb(249,248,242) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(242,238,231) 0%, rgb(249,248,242) 100%);
+    -webkit-box-shadow: 0px 3px 0px 0px rgba(17, 17, 17, 0.2);
+    -moz-box-shadow:    0px 3px 0px 0px rgba(17, 17, 17, 0.2);
+    box-shadow:         0px 3px 0px 0px rgba(17, 17, 17, 0.2);
+    z-index: 9999999999999999999999;
+    position: relative;
+    margin-bottom: 0.34%;
+}
+.inner-tab-verb .accordion:first-child
+{
+    border-top: 0.5px solid #eee4ce;
+}
+.inner-tab-verb .active{
+    background-color: #ca4a6c;
+    color: #fff;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+    background-image: -moz-linear-gradient( 90deg, rgb(204,74,108) 0%, rgb(219,86,121) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(204,74,108) 0%, rgb(219,86,121) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(204,74,108) 0%, rgb(219,86,121) 100%);
+    /* margin-bottom: 0; */
+}
+.inner-tab-verb .panel {
+    padding: 0 2.07%;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    height: 75%;
+    border-left: 1px solid #eee4ce;
+    border-right: 1px solid #eee4ce;
+    border-bottom: 1px solid #eee4ce;
+    overflow: hidden;
+    position: relative;
+}
+.inner-tab-verb.typ-b .panel
+{
+    height: 63%;
+}
+
+/*==========start verb Present typ A A================*/
+.example-table-container-verb-c-a
+{
+    display: block;
+    overflow: hidden;
+    width: 67.94%;
+    height: 52.72%;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-row-verb-c-a
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 34%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-verb-c-a:first-child
+{
+    height: 31.98%;
+}
+.example-table-row-verb-c-a:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-verb-c-a
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-verb-c-a.cell-a,
+.example-table-cell-verb-c-a.cell-b
+{
+    width: 50%;
+}
+.example-table-cell-verb-c-a.cell-b
+{
+    border-left: 0;
+}
+.example-table-cell-verb-c-a.table-text-a
+{
+    background-image: url("../media/verb/2/1/1/text-tab-1-a.svg");
+}
+.example-table-cell-verb-c-a.table-text-b
+{
+    background-image: url("../media/verb/2/1/1/text-tab-1-b.svg");
+}
+.example-table-cell-verb-c-a.table-text-c
+{
+    background-image: url("../media/verb/2/1/1/text-tab-1-c.svg");
+}
+.example-table-cell-verb-c-a.table-text-d
+{
+    background-image: url("../media/verb/2/1/1/text-tab-1-d.svg");
+}
+.example-table-cell-verb-c-a.table-text-e
+{
+    background-image: url("../media/verb/2/1/1/text-tab-1-e.svg");
+}
+.example-table-cell-verb-c-a.table-text-f
+{
+    background-image: url("../media/verb/2/1/1/text-tab-1-f.svg");
+}
+/*==========end verb Present typ A A================*/
+
+/*==========start verb Present typ A b================*/
+.example-table-container-verb-c-b
+{
+    display: block;
+    overflow: hidden;
+    width: 67.94%;
+    height: 39.981%;
+    position: absolute;
+    top: 31%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-row-verb-c-b
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 59%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-verb-c-b:first-child
+{
+    height: 41.45%;
+}
+.example-table-row-verb-c-b:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-verb-c-b
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-verb-c-b.cell-a,
+.example-table-cell-verb-c-b.cell-b
+{
+    width: 50%;
+}
+.example-table-cell-verb-c-b.cell-b
+{
+    border-left: 0;
+}
+.example-table-cell-verb-c-b.table-text-a
+{
+    background-image: url("../media/verb/2/1/2/text-tab-1-a.svg");
+}
+.example-table-cell-verb-c-b.table-text-b
+{
+    background-image: url("../media/verb/2/1/2/text-tab-1-b.svg");
+}
+.example-table-cell-verb-c-b.table-text-c
+{
+    background-image: url("../media/verb/2/1/2/text-tab-1-c.svg");
+}
+.example-table-cell-verb-c-b.table-text-d
+{
+    background-image: url("../media/verb/2/1/2/text-tab-1-d.svg");
+}
+/*==========end verb Present typ A b================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+.arrow-left
+{
+    display: none;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right:10px solid #ce4b6d;
+    position: absolute;
+    right: 8%;
+}
+.arrow-a
+{
+    display: block;
+    top: 11%;
+}
+.arrow-b
+{
+    top: 45%;
+}
+.arrow-c
+{
+    top: 79%;
+}
+.tab-content-left
+{
+    display: block;
+    overflow: hidden;
+    width: 8.047%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.inner-tab-container-left
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-image: -moz-linear-gradient( 90deg, rgb(242,238,231) 0%, rgb(249,248,242) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(242,238,231) 0%, rgb(249,248,242) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(242,238,231) 0%, rgb(249,248,242) 100%);
+}
+.tab-left
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 33.3%;
+    border-left: 3px solid rgba(50,50,50,0.1);
+    position: relative;
+    cursor: pointer;
+}
+.tab-left.selected
+{
+    border-left: 3px solid #ce4b6d;
+    pointer-events: none;
+}
+.line-tabs
+{
+    display: inline-block;
+    overflow: hidden;
+    width: 80%;
+    height: 3px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #e7dfcc;
+    position:  absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.tab-left a
+{
+    display: block;
+    overflow: hidden;
+    width: 71.65%;
+    height: 56.97%;
+    position: absolute;
+    top: 19%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-image: url("../images/tab-left.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.tab-left.selected a
+{
+    background-image: url("../images/tab-left-selected.svg");
+}
+.tab-left a span
+{
+    display: block;
+    overflow: hidden;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 3vmin;
+    color: #cc4a6c;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+.tab-left.selected a span
+{
+    color: #ffffff;
+}
+.tab-left-panel-container
+{
+    display: none;
+    overflow: hidden;
+    width: 91%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+#tab-left-1
+{
+    display: block;
+}
+
+/*=========== start verb present typ b-a-a===============*/
+
+.title-verb-a
+{
+    display: block;
+    overflow: hidden;
+    width: 25.644%;
+    height: 16.86%;
+    position: absolute;
+    top: 14%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-verb-a.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.example-table-container-verb-c-d-a
+{
+    display: block;
+    overflow: hidden;
+    width: 62.667%;
+    height: 50.15%;
+    position: absolute;
+    top: 41%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-row-verb-c-d-a
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 58%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-verb-c-d-a:first-child
+{
+    height: 42.98%;
+}
+.example-table-row-verb-c-d-a:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-verb-c-d-a
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-verb-c-d-a.cell-a
+{
+    width: 62.41%;
+}
+.example-table-cell-verb-c-d-a.cell-b
+{
+    width: 37.5%;
+    border-left: 0;
+}
+.example-table-cell-verb-c-d-a.table-text-a
+{
+    background-image: url("../media/verb/2/2/1/1/text-tab-1-a.svg");
+}
+.example-table-cell-verb-c-d-a.table-text-b
+{
+    background-image: url("../media/verb/2/2/1/1/text-tab-1-b.svg");
+}
+.example-table-cell-verb-c-d-a.table-text-c
+{
+    background-image: url("../media/verb/2/2/1/1/text-tab-1-c.svg");
+}
+.example-table-cell-verb-c-d-a.table-text-d
+{
+    background-image: url("../media/verb/2/2/1/1/text-tab-1-d.svg");
+}
+/*=========== end verb present typ b-a-a===============*/
+/*=========== start verb present typ b-a-b===============*/
+
+.title-verb-b
+{
+    display: block;
+    overflow: hidden;
+    width: 21.728%;
+    height: 14.753%;
+    position: absolute;
+    top: 9%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-verb-b.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.example-table-container-verb-c-d-b
+{
+    display: block;
+    overflow: hidden;
+    width: 51.667%;
+    height: 63.51%;
+    position: absolute;
+    top: 29%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-inner-container-verb-c-d-b
+{
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+.example-table-row-verb-c-d-b
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 35.1%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-verb-c-d-b:first-child
+{
+    height: 30.87%;
+}
+.example-table-row-verb-c-d-b:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-verb-c-d-b
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-verb-c-d-b.cell-a
+{
+    width: 54.055%;
+}
+.example-table-cell-verb-c-d-b.cell-b
+{
+    width: 45.9%;
+    border-left: 0;
+}
+.example-table-cell-verb-c-d-b.table-text-a
+{
+    background-image: url("../media/verb/2/2/1/2/text-tab-1-a.svg");
+}
+.example-table-cell-verb-c-d-b.table-text-b
+{
+    background-image: url("../media/verb/2/2/1/2/text-tab-1-b.svg");
+}
+.example-table-cell-verb-c-d-b.table-text-c
+{
+    background-image: url("../media/verb/2/2/1/2/text-tab-1-c.svg");
+}
+.example-table-cell-verb-c-d-b.table-text-d
+{
+    background-image: url("../media/verb/2/2/1/2/text-tab-1-d.svg");
+}
+.example-table-cell-verb-c-d-b.table-text-e
+{
+    background-image: url("../media/verb/2/2/1/2/text-tab-1-e.svg");
+}
+.example-table-cell-verb-c-d-b.table-text-f
+{
+    background-image: url("../media/verb/2/2/1/2/text-tab-1-f.svg");
+}
+.example-table-cell-verb-c-d-b.table-text-g
+{
+    background-image: url("../media/verb/2/2/1/2/text-tab-1-g.svg");
+}
+.example-table-cell-verb-c-d-b.table-text-h
+{
+    background-image: url("../media/verb/2/2/1/2/text-tab-1-h.svg");
+}
+/*=========== end verb present typ b-a-b===============*/
+/*=========== start verb present typ b-a-c===============*/
+
+.title-verb-c
+{
+    display: block;
+    overflow: hidden;
+    width: 19.707%;
+    height: 17.282%;
+    position: absolute;
+    top: 13%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-verb-c.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.example-table-container-verb-c-d-c
+{
+    display: block;
+    overflow: hidden;
+    width: 49.435%;
+    height: 50.15%;
+    position: absolute;
+    top: 41%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-inner-container-verb-c-d-c
+{
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+.example-table-row-verb-c-d-c
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 52%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-verb-c-d-c:first-child
+{
+    height: 48.98%;
+}
+.example-table-row-verb-c-d-c:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-verb-c-d-c
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-verb-c-d-c.cell-a
+{
+    width: 39.571%;
+}
+.example-table-cell-verb-c-d-c.cell-b
+{
+    width: 60.4%;
+    border-left: 0;
+}
+.example-table-cell-verb-c-d-c.table-text-a
+{
+    background-image: url("../media/verb/2/2/1/3/text-tab-1-a.svg");
+}
+.example-table-cell-verb-c-d-c.table-text-b
+{
+    background-image: url("../media/verb/2/2/1/3/text-tab-1-b.svg");
+}
+.example-table-cell-verb-c-d-c.table-text-c
+{
+    background-image: url("../media/verb/2/2/1/3/text-tab-1-c.svg");
+}
+.example-table-cell-verb-c-d-c.table-text-d
+{
+    background-image: url("../media/verb/2/2/1/3/text-tab-1-d.svg");
+}
+/*=========== end verb present typ b-a-c===============*/
+/*=========== start verb present typ b-a-c===============*/
+
+.title-verb-d
+{
+    display: block;
+    overflow: hidden;
+    width: 26.15%;
+    height: 17.282%;
+    position: absolute;
+    top: 7%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-verb-d.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.example-table-container-verb-c-d-d
+{
+    display: block;
+    overflow: hidden;
+    width: 51.667%;
+    height: 64.15%;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-inner-container-verb-c-d-d
+{
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+.example-table-row-verb-c-d-d
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 28%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-verb-c-d-d:first-child
+{
+    height: 22.64%;
+}
+.example-table-row-verb-c-d-d:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-verb-c-d-d
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-verb-c-d-d.cell-a
+{
+    width: 46.192%;
+}
+.example-table-cell-verb-c-d-d.cell-b
+{
+    width: 53.7%;
+    border-left: 0;
+}
+.example-table-cell-verb-c-d-d.table-text-a
+{
+    background-image: url("../media/verb/2/2/2/1/text-tab-1-a.svg");
+}
+.example-table-cell-verb-c-d-d.table-text-b
+{
+    background-image: url("../media/verb/2/2/2/1/text-tab-1-b.svg");
+}
+.example-table-cell-verb-c-d-d.table-text-c
+{
+    background-image: url("../media/verb/2/2/2/1/text-tab-1-c.svg");
+}
+.example-table-cell-verb-c-d-d.table-text-d
+{
+    background-image: url("../media/verb/2/2/2/1/text-tab-1-d.svg");
+}
+.example-table-cell-verb-c-d-d.table-text-e
+{
+    background-image: url("../media/verb/2/2/2/1/text-tab-1-e.svg");
+}
+.example-table-cell-verb-c-d-d.table-text-f
+{
+    background-image: url("../media/verb/2/2/2/1/text-tab-1-f.svg");
+}
+.example-table-cell-verb-c-d-d.table-text-g
+{
+    background-image: url("../media/verb/2/2/2/1/text-tab-1-g.svg");
+}
+.example-table-cell-verb-c-d-d.table-text-h
+{
+    background-image: url("../media/verb/2/2/2/1/text-tab-1-h.svg");
+}
+.example-table-cell-verb-c-d-d.table-text-i
+{
+    background-image: url("../media/verb/2/2/2/1/text-tab-1-i.svg");
+}
+.example-table-cell-verb-c-d-d.table-text-j
+{
+    background-image: url("../media/verb/2/2/2/1/text-tab-1-j.svg");
+}
+/*=========== end verb present typ b-a-d===============*/
+/*=========== start verb present typ b-a-e===============*/
+
+.title-verb-e
+{
+    display: block;
+    overflow: hidden;
+    width: 22.234%;
+    height: 17.282%;
+    position: absolute;
+    top: 13%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-verb-e.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.example-table-container-verb-c-d-e
+{
+    display: block;
+    overflow: hidden;
+    width: 46.614%;
+    height: 42.15%;
+    position: absolute;
+    top: 41%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-inner-container-verb-c-d-e
+{
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+.example-table-row-verb-c-d-e
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 59%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-verb-c-d-e:first-child
+{
+    height: 42.86%;
+}
+.example-table-row-verb-c-d-e:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-verb-c-d-e
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-verb-c-d-e.cell-a
+{
+    width: 56.131%;
+}
+.example-table-cell-verb-c-d-e.cell-b
+{
+    width: 43.8%;
+    border-left: 0;
+}
+.example-table-cell-verb-c-d-e.table-text-a
+{
+    background-image: url("../media/verb/2/2/2/2/text-tab-1-a.svg");
+}
+.example-table-cell-verb-c-d-e.table-text-b
+{
+    background-image: url("../media/verb/2/2/2/2/text-tab-1-b.svg");
+}
+.example-table-cell-verb-c-d-e.table-text-c
+{
+    background-image: url("../media/verb/2/2/2/2/text-tab-1-c.svg");
+}
+.example-table-cell-verb-c-d-e.table-text-d
+{
+    background-image: url("../media/verb/2/2/2/2/text-tab-1-d.svg");
+}
+/*=========== end verb present typ b-a-e===============*/
+/*=========== start verb present typ b-a-f===============*/
+
+.title-verb-f
+{
+    display: block;
+    overflow: hidden;
+    width: 22.234%;
+    height: 17.282%;
+    position: absolute;
+    top: 13%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-verb-f.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.example-table-container-verb-c-d-f
+{
+    display: block;
+    overflow: hidden;
+    width: 46.614%;
+    height: 42.15%;
+    position: absolute;
+    top: 41%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-inner-container-verb-c-d-f
+{
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+.example-table-row-verb-c-d-f
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 59%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-verb-c-d-f:first-child
+{
+    height: 42.86%;
+}
+.example-table-row-verb-c-d-f:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-verb-c-d-f
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-verb-c-d-f.cell-a
+{
+    width: 30.791%;
+}
+.example-table-cell-verb-c-d-f.cell-b
+{
+    width: 69%;
+    border-left: 0;
+}
+.example-table-cell-verb-c-d-f.table-text-a
+{
+    background-image: url("../media/verb/2/2/2/3/text-tab-1-a.svg");
+}
+.example-table-cell-verb-c-d-f.table-text-b
+{
+    background-image: url("../media/verb/2/2/2/3/text-tab-1-b.svg");
+}
+.example-table-cell-verb-c-d-f.table-text-c
+{
+    background-image: url("../media/verb/2/2/2/3/text-tab-1-c.svg");
+}
+.example-table-cell-verb-c-d-f.table-text-d
+{
+    background-image: url("../media/verb/2/2/2/3/text-tab-1-d.svg");
+}
+/*=========== end verb present typ b-a-f===============*/
+/*=========== start verb present typ b-a-g===============*/
+
+.title-verb-g
+{
+    display: block;
+    overflow: hidden;
+    width: 11.875%;
+    height: 15.18%;
+    position: absolute;
+    top: 9%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-verb-g.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.example-table-container-verb-c-d-g
+{
+    display: block;
+    overflow: hidden;
+    width: 61.268%;
+    height: 63.51%;
+    position: absolute;
+    top: 29%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-inner-container-verb-c-d-g
+{
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+.example-table-row-verb-c-d-g
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 29%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-verb-c-d-g:first-child
+{
+    height: 22.87%;
+}
+.example-table-row-verb-c-d-g:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-verb-c-d-g
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-verb-c-d-g.cell-a
+{
+    width: 45.55%;
+}
+.example-table-cell-verb-c-d-g.cell-b
+{
+    width: 54.3%;
+    border-left: 0;
+}
+.example-table-cell-verb-c-d-g.table-text-a
+{
+    background-image: url("../media/verb/2/2/3/1/text-tab-1-a.svg");
+}
+.example-table-cell-verb-c-d-g.table-text-b
+{
+    background-image: url("../media/verb/2/2/3/1/text-tab-1-b.svg");
+}
+.example-table-cell-verb-c-d-g.table-text-c
+{
+    background-image: url("../media/verb/2/2/3/1/text-tab-1-c.svg");
+}
+.example-table-cell-verb-c-d-g.table-text-d
+{
+    background-image: url("../media/verb/2/2/3/1/text-tab-1-d.svg");
+}
+.example-table-cell-verb-c-d-g.table-text-e
+{
+    background-image: url("../media/verb/2/2/3/1/text-tab-1-e.svg");
+}
+.example-table-cell-verb-c-d-g.table-text-f
+{
+    background-image: url("../media/verb/2/2/3/1/text-tab-1-f.svg");
+}
+.example-table-cell-verb-c-d-g.table-text-g
+{
+    background-image: url("../media/verb/2/2/3/1/text-tab-1-g.svg");
+}
+.example-table-cell-verb-c-d-g.table-text-h
+{
+    background-image: url("../media/verb/2/2/3/1/text-tab-1-h.svg");
+}
+.example-table-cell-verb-c-d-g.table-text-i
+{
+    background-image: url("../media/verb/2/2/3/1/text-tab-1-i.svg");
+}
+.example-table-cell-verb-c-d-g.table-text-j
+{
+    background-image: url("../media/verb/2/2/3/1/text-tab-1-j.svg");
+}
+.example-table-cell-verb-c-d-g.table-text-k
+{
+    background-image: url("../media/verb/2/2/3/1/text-tab-1-k.svg");
+}
+.example-table-cell-verb-c-d-g.table-text-l
+{
+    background-image: url("../media/verb/2/2/3/1/text-tab-1-l.svg");
+}
+/*=========== end verb present typ b-a-g===============*/
+/*=========== start verb present typ b-a-h===============*/
+
+.title-verb-h
+{
+    display: block;
+    overflow: hidden;
+    width: 27.54%;
+    height: 15.6%;
+    position: absolute;
+    top: 9%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-verb-h.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.example-table-container-verb-c-d-h
+{
+    display: block;
+    overflow: hidden;
+    width: 51.667%;
+    height: 67%;
+    position: absolute;
+    top: 29%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-inner-container-verb-c-d-h
+{
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+.example-table-row-verb-c-d-h
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 26%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-verb-c-d-h:first-child
+{
+    height: 22.3%;
+}
+.example-table-row-verb-c-d-h:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-verb-c-d-h
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-verb-c-d-h.cell-a
+{
+    width: 45.55%;
+}
+.example-table-cell-verb-c-d-h.cell-b
+{
+    width: 54.3%;
+    border-left: 0;
+}
+.example-table-cell-verb-c-d-h.table-text-a
+{
+    background-image: url("../media/verb/2/2/3/2/text-tab-1-a.svg");
+}
+.example-table-cell-verb-c-d-h.table-text-b
+{
+    background-image: url("../media/verb/2/2/3/2/text-tab-1-b.svg");
+}
+.example-table-cell-verb-c-d-h.table-text-c
+{
+    background-image: url("../media/verb/2/2/3/2/text-tab-1-c.svg");
+}
+.example-table-cell-verb-c-d-h.table-text-d
+{
+    background-image: url("../media/verb/2/2/3/2/text-tab-1-d.svg");
+}
+.example-table-cell-verb-c-d-h.table-text-e
+{
+    background-image: url("../media/verb/2/2/3/2/text-tab-1-e.svg");
+}
+.example-table-cell-verb-c-d-h.table-text-f
+{
+    background-image: url("../media/verb/2/2/3/2/text-tab-1-f.svg");
+}
+.example-table-cell-verb-c-d-h.table-text-g
+{
+    background-image: url("../media/verb/2/2/3/2/text-tab-1-g.svg");
+}
+.example-table-cell-verb-c-d-h.table-text-h
+{
+    background-image: url("../media/verb/2/2/3/2/text-tab-1-h.svg");
+}
+/*=========== end verb present typ b-a-h===============*/
+/*=========== start verb present typ b-a-i===============*/
+
+.title-verb-i
+{
+    display: block;
+    overflow: hidden;
+    width: 18.444%;
+    height: 15.6%;
+    position: absolute;
+    top: 13%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-verb-i.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.example-table-container-verb-c-d-i
+{
+    display: block;
+    overflow: hidden;
+    width: 59.121%;
+    height: 35.83%;
+    position: absolute;
+    top: 41%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-inner-container-verb-c-d-i
+{
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+.example-table-row-verb-c-d-i
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 54%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-verb-c-d-i:first-child
+{
+    height: 45.8%;
+}
+.example-table-row-verb-c-d-i:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-verb-c-d-i
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-verb-c-d-i.cell-a
+{
+    width: 41.631%;
+}
+.example-table-cell-verb-c-d-i.cell-b
+{
+    width: 58.3%;
+    border-left: 0;
+}
+.example-table-cell-verb-c-d-i.table-text-a
+{
+    background-image: url("../media/verb/2/2/3/3/text-tab-1-a.svg");
+}
+.example-table-cell-verb-c-d-i.table-text-b
+{
+    background-image: url("../media/verb/2/2/3/3/text-tab-1-b.svg");
+}
+.example-table-cell-verb-c-d-i.table-text-c
+{
+    background-image: url("../media/verb/2/2/3/3/text-tab-1-c.svg");
+}
+.example-table-cell-verb-c-d-i.table-text-d
+{
+    background-image: url("../media/verb/2/2/3/3/text-tab-1-d.svg");
+}
+/*=========== end verb present typ b-a-i===============*/
+/*=============end verb Present==========*/
+/*=============star verb Command==========*/
+/*=============star verb Command typ a==========*/
+.example-table-container-verb-b-a
+{
+    display: block;
+    overflow: hidden;
+    width: 66.13%;
+    height: 51.48%;
+    position: absolute;
+    top: 24%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-row-verb-b-a
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 33.3%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-verb-b-a:first-child
+{
+    /* height: 25.775%; */
+}
+.example-table-row-verb-b-a:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-verb-b-a
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-verb-b-a.cell-a,
+.example-table-cell-verb-b-a.cell-b
+{
+    width: 50%;
+}
+.example-table-cell-verb-b-a.cell-b
+{
+    border-left: 0;
+}
+.example-table-cell-verb-b-a.table-text-a
+{
+    background-image: url("../media/verb/3/1/text-tab-1-a.svg");
+}
+.example-table-cell-verb-b-a.table-text-b
+{
+    background-image: url("../media/verb/3/1/text-tab-1-b.svg");
+}
+.example-table-cell-verb-b-a.table-text-c
+{
+    background-image: url("../media/verb/3/1/text-tab-1-c.svg");
+}
+.example-table-cell-verb-b-a.table-text-d
+{
+    background-image: url("../media/verb/3/1/text-tab-1-d.svg");
+}
+.example-table-cell-verb-b-a.table-text-e
+{
+    background-image: url("../media/verb/3/1/text-tab-1-e.svg");
+}
+.example-table-cell-verb-b-a.table-text-f
+{
+    background-image: url("../media/verb/3/1/text-tab-1-f.svg");
+}
+/*=============end verb Command typ a==========*/
+/*=============start verb Command typ b==========*/
+.example-table-container-verb-b-b
+{
+    display: block;
+    overflow: hidden;
+    width: 61.798%;
+    height: 68.08%;
+    position: absolute;
+    top: 19%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-row-verb-b-b
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 25%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-verb-b-b:first-child
+{
+    /* height: 25.775%; */
+}
+.example-table-row-verb-b-b:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-verb-b-b
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-verb-b-b.cell-a,
+.example-table-cell-verb-b-b.cell-b
+{
+    width: 50%;
+}
+.example-table-cell-verb-b-b.cell-b
+{
+    border-left: 0;
+}
+.example-table-cell-verb-b-b.table-text-a
+{
+    background-image: url("../media/verb/3/2/text-tab-1-a.svg");
+}
+.example-table-cell-verb-b-b.table-text-b
+{
+    background-image: url("../media/verb/3/2/text-tab-1-b.svg");
+}
+.example-table-cell-verb-b-b.table-text-c
+{
+    background-image: url("../media/verb/3/2/text-tab-1-c.svg");
+}
+.example-table-cell-verb-b-b.table-text-d
+{
+    background-image: url("../media/verb/3/2/text-tab-1-d.svg");
+}
+.example-table-cell-verb-b-b.table-text-e
+{
+    background-image: url("../media/verb/3/2/text-tab-1-e.svg");
+}
+.example-table-cell-verb-b-b.table-text-f
+{
+    background-image: url("../media/verb/3/2/text-tab-1-f.svg");
+}
+.example-table-cell-verb-b-b.table-text-g
+{
+    background-image: url("../media/verb/3/2/text-tab-1-g.svg");
+}
+.example-table-cell-verb-b-b.table-text-h
+{
+    background-image: url("../media/verb/3/2/text-tab-1-h.svg");
+}
+/*=============end verb Command typ b==========*/
+/*=============start verb Command typ c==========*/
+.example-table-container-verb-b-c
+{
+    display: block;
+    overflow: hidden;
+    width: 70.583%;
+    height: 52.98%;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-row-verb-b-c
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 33.3%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-verb-b-c:first-child
+{
+    /* height: 25.775%; */
+}
+.example-table-row-verb-b-c:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-verb-b-c
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-verb-b-c.cell-a,
+.example-table-cell-verb-b-c.cell-b
+{
+    width: 50%;
+}
+.example-table-cell-verb-b-c.cell-b
+{
+    border-left: 0;
+}
+.example-table-cell-verb-b-c.table-text-a
+{
+    background-image: url("../media/verb/3/3/text-tab-1-a.svg");
+}
+.example-table-cell-verb-b-c.table-text-b
+{
+    background-image: url("../media/verb/3/3/text-tab-1-b.svg");
+}
+.example-table-cell-verb-b-c.table-text-c
+{
+    background-image: url("../media/verb/3/3/text-tab-1-c.svg");
+}
+.example-table-cell-verb-b-c.table-text-d
+{
+    background-image: url("../media/verb/3/3/text-tab-1-d.svg");
+}
+.example-table-cell-verb-b-c.table-text-e
+{
+    background-image: url("../media/verb/3/3/text-tab-1-e.svg");
+}
+.example-table-cell-verb-b-c.table-text-f
+{
+    background-image: url("../media/verb/3/3/text-tab-1-f.svg");
+}
+/*=============end verb Command typ c==========*/
+
+/*=============start verb Command typ d==========*/
+.example-table-container-verb-b-d
+{
+    display: block;
+    overflow: hidden;
+    width: 82.998%;
+    height: 60.8%;
+    position: absolute;
+    top: 23%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-row-verb-b-d
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 25%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-verb-b-d:first-child
+{
+    /* height: 25.775%; */
+}
+.example-table-row-verb-b-d:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-verb-b-d
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-verb-b-d.cell-a
+{
+    width: 54%;
+}
+.example-table-cell-verb-b-d.cell-b
+{
+    width: 46%;
+    border-left: 0;
+}
+.example-table-cell-verb-b-d.table-text-a
+{
+    background-image: url("../media/verb/3/4/text-tab-1-a.svg");
+}
+.example-table-cell-verb-b-d.table-text-b
+{
+    background-image: url("../media/verb/3/4/text-tab-1-b.svg");
+}
+.example-table-cell-verb-b-d.table-text-c
+{
+    background-image: url("../media/verb/3/4/text-tab-1-c.svg");
+}
+.example-table-cell-verb-b-d.table-text-d
+{
+    background-image: url("../media/verb/3/4/text-tab-1-d.svg");
+}
+.example-table-cell-verb-b-d.table-text-e
+{
+    background-image: url("../media/verb/3/4/text-tab-1-e.svg");
+}
+.example-table-cell-verb-b-d.table-text-f
+{
+    background-image: url("../media/verb/3/4/text-tab-1-f.svg");
+}
+.example-table-cell-verb-b-d.table-text-g
+{
+    background-image: url("../media/verb/3/4/text-tab-1-g.svg");
+}
+.example-table-cell-verb-b-d.table-text-h
+{
+    background-image: url("../media/verb/3/4/text-tab-1-h.svg");
+}
+/*=============end verb Command typ d==========*/
+/*=============end verb Command==========*/
+
+
+/*===================end verb ===========*/
+
+/*===================start Name ===========*/
+/*============ start type A-A ==============*/
+.example-table-container-name-a-a
+{
+    display: block;
+    overflow: hidden;
+    width: 83.987%;
+    height: 91%;
+    position: absolute;
+    top: 4.5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-row-name-a-a
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 16.7%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-name-a-a:first-child
+{
+    /* height: 25.775%; */
+}
+.example-table-row-name-a-a:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-name-a-a
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-name-a-a.cell-a,
+.example-table-cell-name-a-a.cell-b
+{
+    width: 50%;
+}
+.example-table-cell-name-a-a.cell-b
+{
+    border-left: 0;
+}
+.example-table-cell-name-a-a.table-text-a
+{
+    background-image: url("../media/name/1/text-tab-1-a.svg");
+}
+.example-table-cell-name-a-a.table-text-b
+{
+    background-image: url("../media/name/1/text-tab-1-b.svg");
+}
+.example-table-cell-name-a-a.table-text-c
+{
+    background-image: url("../media/name/1/text-tab-1-c.svg");
+}
+.example-table-cell-name-a-a.table-text-d
+{
+    background-image: url("../media/name/1/text-tab-1-d.svg");
+}
+.example-table-cell-name-a-a.table-text-e
+{
+    background-image: url("../media/name/1/text-tab-1-e.svg");
+}
+.example-table-cell-name-a-a.table-text-f
+{
+    background-image: url("../media/name/1/text-tab-1-f.svg");
+}
+.example-table-cell-name-a-a.table-text-g
+{
+    background-image: url("../media/name/1/text-tab-1-g.svg");
+}
+.example-table-cell-name-a-a.table-text-h
+{
+    background-image: url("../media/name/1/text-tab-1-h.svg");
+}
+.example-table-cell-name-a-a.table-text-i
+{
+    background-image: url("../media/name/1/text-tab-1-i.svg");
+}
+.example-table-cell-name-a-a.table-text-j
+{
+    background-image: url("../media/name/1/text-tab-1-j.svg");
+}
+.example-table-cell-name-a-a.table-text-k
+{
+    background-image: url("../media/name/1/text-tab-1-k.svg");
+}
+.example-table-cell-name-a-a.table-text-l
+{
+    background-image: url("../media/name/1/text-tab-1-l.svg");
+}
+/*============ end type A-A ==============*/
+
+/*============ start type A-B ==============*/
+.example-table-container-name-a-b
+{
+    display: block;
+    overflow: hidden;
+    width: 83.987%;
+    height: 91%;
+    position: absolute;
+    top: 4.5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-inner-container-name-a-b
+{
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+.example-table-row-name-a-b
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 16.7%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-name-a-b:first-child
+{
+    /* height: 25.775%; */
+}
+.example-table-row-name-a-b:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-name-a-b
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-name-a-b.cell-a,
+.example-table-cell-name-a-b.cell-b
+{
+    width: 50%;
+}
+.example-table-cell-name-a-b.cell-b
+{
+    border-left: 0;
+}
+.example-table-cell-name-a-b.table-text-a
+{
+    background-image: url("../media/name/1/text-tab-1-a.svg");
+}
+.example-table-cell-name-a-b.table-text-b
+{
+    background-image: url("../media/name/1/text-tab-1-b.svg");
+}
+.example-table-cell-name-a-b.table-text-c
+{
+    background-image: url("../media/name/1/text-tab-2-a.svg");
+}
+.example-table-cell-name-a-b.table-text-d
+{
+    background-image: url("../media/name/1/text-tab-2-b.svg");
+}
+.example-table-cell-name-a-b.table-text-e
+{
+    background-image: url("../media/name/1/text-tab-2-c.svg");
+}
+.example-table-cell-name-a-b.table-text-f
+{
+    background-image: url("../media/name/1/text-tab-2-d.svg");
+}
+.example-table-cell-name-a-b.table-text-g
+{
+    background-image: url("../media/name/1/text-tab-2-e.svg");
+}
+.example-table-cell-name-a-b.table-text-h
+{
+    background-image: url("../media/name/1/text-tab-2-f.svg");
+}
+.example-table-cell-name-a-b.table-text-i
+{
+    background-image: url("../media/name/1/text-tab-2-g.svg");
+}
+.example-table-cell-name-a-b.table-text-j
+{
+    background-image: url("../media/name/1/text-tab-2-h.svg");
+}
+.example-table-cell-name-a-b.table-text-k
+{
+    background-image: url("../media/name/1/text-tab-2-i.svg");
+}
+.example-table-cell-name-a-b.table-text-l
+{
+    background-image: url("../media/name/1/text-tab-2-j.svg");
+}
+.example-table-cell-name-a-b.table-text-m
+{
+    background-image: url("../media/name/1/text-tab-2-k.svg");
+}
+.example-table-cell-name-a-b.table-text-n
+{
+    background-image: url("../media/name/1/text-tab-2-l.svg");
+}
+/*============ end type A-B ==============*/
+/*============ start type A-C ==============*/
+.example-table-container-name-a-c
+{
+    display: block;
+    overflow: hidden;
+    width: 83.987%;
+    height: 91%;
+    position: absolute;
+    top: 4.5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-inner-container-name-a-c
+{
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+.example-table-row-name-a-c
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-name-a-c:first-child
+{
+    /* height: 25.775%; */
+}
+.example-table-row-name-a-c:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-name-a-c
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-name-a-c.cell-a,
+.example-table-cell-name-a-c.cell-b
+{
+    width: 50%;
+}
+.example-table-cell-name-a-c.cell-b
+{
+    border-left: 0;
+}
+.example-table-cell-name-a-c.table-text-a
+{
+    background-image: url("../media/name/1/text-tab-1-a.svg");
+}
+.example-table-cell-name-a-c.table-text-b
+{
+    background-image: url("../media/name/1/text-tab-1-b.svg");
+}
+.example-table-cell-name-a-c.table-text-c
+{
+    background-image: url("../media/name/1/text-tab-3-a.svg");
+}
+.example-table-cell-name-a-c.table-text-d
+{
+    background-image: url("../media/name/1/text-tab-3-b.svg");
+}
+.example-table-cell-name-a-c.table-text-e
+{
+    background-image: url("../media/name/1/text-tab-3-c.svg");
+}
+.example-table-cell-name-a-c.table-text-f
+{
+    background-image: url("../media/name/1/text-tab-3-d.svg");
+}
+.example-table-cell-name-a-c.table-text-g
+{
+    background-image: url("../media/name/1/text-tab-3-e.svg");
+}
+.example-table-cell-name-a-c.table-text-h
+{
+    background-image: url("../media/name/1/text-tab-3-f.svg");
+}
+.example-table-cell-name-a-c.table-text-i
+{
+    background-image: url("../media/name/1/text-tab-3-g.svg");
+}
+.example-table-cell-name-a-c.table-text-j
+{
+    background-image: url("../media/name/1/text-tab-3-h.svg");
+}
+/*============ end type A-C ==============*/
+/*============ start type A-D ==============*/
+.example-table-container-name-a-d
+{
+    display: block;
+    overflow: hidden;
+    width: 83.987%;
+    height: 91%;
+    position: absolute;
+    top: 4.5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-inner-container-name-a-d
+{
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+.example-table-row-name-a-d
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-name-a-d:first-child
+{
+    /* height: 25.775%; */
+}
+.example-table-row-name-a-d:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-name-a-d
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-name-a-d.cell-a,
+.example-table-cell-name-a-d.cell-b
+{
+    width: 50%;
+}
+.example-table-cell-name-a-d.cell-b
+{
+    border-left: 0;
+}
+.example-table-cell-name-a-d.table-text-a
+{
+    background-image: url("../media/name/1/text-tab-1-a.svg");
+}
+.example-table-cell-name-a-d.table-text-b
+{
+    background-image: url("../media/name/1/text-tab-1-b.svg");
+}
+.example-table-cell-name-a-d.table-text-c
+{
+    background-image: url("../media/name/1/text-tab-4-a.svg");
+}
+.example-table-cell-name-a-d.table-text-d
+{
+    background-image: url("../media/name/1/text-tab-4-b.svg");
+}
+.example-table-cell-name-a-d.table-text-e
+{
+    background-image: url("../media/name/1/text-tab-4-c.svg");
+}
+.example-table-cell-name-a-d.table-text-f
+{
+    background-image: url("../media/name/1/text-tab-4-d.svg");
+}
+.example-table-cell-name-a-d.table-text-g
+{
+    background-image: url("../media/name/1/text-tab-4-e.svg");
+}
+.example-table-cell-name-a-d.table-text-h
+{
+    background-image: url("../media/name/1/text-tab-4-f.svg");
+}
+.example-table-cell-name-a-d.table-text-i
+{
+    background-image: url("../media/name/1/text-tab-4-g.svg");
+}
+.example-table-cell-name-a-d.table-text-j
+{
+    background-image: url("../media/name/1/text-tab-4-h.svg");
+}
+/*============ end type A-D ==============*/
+
+/*============ start type B-D ==============*/
+.menu-container
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 16%;
+    background: #fff8e9;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    direction: rtl;
+    /* border-top: 1px solid #097b70; */
+    border-bottom: 1px dashed #097b70;
+    -webkit-box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow:    0px 4px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow:         0px 4px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.name-link
+{
+    display: block;
+    overflow: hidden;
+    width: 15.136%;
+    height: 66.67%;
+    margin: 1.5% 2.195% 0 0;
+    background: #fafafa;
+    position: relative;
+}
+.name-link:first-child
+{
+    margin-right: 0.878%;
+}
+.name-link-a,.name-link-b,.name-link-c
+{
+    display: block;
+    overflow: hidden;
+    width: 95.66%;
+    height: 89.66%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.name-link-a
+{
+    background-image: url("../images/name-type-b-a.svg");
+}
+.name-link-b
+{
+    background-image: url("../images/name-type-b-b.svg");
+}
+.name-link-c
+{
+    background-image: url("../images/name-type-b-c.svg");
+}
+.name-link-a.selected
+{
+    background-image: url("../images/name-type-b-a-selected.svg");
+    pointer-events: none;
+}
+.name-link-b.selected
+{
+    background-image: url("../images/name-type-b-b-selected.svg");
+    pointer-events: none;
+}
+.name-link-c.selected
+{
+    background-image: url("../images/name-type-b-c-selected.svg");
+    pointer-events: none;
+}
+.inner-tab
+{
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    height: 80.39%;
+    position: absolute;
+    top: 19.5%;
+}
+.accordion-container
+{
+    display: block;
+    overflow: hidden;
+    width: 95.42%;
+    height: 98%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.inner-tab .accordion {
+    /*background-color: #f1eada;*/
+    color: #542c0b;
+    cursor: pointer;
+    width: 100%;
+    height: 42px;
+    height: 11.63%;
+    outline: none;
+    font-size: 24px;
+    transition: 0.4s;
+    text-align: center;
+    border: 0.5px solid #e0d0a8;
+    border-top: 0;
+    background-image: -moz-linear-gradient( 90deg, rgb(242,238,231) 0%, rgb(249,248,242) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(242,238,231) 0%, rgb(249,248,242) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(242,238,231) 0%, rgb(249,248,242) 100%);
+    -webkit-box-shadow: 0px 3px 0px 0px rgba(17, 17, 17, 0.2);
+    -moz-box-shadow:    0px 3px 0px 0px rgba(17, 17, 17, 0.2);
+    box-shadow:         0px 3px 0px 0px rgba(17, 17, 17, 0.2);
+    z-index: 9999999999999999999999;
+    position: relative;
+    margin-bottom: 0.34%;
+}
+.inner-tab .accordion:first-child
+{
+    border-top: 0.5px solid #eee4ce;
+}
+.inner-tab .active {
+    background-color: #ca4a6c;
+    color: #fff;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+    background-image: -moz-linear-gradient( 90deg, rgb(204,74,108) 0%, rgb(219,86,121) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(204,74,108) 0%, rgb(219,86,121) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(204,74,108) 0%, rgb(219,86,121) 100%);
+    /* margin-bottom: 0; */
+}
+.inner-tab .panel {
+    padding: 0 2.07%;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    height: 63%;
+    border-left: 1px solid #eee4ce;
+    border-right: 1px solid #eee4ce;
+    border-bottom: 1px solid #eee4ce;
+    overflow: hidden;
+    position: relative;
+}
+.inner-tab.typ-b .panel
+{
+    height: 50%;
+}
+/*============ end type B-D ==============*/
+
+/*============ start type b-a-a ==============*/
+.example-table-container-name-b-a-a
+{
+    display: block;
+    overflow: hidden;
+    width: 97.252%;
+    height: 91%;
+    position: absolute;
+    top: 4.5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-inner-container-name-b-a-a
+{
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+.example-table-row-name-b-a-a
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 21.51%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-name-b-a-a:first-child
+{
+    height: 18.24%;
+}
+.example-table-row-name-b-a-a:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-name-b-a-a
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-name-b-a-a.cell-a
+{
+    width: 20.261%;
+}
+.example-table-cell-name-b-a-a.cell-b
+{
+    width: 33.531%;
+}
+.example-table-cell-name-b-a-a.cell-c
+{
+    width: 22.038%;
+}
+.example-table-cell-name-b-a-a.cell-d
+{
+    width: 24.053%;
+    border-left: 0;
+}
+.example-table-cell-name-b-a-a.table-text-a,
+.example-table-cell-name-b-a-a.table-text-c
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-a.svg");
+}
+.example-table-cell-name-b-a-a.table-text-b,
+.example-table-cell-name-b-a-a.table-text-d
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-b.svg");
+}
+.example-table-cell-name-b-a-a.table-text-e
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-c.svg");
+}
+.example-table-cell-name-b-a-a.table-text-f
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-d.svg");
+}
+.example-table-cell-name-b-a-a.table-text-g
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-e.svg");
+}
+.example-table-cell-name-b-a-a.table-text-h
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-f.svg");
+}
+.example-table-cell-name-b-a-a.table-text-i
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-g.svg");
+}
+.example-table-cell-name-b-a-a.table-text-j
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-h.svg");
+}
+.example-table-cell-name-b-a-a.table-text-k
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-i.svg");
+}
+.example-table-cell-name-b-a-a.table-text-l
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-j.svg");
+}
+.example-table-cell-name-b-a-a.table-text-m
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-k.svg");
+}
+.example-table-cell-name-b-a-a.table-text-n
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-l.svg");
+}
+.example-table-cell-name-b-a-a.table-text-o
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-m.svg");
+}
+.example-table-cell-name-b-a-a.table-text-p
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-n.svg");
+}
+.example-table-cell-name-b-a-a.table-text-q
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-o.svg");
+}
+.example-table-cell-name-b-a-a.table-text-r
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-p.svg");
+}
+.example-table-cell-name-b-a-a.table-text-s
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-q.svg");
+}
+.example-table-cell-name-b-a-a.table-text-t
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-r.svg");
+}
+.example-table-cell-name-b-a-a.table-text-u
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-s.svg");
+}
+.example-table-cell-name-b-a-a.table-text-w
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-t.svg");
+}
+.example-table-cell-name-b-a-a.table-text-x
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-u.svg");
+}
+.example-table-cell-name-b-a-a.table-text-y
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-w.svg");
+}
+.example-table-cell-name-b-a-a.table-text-z
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-x.svg");
+}
+.example-table-cell-name-b-a-a.table-text-z-a
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-y.svg");
+}
+.example-table-cell-name-b-a-a.table-text-z-b
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-z.svg");
+}
+.example-table-cell-name-b-a-a.table-text-z-c
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-z-a.svg");
+}
+.example-table-cell-name-b-a-a.table-text-z-d
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-z-b.svg");
+}
+.example-table-cell-name-b-a-a.table-text-z-e
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-z-c.svg");
+}
+.example-table-cell-name-b-a-a.table-text-z-f
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-z-d.svg");
+}
+.example-table-cell-name-b-a-a.table-text-z-g
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-z-e.svg");
+}
+.example-table-cell-name-b-a-a.table-text-z-h
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-z-f.svg");
+}
+.example-table-cell-name-b-a-a.table-text-z-i
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-z-g.svg");
+}
+.example-table-cell-name-b-a-a.table-text-z-j
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-z-h.svg");
+}
+.example-table-cell-name-b-a-a.table-text-z-k
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-z-i.svg");
+}
+.example-table-cell-name-b-a-a.table-text-z-l
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-z-j.svg");
+}
+.example-table-cell-name-b-a-a.table-text-z-m
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-z-k.svg");
+}
+.example-table-cell-name-b-a-a.table-text-z-n
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-z-l.svg");
+}
+.example-table-cell-name-b-a-a.table-text-z-o
+{
+    background-image: url("../media/name/2/1/1/text-tab-1-z-m.svg");
+}
+/*============ end type b-a-a ==============*/
+/*============ start type b-a-b ==============*/
+.example-table-container-name-b-a-b
+{
+    display: block;
+    overflow: hidden;
+    width: 48.167%;
+    height: 59.853%;
+    position: absolute;
+    top: 21.5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-inner-container-name-b-a-b
+{
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+.example-table-row-name-b-a-b
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 33.5%;
+    border-bottom: 1px solid #cccccc;
+}
+/*.example-table-row-name-b-a-b:first-child*/
+/*{*/
+/*height: 18.24%;*/
+/*}*/
+.example-table-row-name-b-a-b:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-name-b-a-b
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-name-b-a-b.cell-a
+{
+    width: 41.25%;
+}
+.example-table-cell-name-b-a-b.cell-b
+{
+    width: 58.7%;
+    border-left: 0;
+}
+
+.example-table-cell-name-b-a-b.table-text-a
+{
+    background-image: url("../media/name/2/1/2/text-tab-1-a.svg");
+}
+.example-table-cell-name-b-a-b.table-text-b
+{
+    background-image: url("../media/name/2/1/2/text-tab-1-b.svg");
+}
+.example-table-cell-name-b-a-b.table-text-c
+{
+    background-image: url("../media/name/2/1/2/text-tab-1-c.svg");
+}
+.example-table-cell-name-b-a-b.table-text-d
+{
+    background-image: url("../media/name/2/1/2/text-tab-1-d.svg");
+}
+.example-table-cell-name-b-a-b.table-text-e
+{
+    background-image: url("../media/name/2/1/2/text-tab-1-e.svg");
+}
+.example-table-cell-name-b-a-b.table-text-f
+{
+    background-image: url("../media/name/2/1/2/text-tab-1-f.svg");
+}
+/*============ end type b-a-b ==============*/
+
+/*============ start type b-a-c ==============*/
+.example-table-container-name-b-a-c
+{
+    display: block;
+    overflow: hidden;
+    width: 52.535%;
+    height: 72.92%;
+    position: absolute;
+    top: 13.5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-inner-container-name-b-a-c
+{
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+.example-table-row-name-b-a-c
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 26.3%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-name-b-a-c:first-child
+{
+    height: 21.06%;
+}
+.example-table-row-name-b-a-c:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-name-b-a-c
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-name-b-a-c.cell-a
+{
+    width: 38.682%;
+}
+.example-table-cell-name-b-a-c.cell-b
+{
+    width: 61.3%;
+    border-left: 0;
+}
+
+.example-table-cell-name-b-a-c.table-text-a
+{
+    background-image: url("../media/name/2/1/3/text-tab-1-a.svg");
+}
+.example-table-cell-name-b-a-c.table-text-b
+{
+    background-image: url("../media/name/2/1/3/text-tab-1-b.svg");
+}
+.example-table-cell-name-b-a-c.table-text-c
+{
+    background-image: url("../media/name/2/1/3/text-tab-1-c.svg");
+}
+.example-table-cell-name-b-a-c.table-text-d
+{
+    background-image: url("../media/name/2/1/3/text-tab-1-d.svg");
+}
+.example-table-cell-name-b-a-c.table-text-e
+{
+    background-image: url("../media/name/2/1/3/text-tab-1-e.svg");
+}
+.example-table-cell-name-b-a-c.table-text-f
+{
+    background-image: url("../media/name/2/1/3/text-tab-1-f.svg");
+}
+.example-table-cell-name-b-a-c.table-text-g
+{
+    background-image: url("../media/name/2/1/3/text-tab-1-g.svg");
+}
+.example-table-cell-name-b-a-c.table-text-h
+{
+    background-image: url("../media/name/2/1/3/text-tab-1-h.svg");
+}
+/*============ end type b-a-c ==============*/
+
+/*============ start type b-b-a ==============*/
+
+.example-table-container-name-b-b-a
+{
+    display: block;
+    overflow: hidden;
+    width: 97.252%;
+    height: 91%;
+    position: absolute;
+    top: 4.5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-inner-container-name-b-b-a
+{
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+.example-table-row-name-b-b-a
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 21.51%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-name-b-b-a:first-child
+{
+    height: 18.24%;
+}
+.example-table-row-name-b-b-a:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-name-b-b-a
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-name-b-b-a.cell-a
+{
+    width: 20.261%;
+}
+.example-table-cell-name-b-b-a.cell-b
+{
+    width: 33.531%;
+}
+.example-table-cell-name-b-b-a.cell-c
+{
+    width: 22.038%;
+}
+.example-table-cell-name-b-b-a.cell-d
+{
+    width: 24.053%;
+    border-left: 0;
+}
+.example-table-cell-name-b-b-a.table-text-a,
+.example-table-cell-name-b-b-a.table-text-c
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-a.svg");
+}
+.example-table-cell-name-b-b-a.table-text-b,
+.example-table-cell-name-b-b-a.table-text-d
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-b.svg");
+}
+.example-table-cell-name-b-b-a.table-text-e
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-c.svg");
+}
+.example-table-cell-name-b-b-a.table-text-f
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-d.svg");
+}
+.example-table-cell-name-b-b-a.table-text-g
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-e.svg");
+}
+.example-table-cell-name-b-b-a.table-text-h
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-f.svg");
+}
+.example-table-cell-name-b-b-a.table-text-i
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-g.svg");
+}
+.example-table-cell-name-b-b-a.table-text-j
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-h.svg");
+}
+.example-table-cell-name-b-b-a.table-text-k
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-i.svg");
+}
+.example-table-cell-name-b-b-a.table-text-l
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-j.svg");
+}
+.example-table-cell-name-b-b-a.table-text-m
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-k.svg");
+}
+.example-table-cell-name-b-b-a.table-text-n
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-l.svg");
+}
+.example-table-cell-name-b-b-a.table-text-o
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-m.svg");
+}
+.example-table-cell-name-b-b-a.table-text-p
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-n.svg");
+}
+.example-table-cell-name-b-b-a.table-text-q
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-o.svg");
+}
+.example-table-cell-name-b-b-a.table-text-r
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-p.svg");
+}
+.example-table-cell-name-b-b-a.table-text-s
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-q.svg");
+}
+.example-table-cell-name-b-b-a.table-text-t
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-r.svg");
+}
+.example-table-cell-name-b-b-a.table-text-u
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-s.svg");
+}
+.example-table-cell-name-b-b-a.table-text-w
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-t.svg");
+}
+.example-table-cell-name-b-b-a.table-text-x
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-u.svg");
+}
+.example-table-cell-name-b-b-a.table-text-y
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-w.svg");
+}
+.example-table-cell-name-b-b-a.table-text-z
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-x.svg");
+}
+.example-table-cell-name-b-b-a.table-text-z-a
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-y.svg");
+}
+.example-table-cell-name-b-b-a.table-text-z-b
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-z.svg");
+}
+.example-table-cell-name-b-b-a.table-text-z-c
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-z-a.svg");
+}
+.example-table-cell-name-b-b-a.table-text-z-d
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-z-b.svg");
+}
+.example-table-cell-name-b-b-a.table-text-z-e
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-z-c.svg");
+}
+.example-table-cell-name-b-b-a.table-text-z-f
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-z-d.svg");
+}
+.example-table-cell-name-b-b-a.table-text-z-g
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-z-e.svg");
+}
+.example-table-cell-name-b-b-a.table-text-z-h
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-z-f.svg");
+}
+.example-table-cell-name-b-b-a.table-text-z-i
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-z-g.svg");
+}
+.example-table-cell-name-b-b-a.table-text-z-j
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-z-h.svg");
+}
+.example-table-cell-name-b-b-a.table-text-z-k
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-z-i.svg");
+}
+.example-table-cell-name-b-b-a.table-text-z-l
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-z-j.svg");
+}
+.example-table-cell-name-b-b-a.table-text-z-m
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-z-k.svg");
+}
+.example-table-cell-name-b-b-a.table-text-z-n
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-z-l.svg");
+}
+.example-table-cell-name-b-b-a.table-text-z-o
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-z-m.svg");
+}
+.example-table-cell-name-b-b-a.table-text-z-p
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-z-n.svg");
+}
+.example-table-cell-name-b-b-a.table-text-z-q
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-z-o.svg");
+}
+.example-table-cell-name-b-b-a.table-text-z-r
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-z-p.svg");
+}
+.example-table-cell-name-b-b-a.table-text-z-s
+{
+    background-image: url("../media/name/2/2/1/text-tab-1-z-q.svg");
+}
+/*============ end type b-b-a ==============*/
+
+/*============ start type b-b-b ==============*/
+.example-table-container-name-b-b-b
+{
+    display: block;
+    overflow: hidden;
+    width: 45.063%;
+    height: 51.571%;
+    position: absolute;
+    top: 26.5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-inner-container-name-b-b-b
+{
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+.example-table-row-name-b-b-b
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-name-b-b-b:first-child
+{
+    /* height: 21.06%; */
+}
+.example-table-row-name-b-b-b:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-name-b-b-b
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-name-b-b-b.cell-a
+{
+    width: 38.682%;
+}
+.example-table-cell-name-b-b-b.cell-b
+{
+    width: 61.3%;
+    border-left: 0;
+}
+
+.example-table-cell-name-b-b-b.table-text-a
+{
+    background-image: url("../media/name/2/2/2/text-tab-1-a.svg");
+}
+.example-table-cell-name-b-b-b.table-text-b
+{
+    background-image: url("../media/name/2/2/2/text-tab-1-b.svg");
+}
+.example-table-cell-name-b-b-b.table-text-c
+{
+    background-image: url("../media/name/2/2/2/text-tab-1-c.svg");
+}
+.example-table-cell-name-b-b-b.table-text-d
+{
+    background-image: url("../media/name/2/2/2/text-tab-1-d.svg");
+}
+/*============ end type b-b-b ==============*/
+
+/*============ start type b-b-c ==============*/
+.example-table-container-name-b-b-c
+{
+    display: block;
+    overflow: hidden;
+    width: 49.661%;
+    height: 87.73%;
+    position: absolute;
+    top: 6.5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-inner-container-name-b-b-c
+{
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+.example-table-row-name-b-b-c
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-name-b-b-c:first-child
+{
+    /* height: 21.06%; */
+}
+.example-table-row-name-b-b-c:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-name-b-b-c
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-name-b-b-c.cell-a
+{
+    width: 43.954%;
+}
+.example-table-cell-name-b-b-c.cell-b
+{
+    width: 56.05%;
+    border-left: 0;
+}
+
+.example-table-cell-name-b-b-c.table-text-a
+{
+    background-image: url("../media/name/2/2/3/text-tab-1-a.svg");
+}
+.example-table-cell-name-b-b-c.table-text-b
+{
+    background-image: url("../media/name/2/2/3/text-tab-1-b.svg");
+}
+.example-table-cell-name-b-b-c.table-text-c
+{
+    background-image: url("../media/name/2/2/3/text-tab-1-c.svg");
+}
+.example-table-cell-name-b-b-c.table-text-d
+{
+    background-image: url("../media/name/2/2/3/text-tab-1-d.svg");
+}
+.example-table-cell-name-b-b-c.table-text-e
+{
+    background-image: url("../media/name/2/2/3/text-tab-1-e.svg");
+}
+.example-table-cell-name-b-b-c.table-text-f
+{
+    background-image: url("../media/name/2/2/3/text-tab-1-f.svg");
+}
+.example-table-cell-name-b-b-c.table-text-g
+{
+    background-image: url("../media/name/2/2/3/text-tab-1-g.svg");
+}
+.example-table-cell-name-b-b-c.table-text-h
+{
+    background-image: url("../media/name/2/2/3/text-tab-1-h.svg");
+}
+.example-table-cell-name-b-b-c.table-text-i
+{
+    background-image: url("../media/name/2/2/3/text-tab-1-i.svg");
+}
+.example-table-cell-name-b-b-c.table-text-j
+{
+    background-image: url("../media/name/2/2/3/text-tab-1-j.svg");
+}
+/*============ end type b-b-c ==============*/
+
+/*============ start type b-b-d ==============*/
+.example-table-container-name-b-b-d
+{
+    display: block;
+    overflow: hidden;
+    width: 53.34%;
+    height: 55.831%;
+    position: absolute;
+    top: 20.5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-inner-container-name-b-b-d
+{
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+.example-table-row-name-b-b-d
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 33.4%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-name-b-b-d:first-child
+{
+    /* height: 21.06%; */
+}
+.example-table-row-name-b-b-d:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-name-b-b-d
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-name-b-b-d.cell-a
+{
+    width: 43.94%;
+}
+.example-table-cell-name-b-b-d.cell-b
+{
+    width: 56.06%;
+    border-left: 0;
+}
+
+.example-table-cell-name-b-b-d.table-text-a
+{
+    background-image: url("../media/name/2/2/4/text-tab-1-a.svg");
+}
+.example-table-cell-name-b-b-d.table-text-b
+{
+    background-image: url("../media/name/2/2/4/text-tab-1-b.svg");
+}
+.example-table-cell-name-b-b-d.table-text-c
+{
+    background-image: url("../media/name/2/2/4/text-tab-1-c.svg");
+}
+.example-table-cell-name-b-b-d.table-text-d
+{
+    background-image: url("../media/name/2/2/4/text-tab-1-d.svg");
+}
+.example-table-cell-name-b-b-d.table-text-e
+{
+    background-image: url("../media/name/2/2/4/text-tab-1-e.svg");
+}
+.example-table-cell-name-b-b-d.table-text-f
+{
+    background-image: url("../media/name/2/2/4/text-tab-1-f.svg");
+}
+/*============ end type b-b-d ==============*/
+
+/*============ start type b-c-a ==============*/
+.example-table-container-name-b-c-a
+{
+    display: block;
+    overflow: hidden;
+    width: 48.167%;
+    height: 40.043%;
+    position: absolute;
+    top: 28.5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-inner-container-name-b-c-a
+{
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+.example-table-row-name-b-c-a
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-name-b-c-a:first-child
+{
+    /* height: 21.06%; */
+}
+.example-table-row-name-b-c-a:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-name-b-c-a
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-name-b-c-a.cell-a
+{
+    width: 41.25%;
+}
+.example-table-cell-name-b-c-a.cell-b
+{
+    width: 58.7%;
+    border-left: 0;
+}
+
+.example-table-cell-name-b-c-a.table-text-a
+{
+    background-image: url("../media/name/2/3/1/text-tab-1-a.svg");
+}
+.example-table-cell-name-b-c-a.table-text-b
+{
+    background-image: url("../media/name/2/3/1/text-tab-1-b.svg");
+}
+.example-table-cell-name-b-c-a.table-text-c
+{
+    background-image: url("../media/name/2/3/1/text-tab-1-c.svg");
+}
+.example-table-cell-name-b-c-a.table-text-d
+{
+    background-image: url("../media/name/2/3/1/text-tab-1-d.svg");
+}
+/*============ end type b-c-a ==============*/
+
+/*============ start type b-c-b ==============*/
+.example-table-container-name-b-c-b
+{
+    display: block;
+    overflow: hidden;
+    width: 59.432%;
+    height: 90%;
+    position: absolute;
+    top: 5.5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-inner-container-name-b-c-b
+{
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+.example-table-row-name-b-c-b
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 22%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-name-b-c-b:first-child
+{
+    /* height: 21.06%; */
+}
+.example-table-row-name-b-c-b:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-name-b-c-b
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-name-b-c-b.cell-a
+{
+    width: 52%;
+}
+.example-table-cell-name-b-c-b.cell-b
+{
+    width: 48%;
+    border-left: 0;
+}
+
+.example-table-cell-name-b-c-b.table-text-a
+{
+    background-image: url("../media/name/2/3/2/text-tab-1-a.svg");
+}
+.example-table-cell-name-b-c-b.table-text-b
+{
+    background-image: url("../media/name/2/3/2/text-tab-1-b.svg");
+}
+.example-table-cell-name-b-c-b.table-text-c
+{
+    background-image: url("../media/name/2/3/2/text-tab-1-c.svg");
+}
+.example-table-cell-name-b-c-b.table-text-d
+{
+    background-image: url("../media/name/2/3/2/text-tab-1-d.svg");
+}
+.example-table-cell-name-b-c-b.table-text-e
+{
+    background-image: url("../media/name/2/3/2/text-tab-1-e.svg");
+}
+.example-table-cell-name-b-c-b.table-text-f
+{
+    background-image: url("../media/name/2/3/2/text-tab-1-f.svg");
+}
+.example-table-cell-name-b-c-b.table-text-g
+{
+    background-image: url("../media/name/2/3/2/text-tab-1-g.svg");
+}
+.example-table-cell-name-b-c-b.table-text-h
+{
+    background-image: url("../media/name/2/3/2/text-tab-1-h.svg");
+}
+.example-table-cell-name-b-c-b.table-text-i
+{
+    background-image: url("../media/name/2/3/2/text-tab-1-i.svg");
+}
+.example-table-cell-name-b-c-b.table-text-j
+{
+    background-image: url("../media/name/2/3/2/text-tab-1-j.svg");
+}
+.example-table-cell-name-b-c-b.table-text-k
+{
+    background-image: url("../media/name/2/3/2/text-tab-1-k.svg");
+}
+.example-table-cell-name-b-c-b.table-text-l
+{
+    background-image: url("../media/name/2/3/2/text-tab-1-l.svg");
+}
+.example-table-cell-name-b-c-b.table-text-m
+{
+    background-image: url("../media/name/2/3/2/text-tab-1-m.svg");
+}
+.example-table-cell-name-b-c-b.table-text-n
+{
+    background-image: url("../media/name/2/3/2/text-tab-1-n.svg");
+}
+.example-table-cell-name-b-c-b.table-text-o
+{
+    background-image: url("../media/name/2/3/2/text-tab-1-o.svg");
+}
+.example-table-cell-name-b-c-b.table-text-p
+{
+    background-image: url("../media/name/2/3/2/text-tab-1-p.svg");
+}
+.example-table-cell-name-b-c-b.table-text-q
+{
+    background-image: url("../media/name/2/3/2/text-tab-1-q.svg");
+}
+.example-table-cell-name-b-c-b.table-text-r
+{
+    background-image: url("../media/name/2/3/2/text-tab-1-r.svg");
+}
+.example-table-cell-name-b-c-b.table-text-s
+{
+    background-image: url("../media/name/2/3/2/text-tab-1-s.svg");
+}
+.example-table-cell-name-b-c-b.table-text-t
+{
+    background-image: url("../media/name/2/3/2/text-tab-1-t.svg");
+}
+.example-table-cell-name-b-c-b.table-text-u
+{
+    background-image: url("../media/name/2/3/2/text-tab-1-u.svg");
+}
+.example-table-cell-name-b-c-b.table-text-w
+{
+    background-image: url("../media/name/2/3/2/text-tab-1-w.svg");
+}
+.example-table-cell-name-b-c-b.table-text-x
+{
+    background-image: url("../media/name/2/3/2/text-tab-1-x.svg");
+}
+.example-table-cell-name-b-c-b.table-text-y
+{
+    background-image: url("../media/name/2/3/2/text-tab-1-y.svg");
+}
+/*============ end type b-c-b ==============*/
+/*============ start type b-c-c ==============*/
+.example-table-container-name-b-c-c
+{
+    display: block;
+    overflow: hidden;
+    width: 58.513%;
+    height: 90%;
+    position: absolute;
+    top: 5.5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fffdeb;
+    border-radius: 22px;
+    border: 1px solid #eae2cf;
+}
+.example-table-inner-container-name-b-c-c
+{
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+.example-table-row-name-b-c-c
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 22%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row-name-b-c-c:first-child
+{
+    /* height: 21.06%; */
+}
+.example-table-row-name-b-c-c:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell-name-b-c-c
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.example-table-cell-name-b-c-c.cell-a
+{
+    width: 41.25%;
+}
+.example-table-cell-name-b-c-c.cell-b
+{
+    width: 58.7%;
+    border-left: 0;
+}
+
+.example-table-cell-name-b-c-c.table-text-a
+{
+    background-image: url("../media/name/2/3/3/text-tab-1-a.svg");
+}
+.example-table-cell-name-b-c-c.table-text-b
+{
+    background-image: url("../media/name/2/3/3/text-tab-1-b.svg");
+}
+.example-table-cell-name-b-c-c.table-text-c
+{
+    background-image: url("../media/name/2/3/3/text-tab-1-c.svg");
+}
+.example-table-cell-name-b-c-c.table-text-d
+{
+    background-image: url("../media/name/2/3/3/text-tab-1-d.svg");
+}
+.example-table-cell-name-b-c-c.table-text-e
+{
+    background-image: url("../media/name/2/3/3/text-tab-1-e.svg");
+}
+.example-table-cell-name-b-c-c.table-text-f
+{
+    background-image: url("../media/name/2/3/3/text-tab-1-f.svg");
+}
+.example-table-cell-name-b-c-c.table-text-g
+{
+    background-image: url("../media/name/2/3/3/text-tab-1-g.svg");
+}
+.example-table-cell-name-b-c-c.table-text-h
+{
+    background-image: url("../media/name/2/3/3/text-tab-1-h.svg");
+}
+.example-table-cell-name-b-c-c.table-text-i
+{
+    background-image: url("../media/name/2/3/3/text-tab-1-i.svg");
+}
+.example-table-cell-name-b-c-c.table-text-j
+{
+    background-image: url("../media/name/2/3/3/text-tab-1-j.svg");
+}
+.example-table-cell-name-b-c-c.table-text-k
+{
+    background-image: url("../media/name/2/3/3/text-tab-1-k.svg");
+}
+.example-table-cell-name-b-c-c.table-text-l
+{
+    background-image: url("../media/name/2/3/3/text-tab-1-l.svg");
+}
+/*============ end type b-c-a ==============*/
+/*===================end Name ===========*/

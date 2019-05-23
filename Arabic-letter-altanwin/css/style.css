@@ -1,0 +1,426 @@
+@font-face {
+    font-family: 'Droid Arabic Kufi';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/DroidKufi-Regular.eot);
+    src: url(../fonts/DroidKufi-Regulard41d.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/DroidKufi-Regular.html) format('woff2'),
+    url(../fonts/DroidKufi-Regular.woff) format('woff'),
+    url(../fonts/DroidKufi-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Droid Arabic Kufi';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/DroidKufi-Bold.eot);
+    src: url(../fonts/DroidKufi-Boldd41d.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/DroidKufi-Bold.html) format('woff2'),
+    url(../fonts/DroidKufi-Bold.woff) format('woff'),
+    url(../fonts/DroidKufi-Bold.ttf) format('truetype');
+}
+.floating-right
+{
+    float: right;
+}
+.floating-left
+{
+    float: left;
+}
+.text-right
+{
+    text-align: right;
+}
+.text-left
+{
+    text-align: left;
+}
+.text-center
+{
+    text-align: center;
+}
+.display-block
+{
+    display: block;
+    overflow: hidden;
+}
+.display-inline-block
+{
+    display: inline-block;
+    overflow: hidden;
+}
+.clear
+{
+    clear: both;
+}
+a
+{
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+*,a,
+a:focus {
+    outline: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-family: open_sans;
+    text-align: center;
+}
+.main-container
+{
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #4AB1BA;
+}
+.inner-container
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.game-container
+{
+    display: block;
+    overflow: visible;
+    width: 95.118%;
+    height: 94.662%;
+    position: absolute;
+    top: 2.474%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /* background: url("../images/bg-inner.svg") no-repeat center; */
+    background-size: 100% 100%;
+}
+.paper-container
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 88.99%;
+    position: absolute;
+    top: 11.1%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /* background: url("../images/paper.svg") no-repeat center; */
+    /* background-size: 100% 100%; */
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+.view-container
+{
+    display: block;
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.inner-inner-container
+{
+    display: none;
+    overflow: visible;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.top-btn-container
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 8.53%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    direction: rtl;
+}
+.top-btn
+{
+    display: inline-block;
+    overflow: hidden;
+    width: 20.226%;
+    height: 100%;
+    position: relative;
+    background: #FFD440;
+    border-radius: 8px;
+    margin-left: 3.1%;
+}
+.top-btn:last-child
+{
+    margin-left: 0;
+}
+.top-btn span
+{
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.top-btn span.lbl-a
+{
+    width: 89.85%;
+    height: 79.04%;
+    background-image: url("../images/top-lbl-a.svg");
+}
+.top-btn span.lbl-b
+{
+    width: 89.85%;
+    height: 79.04%;
+    background-image: url("../images/top-lbl-b.svg");
+}
+.top-btn span.lbl-c
+{
+    width: 89.85%;
+    height: 79.04%;
+    background-image: url("../images/top-lbl-c.svg");
+}
+.top-btn.selected span.lbl-a
+{
+    background-image: url("../images/top-lbl-a-select.svg");
+}
+.top-btn.selected span.lbl-b
+{
+    background-image: url("../images/top-lbl-b-select.svg");
+}
+.top-btn.selected span.lbl-c
+{
+    background-image: url("../images/top-lbl-c-select.svg");
+}
+.poweredBy
+{
+    display: block;
+    overflow: hidden;
+    width: 11.333%;
+    height: 2.997%;
+    position: absolute;
+    bottom: 3.242%;
+    left: 3.661%;
+    background: url("../images/poweredBy.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.character-formation-container
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 36.325%;
+    position: relative;
+}
+.title-a,.title-b,
+.title-c,.title-d
+{
+    display: block;
+    overflow: hidden;
+    width: 18.994%;
+    height: 22.13%;
+    position: absolute;
+    top: 5.96%;
+    right: 1.643%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.character-formation-inner-container
+{
+    display: block;
+    overflow: hidden;
+    width: 36.756%;
+    height: 62.98%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.character-1
+{
+    background-image: url("../images/chape-1.png");
+}
+.character-2
+{
+    background-image: url("../images/chape-2.png");
+}
+.character-3
+{
+    background-image: url("../images/chape-3.png");
+}
+
+.slider-main-container
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 60.747%;
+    position: relative;
+    margin-top: 2%;
+}
+.slide-inner-container
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 62.341%;
+    position: absolute;
+    bottom: 9.161%;
+}
+.prev-btn,.next-btn
+{
+    display: block;
+    overflow: hidden;
+    width: 2.875%;
+    height: 15.511%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.prev-btn
+{
+    right: 1.13%;
+    background-image: url("../images/next.svg");
+}
+.next-btn
+{
+    left: 1.13%;
+    background-image: url("../images/prev.svg");
+}
+.inner-slider
+{
+    display: block;
+    overflow: hidden;
+    width: 82.957%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.swiper-container
+{
+    width: 100%;
+    height: 100%;
+    margin:0;
+}
+.swiper-button-next,.swiper-button-prev
+{
+    display: block;
+    overflow: hidden;
+    width: 2.875%;
+    height: 15.511%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.swiper-button-prev
+{
+    right: 1.13%;
+    left: auto;
+    background-image: url("../images/next.svg");
+}
+.swiper-button-next
+{
+    left: 1.13%;
+    right: auto;
+    background-image: url("../images/prev.svg");
+}
+.swiper-wrapper
+{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.img-slider-container
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.img-slider-container img
+{
+    display: block;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.text-img
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 31.3%;
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.swiper-slide
+{
+    cursor: pointer;
+}

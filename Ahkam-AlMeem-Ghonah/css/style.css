@@ -1,0 +1,716 @@
+@font-face {
+    font-family: 'Droid Arabic Kufi';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/DroidKufi-Regular.eot);
+    src: url(../fonts/DroidKufi-Regulard41d.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/DroidKufi-Regular.html) format('woff2'),
+    url(../fonts/DroidKufi-Regular.woff) format('woff'),
+    url(../fonts/DroidKufi-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Droid Arabic Kufi';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/DroidKufi-Bold.eot);
+    src: url(../fonts/DroidKufi-Boldd41d.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/DroidKufi-Bold.html) format('woff2'),
+    url(../fonts/DroidKufi-Bold.woff) format('woff'),
+    url(../fonts/DroidKufi-Bold.ttf) format('truetype');
+}
+
+.floating-right
+{
+    float: right;
+}
+.floating-left
+{
+    float: left;
+}
+.text-right
+{
+    text-align: right;
+}
+.text-left
+{
+    text-align: left;
+}
+.text-center
+{
+    text-align: center;
+}
+.display-block
+{
+    display: block;
+    overflow: hidden;
+}
+.display-inline-block
+{
+    display: inline-block;
+    overflow: hidden;
+}
+.clear
+{
+    clear: both;
+}
+a
+{
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+*,a,
+a:focus {
+    outline: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-family: 'Droid Arabic Kufi';
+    text-align: center;
+}
+.main-container
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/bg.jpg") no-repeat center;
+    background-size: 100% 100%;
+}
+.inner-container
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.inner-app
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.home-btn
+{
+    display: none;
+    overflow: hidden;
+    width: 5.762%;
+    height: 5.34%;
+    position: absolute;
+    top: 4.688%;
+    left: 6.836%;
+    background: url("../images/home.svg") no-repeat center;
+    background-size: 100% 100%;
+    z-index: 9999;
+}
+.title-logo
+{
+    display: block;
+    overflow: hidden;
+    width: 18.946%;
+    height: 18.36%;
+    position: absolute;
+    top: 4%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-logo.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-button-next,
+.swiper-button-prev
+{
+    display: block;
+    overflow: hidden;
+    width: 7.833%;
+    height: 6.54%;
+    position: absolute;
+    bottom: -11.2%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-button-next
+{
+    right: auto !important;
+    top: auto !important;
+    left: 38.658% !important;
+    background-image: url("../images/prev.svg") !important;
+}
+.swiper-button-prev
+{
+    left: auto !important;
+    top: auto !important;
+    right: 38.658% !important;
+    background-image: url("../images/next.svg") !important;
+}
+.slider-container
+{
+    display: block;
+    overflow: visible;
+    width: 85.547%;
+    height: 72.527%;
+    position: absolute;
+    top: 13.6%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.introduction-container
+{
+    display: block;
+    overflow: visible;
+    width: 99.5%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.poweredBy
+{
+    display: block;
+    overflow: hidden;
+    width: 15.333%;
+    height: 4.297%;
+    position: absolute;
+    bottom: 2%;
+    left: 2.344%;
+    background: url(../images/poweredBy.svg) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 99999999;
+}
+
+.introduction-container-a,.introduction-container-b,
+.introduction-container-c,.introduction-container-d,
+.introduction-container-e,.introduction-container-f,
+.introduction-container-g,.introduction-container-h
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.title-0-1
+{
+    display: block;
+    overflow: hidden;
+    width: 22.478%;
+    height: 9.336%;
+    position: absolute;
+    top: 20.647%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-0-1.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-0-1
+{
+    display: block;
+    overflow: hidden;
+    width: 88.647%;
+    height: 7.72%;
+    position: absolute;
+    top: 34.65%;
+    right: 4.588%;
+    background: url("../images/text-0-1.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-0-2
+{
+    display: block;
+    overflow: hidden;
+    width: 74.198%;
+    height: 7.541%;
+    position: absolute;
+    top: 43.627%;
+    right: 4.588%;
+    background: url("../images/text-0-2.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.title-1-1
+{
+    display: block;
+    overflow: hidden;
+    width: 25.918%;
+    height: 10.772%;
+    position: absolute;
+    top: 19.39%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-1-1.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-1-1
+{
+    display: block;
+    overflow: hidden;
+    width: 78.9%;
+    height: 15.8%;
+    position: absolute;
+    top: 34.471%;
+    right: 9.863%;
+    background: url("../images/text-1-1.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-1-2
+{
+    display: block;
+    overflow: hidden;
+    width: 73.051%;
+    height: 7.182%;
+    position: absolute;
+    top: 53.322%;
+    right: 9.863%;
+    background: url("../images/text-1-2.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.title-2-1
+{
+    display: block;
+    overflow: hidden;
+    width: 27.18%;
+    height: 13.106%;
+    position: absolute;
+    top: 16.697%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-2-1.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-2-1
+{
+    display: block;
+    overflow: hidden;
+    width: 30.85%;
+    height: 8.26%;
+    position: absolute;
+    top: 31.6%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/text-2-1.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-2-2
+{
+    display: block;
+    overflow: hidden;
+    width: 70.757%;
+    height: 8.44%;
+    position: absolute;
+    top: 44.166%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/text-2-2.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.title-3-1
+{
+    display: block;
+    overflow: hidden;
+    width: 20.185%;
+    height: 9.695%;
+    position: absolute;
+    top: 17.236%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-3-1.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-3-1
+{
+    display: block;
+    overflow: hidden;
+    width: 27.294%;
+    height: 7.002%;
+    position: absolute;
+    top: 32.137%;
+    right: 10.78%;
+    background: url("../images/text-3-1.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-3-2
+{
+    display: block;
+    overflow: hidden;
+    width: 28.326%;
+    height: 5.566%;
+    position: absolute;
+    top: 41.473%;
+    right: 10.78%;
+    background: url("../images/text-3-2.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-3-3
+{
+    display: block;
+    overflow: hidden;
+    width: 75.115%;
+    height: 15.8%;
+    position: absolute;
+    top: 50.81%;
+    right: 10.78%;
+    background: url("../images/text-3-3.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.title-4-1
+{
+    display: block;
+    overflow: hidden;
+    width: 35.092%;
+    height: 11.491%;
+    position: absolute;
+    top: 17.415%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-4-1.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.text-4-1
+{
+    display: block;
+    overflow: hidden;
+    width: 68.464%;
+    height: 15.44%;
+    position: absolute;
+    top: 33.573%;
+    right: 9.748%;
+    background: url("../images/text-4-1.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+.title-5-1
+{
+    display: block;
+    overflow: hidden;
+    width: 20.184%;
+    height: 11.311%;
+    position: absolute;
+    top: 14.004%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../images/title-5-1.svg") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.example-table-container
+{
+    display: block;
+    overflow: hidden;
+    width: 91.63%;
+    height: 64.632%;
+    position: absolute;
+    top: 28.546%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 22px;
+}
+.example-table-container.example-a
+{
+    height: 64.453%;
+}
+.example-table-row
+{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 14.29%;
+    border-bottom: 1px solid #cccccc;
+}
+.example-table-row:last-child
+{
+    border-bottom: 0;
+}
+.example-table-cell
+{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    border-left: 1px solid #cccccc;
+}
+.example-table-cell:nth-child(1)
+{
+    width: 17.898%;
+}
+.example-table-cell:nth-child(2)
+{
+    width: 31.54%;
+}
+.example-table-cell:nth-child(3)
+{
+    width: 49.564%;
+    border-left: 0;
+}
+/*========table example 1 start=========*/
+.example-table-container.example-a .table-text-a
+{
+    background-image: url("../images/text-tabel-0-a-1.svg");
+}
+.example-table-container.example-a .table-text-b
+{
+    background-image: url("../images/text-tabel-0-b-1.svg");
+}
+.example-table-container.example-a .table-text-c
+{
+    background-image: url("../images/text-tabel-0-c-1.svg");
+}
+.example-table-container.example-a .table-text-d
+{
+    background-image: url("../images/text-tabel-0-b-2.svg");
+}
+.example-table-container.example-a .table-text-e
+{
+    background-image: url("../images/text-tabel-0-c-2.svg");
+}
+.example-table-container.example-a .table-text-f
+{
+    background-image: url("../images/text-tabel-0-b-3.svg");
+}
+.example-table-container.example-a .table-text-g
+{
+    background-image: url("../images/text-tabel-0-c-3.svg");
+}
+.example-table-container.example-a .table-text-h
+{
+    background-image: url("../images/text-tabel-0-b-4.svg");
+}
+.example-table-container.example-a .table-text-i
+{
+    background-image: url("../images/text-tabel-0-c-4.svg");
+}
+.example-table-container.example-a .table-text-j
+{
+    background-image: url("../images/text-tabel-0-a-2.svg");
+}
+.example-table-container.example-a .table-text-k
+{
+    background-image: url("../images/text-tabel-0-b-5.svg");
+}
+.example-table-container.example-a .table-text-l
+{
+    background-image: url("../images/text-tabel-0-c-5.svg");
+}
+.example-table-container.example-a .table-text-m
+{
+    background-image: url("../images/text-tabel-0-a-3.svg");
+}
+.example-table-container.example-a .table-text-n
+{
+    background-image: url("../images/text-tabel-0-b-6.svg");
+}
+.example-table-container.example-a .table-text-o
+{
+    background-image: url("../images/text-tabel-0-c-6.svg");
+}
+.example-table-container.example-a .table-text-p
+{
+    background-image: url("../images/text-tabel-0-b-7.svg");
+}
+.example-table-container.example-a .table-text-q
+{
+    background-image: url("../images/text-tabel-0-c-6.svg");
+}
+/*========table example 1 end=========*/
+
+/*========table example 2 start=========*/
+.example-table-container.example-b .table-text-a
+{
+    background-image: url("../images/text-tabel-1-a-1.svg");
+}
+.example-table-container.example-b .table-text-b
+{
+    background-image: url("../images/text-tabel-1-b-1.svg");
+}
+.example-table-container.example-b .table-text-c
+{
+    background-image: url("../images/text-tabel-1-c-1.svg");
+}
+.example-table-container.example-b .table-text-d
+{
+    background-image: url("../images/text-tabel-1-b-2.svg");
+}
+.example-table-container.example-b .table-text-e
+{
+    background-image: url("../images/text-tabel-1-c-2.svg");
+}
+.example-table-container.example-b .table-text-f
+{
+    background-image: url("../images/text-tabel-1-b-3.svg");
+}
+.example-table-container.example-b .table-text-g
+{
+    background-image: url("../images/text-tabel-1-c-3.svg");
+}
+.example-table-container.example-b .table-text-h
+{
+    background-image: url("../images/text-tabel-1-b-4.svg");
+}
+.example-table-container.example-b .table-text-i
+{
+    background-image: url("../images/text-tabel-1-c-4.svg");
+}
+.example-table-container.example-b .table-text-j
+{
+    background-image: url("../images/text-tabel-1-b-5.svg");
+}
+.example-table-container.example-b .table-text-k
+{
+    background-image: url("../images/text-tabel-1-c-5.svg");
+}
+.example-table-container.example-b .table-text-l
+{
+    background-image: url("../images/text-tabel-1-b-6.svg");
+}
+.example-table-container.example-b .table-text-m
+{
+    background-image: url("../images/text-tabel-1-c-6.svg");
+}
+.example-table-container.example-b .table-text-n
+{
+    background-image: url("../images/text-tabel-1-b-7.svg");
+}
+.example-table-container.example-b .table-text-o
+{
+    background-image: url("../images/text-tabel-1-c-7.svg");
+}
+/*========table example 2 end=========*/
+
+/*========table example 3 start=========*/
+.example-table-container.example-c .table-text-a
+{
+    background-image: url("../images/text-tabel-1-a-1.svg");
+}
+.example-table-container.example-c .table-text-b
+{
+    background-image: url("../images/text-tabel-2-b-1.svg");
+}
+
+.example-table-container.example-c .table-text-c
+{
+    background-image: url("../images/text-tabel-2-c-1.svg");
+}
+.example-table-container.example-c .table-text-d
+{
+    background-image: url("../images/text-tabel-2-b-2.svg");
+}
+.example-table-container.example-c .table-text-e
+{
+    background-image: url("../images/text-tabel-2-c-2.svg");
+}
+.example-table-container.example-c .table-text-f
+{
+    background-image: url("../images/text-tabel-2-b-3.svg");
+}
+.example-table-container.example-c .table-text-g
+{
+    background-image: url("../images/text-tabel-2-c-3.svg");
+}
+.example-table-container.example-c .table-text-h
+{
+    background-image: url("../images/text-tabel-2-b-4.svg");
+}
+.example-table-container.example-c .table-text-i
+{
+    background-image: url("../images/text-tabel-2-c-4.svg");
+}
+.example-table-container.example-c .table-text-j
+{
+    background-image: url("../images/text-tabel-2-b-5.svg");
+}
+.example-table-container.example-c .table-text-k
+{
+    background-image: url("../images/text-tabel-2-c-5.svg");
+}
+.example-table-container.example-c .table-text-l
+{
+    background-image: url("../images/text-tabel-2-b-6.svg");
+}
+.example-table-container.example-c .table-text-m
+{
+    background-image: url("../images/text-tabel-2-c-6.svg");
+}
+.example-table-container.example-c .table-text-n
+{
+    background-image: url("../images/text-tabel-2-b-7.svg");
+}
+.example-table-container.example-c .table-text-o
+{
+    background-image: url("../images/text-tabel-2-c-7.svg");
+}
+/*========table example 3 end=========*/

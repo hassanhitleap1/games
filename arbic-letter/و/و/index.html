@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from 192.168.100.27/app/arbic-letter/و/و/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 May 2019 10:53:08 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <title>Arabic Letter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/manhalloader.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/manhalLoader.js"></script>
+    <script src="js/data_putCircle.js"></script>
+    <script src="js/manhalLoader.js"></script>
+    <script src="js/fileLoader.js"></script>
+    <script src="js/js.js"></script>
+    <script type="text/javascript" src="js/TouchPunch.js"></script>
+    <link rel="stylesheet" href="dist/plyr.css">
+    <link rel="stylesheet" href="dist/demo.css">
+</head>
+<body>
+<div id="main-container" class="main-container">
+    <div id="inner-container" class="inner-container">
+        <div class="game-container">
+            <div class="paper-container">
+                <div class="view-container">
+                    <div id="Litter" class="inner-inner-container">
+                        <!--<video id="LitterVideo"   crossorigin autoplay loop></video>-->
+                        <img src="#" id="gifLitter"/>
+                    </div>
+                    <div id="wrightLitter" class="inner-inner-container">
+                        <video id="wrightLitterVideo"  crossorigin autoplay loop></video>
+                    </div>
+                    <div id="soundLitter" class="inner-inner-container">
+                        <div class="character-formation-container">
+                            <span class="title-a floating-right animated fadeInRight"></span>
+                            <div class="character-formation-inner-container animated fadeInRight">
+                                <div class="formation-container formation-a"><span sound=""></span></div>
+                                <div class="formation-container formation-b"><span sound=""></span></div>
+                                <div class="formation-container formation-c"><span sound=""></span></div>
+                                <div class="formation-container formation-d"><span sound=""></span></div>
+                                <div class="line-a"></div>
+                            </div>
+                        </div>
+                        <div class="example-soundLitter-container">
+                            <span class="title-c floating-right animated fadeInRight"></span>
+                            <div class="example-soundLitter-inner-container animated fadeInRight"></div>
+
+                        </div>
+                    </div>
+                    <div id="example" class="inner-inner-container">
+
+                        <div class="img-main-container">
+                            <div class="img-container img-word-a floating-right animated fadeInRight"><img class="animated" src="#"/></div>
+                            <div class="img-container img-word-b floating-right animated fadeInRight"><img class="animated" src="#"/></div>
+                            <div class="img-container img-word-c floating-right animated fadeInRight"><img class="animated" src="#"/></div>
+                            <div class="img-container img-word-d floating-right animated fadeInRight"><img class="animated" src="#"/></div>
+                        </div>
+                        <div class="word-main-container">
+                            <div class="word-container word-a floating-right animated fadeInRight"><img class="animated" src="#"/></div>
+                            <div class="word-container word-b floating-right animated fadeInRight"><img class="animated" src="#"/></div>
+                            <div class="word-container word-c floating-right animated fadeInRight"><img class="animated" src="#"/></div>
+                            <div class="word-container word-d floating-right animated fadeInRight"><img class="animated" src="#"/></div>
+                        </div>
+                    </div>
+                    <div id="training" class="inner-inner-container">
+                        <div class="training-container matching-game">
+                            <div class="question-title">
+                                <span class="question-text"></span>
+                                <a id="matchingQuestion" class="sound-question"></a>
+                            </div>
+                            <div class="inner-matching-game">
+                                <div class="left-container floating-left">
+                                    <div class="lbl-container lbl-1" onclick="pointBB(this)" num="1"><span></span><i></i></div>
+                                    <div class="lbl-container lbl-2" onclick="pointBB(this)" num="2"><span></span><i></i></div>
+                                    <div class="lbl-container lbl-3" onclick="pointBB(this)" num="3"><span></span><i></i></div>
+                                    <div class="lbl-container lbl-4" onclick="pointBB(this)" num="4"><span></span><i></i></div>
+                                </div><i></i>
+                                <div class="right-container floating-right">
+                                    <div class="lbl-container lbl-1" onclick="pointAA(this)" num="1"><span></span><i></i></div>
+                                    <div class="lbl-container lbl-2" onclick="pointAA(this)" num="2"><span></span><i></i></div>
+                                    <div class="lbl-container lbl-3" onclick="pointAA(this)" num="3"><span></span><i></i></div>
+                                    <div class="lbl-container lbl-4" onclick="pointAA(this)" num="4"><span></span><i></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="training-container putCircle-game">
+                            <div class="question-title">
+                                <span class="question-text"></span>
+                                <a class="sound-question" onclick="PutCircleQustion(this)"></a>
+                            </div>
+                            <div class="inner-putCircle-game"></div>
+                        </div>
+                        <div class="training-container makingWord-game">
+                            <div class="inner-container-game">
+                                <div class="drop-container"></div>
+                                <div class="img-game-container animated">
+                                    <img src="#">
+                                </div>
+                                <div class="word-game-container animated fadeInLeft">
+                                    <img src="#">
+                                </div>
+                                <div class="drag-container"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-btn-container">
+                <a class="top-btn floating-right" type="0"><span class="lbl-a"></span></a>
+                <a class="top-btn floating-right" type="3"><span class="lbl-d"></span></a>
+            </div>
+            <div class="right-btn-container">
+                <a class="right-btn" type="0"><span class="lbl-a"></span></a>
+                <a class="right-btn" type="1"><span class="lbl-b"></span></a>
+                <a class="right-btn" type="2"><span class="lbl-c"></span></a>
+                <a class="right-btn" type="3"><span class="lbl-d"></span></a>
+            </div>
+            <div id="menu-a" class="left-btn-container">
+                <a class="left-btn" type="1"><span class="lbl-a"></span></a>
+                <a class="left-btn" type="2"><span class="lbl-b"></span></a>
+                <a class="left-btn" type="3"><span class="lbl-c"></span></a>
+                <a class="left-btn" type="4"><span class="lbl-d"></span></a>
+            </div>
+        </div>
+        <a class="poweredBy" target="_blank" href="https://www.manhal.com/"></a>
+        <div class="main-message-container">
+            <div class="inner-message-container">
+                <span id="message-icone" class=""></span>
+                <span id="feedback" class=""></span>
+                <span class="result-text"></span>
+                <div class="result-container">
+                    <span></span>
+                </div>
+                <a class="reload" onclick="closeMessage()"></a>
+            </div>
+        </div>
+        <div class="main-message-container-help">
+            <div class="inner-message-container-help">
+                <div class="message-title">
+                    <span></span>
+                </div>
+                <div class="border-message-container-help">
+                    <a class="close-message"></a>
+                    <span class="help-text"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="dist/plyr.js"></script>
+<script>
+    $(document).ready(function (){
+        player = new Plyr('#LitterVideo');
+    })
+</script>
+</body>
+
+<!-- Mirrored from 192.168.100.27/app/arbic-letter/و/و/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 May 2019 10:53:27 GMT -->
+</html>

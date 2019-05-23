@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from 192.168.100.27/app/Word-Character/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 May 2019 09:49:39 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <title>Word Parts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/manhalloader.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/manhalLoader.js"></script>
+    <script src="js/js.js"></script>
+    <script type="text/javascript" src="js/TouchPunch.js"></script>
+</head>
+<body>
+<div id="main-container" class="main-container">
+    <div id="inner-container" class="inner-container">
+        <div class="game-container">
+            <div class="title-container">
+                <span class="main-title"></span>
+            </div>
+            <div class="border-container">
+                <div class="word-typ-container">
+                    <div id="tabs-container">
+                        <ul class="tabs-menu">
+                            <li class="current"><a class="tab-0-1" href="#tab-0-1" onclick="Tabs(this)"><i></i></a></li>
+                            <li><a class="tab-0-2" href="#tab-0-2" onclick="Tabs(this)"><i></i></a></li>
+                            <li><a class="tab-0-3" href="#tab-0-3" onclick="Tabs(this)"><i></i></a></li>
+                        </ul>
+                        <div class="tab">
+                            <div id="tab-0-1" class="tab-content">
+                                <div class="name-typ floating-right">
+                                    <a class="name-typ-a"></a>
+                                </div>
+                                <div class="name-typ floating-right">
+                                    <a class="name-typ-b"></a>
+                                </div>
+                            </div>
+                            <div id="tab-0-2" class="tab-content">
+                                <div class="verb-typ floating-right">
+                                    <a class="verb-typ-a"></a>
+                                </div>
+                                <div class="verb-typ floating-right">
+                                    <a class="verb-typ-b"></a>
+                                </div>
+                                <div class="verb-typ floating-right">
+                                    <a class="verb-typ-c"></a>
+                                </div>
+                            </div>
+                            <div id="tab-0-3" class="tab-content">
+                                <div class="Letter-typ floating-right">
+                                    <a class="Letter-typ-a"></a>
+                                </div>
+                                <div class="Letter-typ floating-right">
+                                    <a class="Letter-typ-b"></a>
+                                </div>
+                                <div class="Letter-typ floating-right">
+                                    <a class="Letter-typ-c"></a>
+                                </div>
+                                <div class="Letter-typ floating-right">
+                                    <a class="Letter-typ-d"></a>
+                                </div>
+                                <div class="Letter-typ floating-right">
+                                    <a class="Letter-typ-e"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="word-typ floating-right" style="display: none">
+                        <div class="typ-title name"></div>
+                        <div class="inner-typ-container">
+                            <div class="name-typ">
+                                <a class="name-typ-a"></a>
+                            </div>
+                            <div class="line-yellow"></div>
+                            <div class="name-typ">
+                                <a class="name-typ-b"></a>
+                            </div>
+                        </div>
+                        <div class="shadow-type"></div>
+                    </div>
+                    <div class="word-typ floating-right" style="display: none">
+                        <div class="typ-title verb"></div>
+                        <div class="inner-typ-container">
+                            <div class="verb-typ">
+                                <a class="verb-typ-a"></a>
+                            </div>
+                            <div class="line-yellow"></div>
+                            <div class="verb-typ">
+                                <a class="verb-typ-b"></a>
+                            </div>
+                            <div class="line-yellow"></div>
+                            <div class="verb-typ">
+                                <a class="verb-typ-c"></a>
+                            </div>
+                        </div>
+                        <div class="shadow-type"></div>
+                    </div>
+                    <div class="word-typ floating-right" style="display: none">
+                        <div class="typ-title Letter"></div>
+                        <div class="inner-typ-container">
+                            <div class="Letter-typ">
+                                <a class="Letter-typ-a"></a>
+                            </div>
+                            <div class="line-yellow"></div>
+                            <div class="Letter-typ">
+                                <a class="Letter-typ-b"></a>
+                            </div>
+                            <div class="line-yellow"></div>
+                            <div class="Letter-typ">
+                                <a class="Letter-typ-c"></a>
+                            </div>
+                            <div class="line-yellow"></div>
+                            <div class="Letter-typ">
+                                <a class="Letter-typ-d"></a>
+                            </div>
+                            <div class="line-yellow"></div>
+                            <div class="Letter-typ">
+                                <a class="Letter-typ-e"></a>
+                            </div>
+                        </div>
+                        <div class="shadow-type"></div>
+                    </div>
+                </div>
+                <div class="Letter-container">
+                    <div id="tabs-containerLetter">
+                        <ul class="letter-tabs-menu">
+                            <li class="current"><a class="tab-1" href="#tab-1" onclick="letterTabs(this)"><i></i></a></li>
+                            <li><a class="tab-2" href="#tab-2" onclick="letterTabs(this)"><i></i></a></li>
+                            <li><a class="tab-3" href="#tab-3" onclick="letterTabs(this)"><i></i></a></li>
+                            <li><a class="tab-4" href="#tab-4" onclick="letterTabs(this)"><i></i></a></li>
+                            <li><a class="tab-5" href="#tab-5" onclick="letterTabs(this)"><i></i></a></li>
+                        </ul>
+                        <div class="tab">
+                            <div id="tab-1" class="tab-content">
+                                <span class="title-letter-a"></span>
+                                <div class="example-table-container">
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-a animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-b animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-c table-text-c animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-d table-text-d animated floating-right" sound=""></div>
+                                    </div>
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-e animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-f animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-c table-text-g animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-d table-text-h animated floating-right" sound=""></div>
+                                    </div>
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-i animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-j animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-c table-text-k animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-d table-text-l animated floating-right" sound=""></div>
+                                    </div>
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-m animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-n animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-c table-text-o animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-d table-text-p animated floating-right" sound=""></div>
+                                    </div>
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-q animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-r animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-c table-text-s animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-d table-text-t animated floating-right" sound=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-2" class="tab-content">
+                                <span class="title-letter-b"></span>
+                                <div class="example-table-container">
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-a animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-b animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-c table-text-c animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-d table-text-d animated floating-right" sound=""></div>
+                                    </div>
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-e animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-f animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-c table-text-g animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-d table-text-h animated floating-right" sound=""></div>
+                                    </div>
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-i animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-j animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-c table-text-k animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-d table-text-l animated floating-right" sound=""></div>
+                                    </div>
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-m animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-n animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-c table-text-o animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-d table-text-p animated floating-right" sound=""></div>
+                                    </div>
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-q animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-r animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-c table-text-s animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-d table-text-t animated floating-right" sound=""></div>
+                                    </div>
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-u animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-w animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-c table-text-x animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-d table-text-y animated floating-right" sound=""></div>
+                                    </div>
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-z animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-aa animated floating-right" sound="" style="border-left: 0"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-3" class="tab-content">
+                                <span class="title-letter-c"></span>
+                                <div class="example-table-container">
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-a animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-b animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-c table-text-c animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-d table-text-d animated floating-right" sound=""></div>
+                                    </div>
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-e animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-f animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-c table-text-g animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-d table-text-h animated floating-right" sound=""></div>
+                                    </div>
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-i animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-j animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-c table-text-k animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-d table-text-l animated floating-right" sound=""></div>
+                                    </div>
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-m animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-n animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-c table-text-o animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-d table-text-p animated floating-right" sound=""></div>
+                                    </div>
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-q animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-r animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-c table-text-s animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-d table-text-t animated floating-right" sound=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-4" class="tab-content">
+                                <span class="title-letter-d"></span>
+                                <div class="example-table-container">
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-a animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-b animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-c table-text-c animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-d table-text-d animated floating-right" sound=""></div>
+                                    </div>
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-e animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-f animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-c table-text-g animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-d table-text-h animated floating-right" sound=""></div>
+                                    </div>
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-i animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-j animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-c table-text-k animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-d table-text-l animated floating-right" sound=""></div>
+                                    </div>
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-m animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-n animated floating-right" sound="" style="border-left: 0"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-5" class="tab-content">
+                                <span class="title-letter-e"></span>
+                                <div class="example-table-container">
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-a animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-b animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-c table-text-c animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-d table-text-d animated floating-right" sound=""></div>
+                                    </div>
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-e animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-f animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-c table-text-g animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-d table-text-h animated floating-right" sound=""></div>
+                                    </div>
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-i animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-j animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-c table-text-k animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-d table-text-l animated floating-right" sound=""></div>
+                                    </div>
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-m animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-n animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-c table-text-o animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-d table-text-p animated floating-right" sound=""></div>
+                                    </div>
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-q animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-r animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-c table-text-s animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-d table-text-t animated floating-right" sound=""></div>
+                                    </div>
+                                    <div class="example-table-row">
+                                        <div class="example-table-cell cell-a table-text-u animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-b table-text-w animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-c table-text-x animated floating-right" sound=""></div>
+                                        <div class="example-table-cell cell-d table-text-y animated floating-right" sound=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="verb-container">
+                    <div id="tabs-containerVerb">
+                        <ul class="verb-tabs-menu">
+                            <li class="current"><a class="tab-6" href="#tab-6" onclick="verbTabs(this)"><i></i></a></li>
+                            <li><a class="tab-7" href="#tab-7" onclick="verbTabs(this)"><i></i></a></li>
+                            <li><a class="tab-8" href="#tab-8" onclick="verbTabs(this)"><i></i></a></li>
+                        </ul>
+                        <div class="tab">
+                            <div id="tab-6" class="tab-content">
+                                <div class="accordion-container">
+                                    <button class="accordion">مبني على الفتح</button>
+                                    <div class="panel"  style="height: 70%;">
+                                        <div class="example-table-container-verb-a-a">
+                                            <div class="example-table-row-verb-a-a">
+                                                <div class="example-table-cell-verb-a-a cell-a table-text-a animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-verb-a-a cell-b table-text-b animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-verb-a-a">
+                                                <div class="example-table-cell-verb-a-a cell-a table-text-c animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-verb-a-a cell-b table-text-d animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-verb-a-a">
+                                                <div class="example-table-cell-verb-a-a cell-a table-text-e animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-verb-a-a cell-b table-text-f animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-verb-a-a">
+                                                <div class="example-table-cell-verb-a-a cell-a table-text-g animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-verb-a-a cell-b table-text-h animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-verb-a-a">
+                                                <div class="example-table-cell-verb-a-a cell-a table-text-i animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-verb-a-a cell-b table-text-j animated floating-right" sound=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="accordion">مبني على الضم</button>
+                                    <div class="panel"  style="height: 70%;">
+                                        <div class="example-table-container-verb-a-b">
+                                            <div class="example-table-row-verb-a-b">
+                                                <div class="example-table-cell-verb-a-b cell-a table-text-a animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-verb-a-b cell-b table-text-b animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-verb-a-b">
+                                                <div class="example-table-cell-verb-a-b cell-a table-text-c animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-verb-a-b cell-b table-text-d animated floating-right" sound=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="accordion">مبني على السكون</button>
+                                    <div class="panel"  style="height: 70%;">
+                                        <div class="example-table-container-verb-a-c">
+                                            <div class="example-table-row-verb-a-c">
+                                                <div class="example-table-cell-verb-a-c cell-a table-text-a animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-verb-a-c cell-b table-text-b animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-verb-a-c">
+                                                <div class="example-table-cell-verb-a-c cell-a table-text-c animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-verb-a-c cell-b table-text-d animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-verb-a-c">
+                                                <div class="example-table-cell-verb-a-c cell-a table-text-e animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-verb-a-c cell-b table-text-f animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-verb-a-c">
+                                                <div class="example-table-cell-verb-a-c cell-a table-text-g animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-verb-a-c cell-b table-text-h animated floating-right" sound=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-7" class="tab-content">
+                                <div class="menu-container">
+                                    <div class="verb-link floating-right"><a class="verb-link-a"></a></div>
+                                    <div class="verb-link floating-right"><a class="verb-link-b"></a></div>
+                                </div>
+                                <div class="inner-tab-verb typ-a">
+                                    <div class="accordion-container">
+                                        <button class="accordion">مبني على الفتح</button>
+                                        <div class="panel">
+                                            <div class="example-table-container-verb-c-a">
+                                                <div class="example-table-row-verb-c-a">
+                                                    <div class="example-table-cell-verb-c-a cell-a table-text-a animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-verb-c-a cell-b table-text-b animated floating-right" sound=""></div>
+                                                </div>
+                                                <div class="example-table-row-verb-c-a">
+                                                    <div class="example-table-cell-verb-c-a cell-a table-text-c animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-verb-c-a cell-b table-text-d animated floating-right" sound=""></div>
+                                                </div>
+                                                <div class="example-table-row-verb-c-a">
+                                                    <div class="example-table-cell-verb-c-a cell-a table-text-e animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-verb-c-a cell-b table-text-f animated floating-right" sound=""></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="accordion">مبني على السكون</button>
+                                        <div class="panel">
+                                            <div class="example-table-container-verb-c-b">
+                                                <div class="example-table-row-verb-c-b">
+                                                    <div class="example-table-cell-verb-c-b cell-a table-text-a animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-verb-c-b cell-b table-text-b animated floating-right" sound=""></div>
+                                                </div>
+                                                <div class="example-table-row-verb-c-b">
+                                                    <div class="example-table-cell-verb-c-b cell-a table-text-c animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-verb-c-b cell-b table-text-d animated floating-right" sound=""></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inner-tab-verb typ-b">
+                                    <div class="accordion-container">
+                                        <button class="accordion">الرفع</button>
+                                        <div class="panel">
+                                            <div class="arrow-left arrow-a"></div>
+                                            <div class="arrow-left arrow-b"></div>
+                                            <div class="arrow-left arrow-c"></div>
+                                            <div class="tab-content-left">
+                                                <div class="inner-tab-container-left">
+                                                    <div class="tab-left" onclick="tabLeft(this)">
+                                                        <a class="tab-link-a"><span>1</span></a>
+                                                        <div class="line-tabs"></div>
+                                                    </div>
+                                                    <div class="tab-left" onclick="tabLeft(this)">
+                                                        <a class="tab-link-b"><span>2</span></a>
+                                                        <div class="line-tabs"></div>
+                                                    </div>
+                                                    <div class="tab-left" onclick="tabLeft(this)">
+                                                        <a class="tab-link-c"><span>3</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tab-left-1" class="tab-left-panel-container">
+                                                <div class="title-verb-a"></div>
+                                                <div class="example-table-container-verb-c-d-a">
+                                                    <div class="example-table-row-verb-c-d-a">
+                                                        <div class="example-table-cell-verb-c-d-a cell-a table-text-a animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-verb-c-d-a cell-b table-text-b animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-verb-c-d-a">
+                                                        <div class="example-table-cell-verb-c-d-a cell-a table-text-c animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-verb-c-d-a cell-b table-text-d animated floating-right" sound=""></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tab-left-2" class="tab-left-panel-container">
+                                                <div class="title-verb-b"></div>
+                                                <div class="example-table-container-verb-c-d-b">
+                                                    <div class="example-table-inner-container-verb-c-d-b">
+                                                        <div class="example-table-row-verb-c-d-b">
+                                                            <div class="example-table-cell-verb-c-d-b cell-a table-text-a animated floating-right" sound=""></div>
+                                                            <div class="example-table-cell-verb-c-d-b cell-b table-text-b animated floating-right" sound=""></div>
+                                                        </div>
+                                                        <div class="example-table-row-verb-c-d-b">
+                                                            <div class="example-table-cell-verb-c-d-b cell-a table-text-c animated floating-right" sound=""></div>
+                                                            <div class="example-table-cell-verb-c-d-b cell-b table-text-d animated floating-right" sound=""></div>
+                                                        </div>
+                                                        <div class="example-table-row-verb-c-d-b">
+                                                            <div class="example-table-cell-verb-c-d-b cell-a table-text-e animated floating-right" sound=""></div>
+                                                            <div class="example-table-cell-verb-c-d-b cell-b table-text-f animated floating-right" sound=""></div>
+                                                        </div>
+                                                        <div class="example-table-row-verb-c-d-b">
+                                                            <div class="example-table-cell-verb-c-d-b cell-a table-text-g animated floating-right" sound=""></div>
+                                                            <div class="example-table-cell-verb-c-d-b cell-b table-text-h animated floating-right" sound=""></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tab-left-3" class="tab-left-panel-container">
+                                                <div class="title-verb-c"></div>
+                                                <div class="example-table-container-verb-c-d-c">
+                                                    <div class="example-table-row-verb-c-d-c">
+                                                        <div class="example-table-cell-verb-c-d-c cell-a table-text-a animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-verb-c-d-c cell-b table-text-b animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-verb-c-d-c">
+                                                        <div class="example-table-cell-verb-c-d-c cell-a table-text-c animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-verb-c-d-c cell-b table-text-d animated floating-right" sound=""></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="accordion">النصب</button>
+                                        <div class="panel">
+                                            <div class="arrow-left arrow-a"></div>
+                                            <div class="arrow-left arrow-b"></div>
+                                            <div class="arrow-left arrow-c"></div>
+                                            <div class="tab-content-left">
+                                                <div class="inner-tab-container-left">
+                                                    <div class="tab-left" onclick="tabLeft(this)">
+                                                        <a class="tab-link-d"><span>1</span></a>
+                                                        <div class="line-tabs"></div>
+                                                    </div>
+                                                    <div class="tab-left" onclick="tabLeft(this)">
+                                                        <a class="tab-link-e"><span>2</span></a>
+                                                        <div class="line-tabs"></div>
+                                                    </div>
+                                                    <div class="tab-left" onclick="tabLeft(this)">
+                                                        <a class="tab-link-f"><span>3</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tab-left-4" class="tab-left-panel-container">
+                                                <div class="title-verb-d"></div>
+                                                <div class="example-table-container-verb-c-d-d">
+                                                    <div class="example-table-inner-container-verb-c-d-d">
+                                                        <div class="example-table-row-verb-c-d-d">
+                                                            <div class="example-table-cell-verb-c-d-d cell-a table-text-a animated floating-right" sound=""></div>
+                                                            <div class="example-table-cell-verb-c-d-d cell-b table-text-b animated floating-right" sound=""></div>
+                                                        </div>
+                                                        <div class="example-table-row-verb-c-d-d">
+                                                            <div class="example-table-cell-verb-c-d-d cell-a table-text-c animated floating-right" sound=""></div>
+                                                            <div class="example-table-cell-verb-c-d-d cell-b table-text-d animated floating-right" sound=""></div>
+                                                        </div>
+                                                        <div class="example-table-row-verb-c-d-d">
+                                                            <div class="example-table-cell-verb-c-d-d cell-a table-text-e animated floating-right" sound=""></div>
+                                                            <div class="example-table-cell-verb-c-d-d cell-b table-text-f animated floating-right" sound=""></div>
+                                                        </div>
+                                                        <div class="example-table-row-verb-c-d-d">
+                                                            <div class="example-table-cell-verb-c-d-d cell-a table-text-g animated floating-right" sound=""></div>
+                                                            <div class="example-table-cell-verb-c-d-d cell-b table-text-h animated floating-right" sound=""></div>
+                                                        </div>
+                                                        <div class="example-table-row-verb-c-d-d">
+                                                            <div class="example-table-cell-verb-c-d-d cell-a table-text-i animated floating-right" sound=""></div>
+                                                            <div class="example-table-cell-verb-c-d-d cell-b table-text-j animated floating-right" sound=""></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tab-left-5" class="tab-left-panel-container">
+                                                <div class="title-verb-e"></div>
+                                                <div class="example-table-container-verb-c-d-e">
+                                                    <div class="example-table-row-verb-c-d-e">
+                                                        <div class="example-table-cell-verb-c-d-e cell-a table-text-a animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-verb-c-d-e cell-b table-text-b animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-verb-c-d-e">
+                                                        <div class="example-table-cell-verb-c-d-e cell-a table-text-c animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-verb-c-d-e cell-b table-text-d animated floating-right" sound=""></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tab-left-6" class="tab-left-panel-container">
+                                                <div class="title-verb-f"></div>
+                                                <div class="example-table-container-verb-c-d-f">
+                                                    <div class="example-table-row-verb-c-d-f">
+                                                        <div class="example-table-cell-verb-c-d-f cell-a table-text-a animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-verb-c-d-f cell-b table-text-b animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-verb-c-d-f">
+                                                        <div class="example-table-cell-verb-c-d-f cell-a table-text-c animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-verb-c-d-f cell-b table-text-d animated floating-right" sound=""></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="accordion">الجزم</button>
+                                        <div class="panel">
+                                            <div class="arrow-left arrow-a"></div>
+                                            <div class="arrow-left arrow-b"></div>
+                                            <div class="arrow-left arrow-c"></div>
+                                            <div class="tab-content-left">
+                                                <div class="inner-tab-container-left">
+                                                    <div class="tab-left" onclick="tabLeft(this)">
+                                                        <a class="tab-link-g"><span>1</span></a>
+                                                        <div class="line-tabs"></div>
+                                                    </div>
+                                                    <div class="tab-left" onclick="tabLeft(this)">
+                                                        <a class="tab-link-h"><span>2</span></a>
+                                                        <div class="line-tabs"></div>
+                                                    </div>
+                                                    <div class="tab-left" onclick="tabLeft(this)">
+                                                        <a class="tab-link-i"><span>3</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tab-left-7" class="tab-left-panel-container">
+                                                <div class="title-verb-g"></div>
+                                                <div class="example-table-container-verb-c-d-g">
+                                                    <div class="example-table-inner-container-verb-c-d-g">
+                                                        <div class="example-table-row-verb-c-d-g">
+                                                            <div class="example-table-cell-verb-c-d-g cell-a table-text-a animated floating-right" sound=""></div>
+                                                            <div class="example-table-cell-verb-c-d-g cell-b table-text-b animated floating-right" sound=""></div>
+                                                        </div>
+                                                        <div class="example-table-row-verb-c-d-g">
+                                                            <div class="example-table-cell-verb-c-d-g cell-a table-text-c animated floating-right" sound=""></div>
+                                                            <div class="example-table-cell-verb-c-d-g cell-b table-text-d animated floating-right" sound=""></div>
+                                                        </div>
+                                                        <div class="example-table-row-verb-c-d-g">
+                                                            <div class="example-table-cell-verb-c-d-g cell-a table-text-e animated floating-right" sound=""></div>
+                                                            <div class="example-table-cell-verb-c-d-g cell-b table-text-f animated floating-right" sound=""></div>
+                                                        </div>
+                                                        <div class="example-table-row-verb-c-d-g">
+                                                            <div class="example-table-cell-verb-c-d-g cell-a table-text-g animated floating-right" sound=""></div>
+                                                            <div class="example-table-cell-verb-c-d-g cell-b table-text-h animated floating-right" sound=""></div>
+                                                        </div>
+                                                        <div class="example-table-row-verb-c-d-g">
+                                                            <div class="example-table-cell-verb-c-d-g cell-a table-text-i animated floating-right" sound=""></div>
+                                                            <div class="example-table-cell-verb-c-d-g cell-b table-text-j animated floating-right" sound=""></div>
+                                                        </div>
+                                                        <div class="example-table-row-verb-c-d-g">
+                                                            <div class="example-table-cell-verb-c-d-g cell-a table-text-k animated floating-right" sound=""></div>
+                                                            <div class="example-table-cell-verb-c-d-g cell-b table-text-l animated floating-right" sound=""></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tab-left-8" class="tab-left-panel-container">
+                                                <div class="title-verb-h"></div>
+                                                <div class="example-table-container-verb-c-d-h">
+                                                    <div class="example-table-inner-container-verb-c-d-h">
+                                                        <div class="example-table-row-verb-c-d-h">
+                                                            <div class="example-table-cell-verb-c-d-h cell-a table-text-a animated floating-right" sound=""></div>
+                                                            <div class="example-table-cell-verb-c-d-h cell-b table-text-b animated floating-right" sound=""></div>
+                                                        </div>
+                                                        <div class="example-table-row-verb-c-d-h">
+                                                            <div class="example-table-cell-verb-c-d-h cell-a table-text-c animated floating-right" sound=""></div>
+                                                            <div class="example-table-cell-verb-c-d-h cell-b table-text-d animated floating-right" sound=""></div>
+                                                        </div>
+                                                        <div class="example-table-row-verb-c-d-h">
+                                                            <div class="example-table-cell-verb-c-d-h cell-a table-text-e animated floating-right" sound=""></div>
+                                                            <div class="example-table-cell-verb-c-d-h cell-b table-text-f animated floating-right" sound=""></div>
+                                                        </div>
+                                                        <div class="example-table-row-verb-c-d-h">
+                                                            <div class="example-table-cell-verb-c-d-h cell-a table-text-g animated floating-right" sound=""></div>
+                                                            <div class="example-table-cell-verb-c-d-h cell-b table-text-h animated floating-right" sound=""></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tab-left-9" class="tab-left-panel-container">
+                                                <div class="title-verb-i"></div>
+                                                <div class="example-table-container-verb-c-d-i">
+                                                    <div class="example-table-row-verb-c-d-i">
+                                                        <div class="example-table-cell-verb-c-d-i cell-a table-text-a animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-verb-c-d-i cell-b table-text-b animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-verb-c-d-i">
+                                                        <div class="example-table-cell-verb-c-d-i cell-a table-text-c animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-verb-c-d-i cell-b table-text-d animated floating-right" sound=""></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-8" class="tab-content">
+                                <div class="accordion-container">
+                                    <button class="accordion">مبني على الفتح</button>
+                                    <div class="panel">
+                                        <div class="example-table-container-verb-b-a">
+                                            <div class="example-table-row-verb-b-a">
+                                                <div class="example-table-cell-verb-b-a cell-a table-text-a animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-verb-b-a cell-b table-text-b animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-verb-b-a">
+                                                <div class="example-table-cell-verb-b-a cell-a table-text-c animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-verb-b-a cell-b table-text-d animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-verb-b-a">
+                                                <div class="example-table-cell-verb-b-a cell-a table-text-e animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-verb-b-a cell-b table-text-f animated floating-right" sound=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="accordion">مبني على حذف النون</button>
+                                    <div class="panel">
+                                        <div class="example-table-container-verb-b-b">
+                                            <div class="example-table-row-verb-b-b">
+                                                <div class="example-table-cell-verb-b-b cell-a table-text-a animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-verb-b-b cell-b table-text-b animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-verb-b-b">
+                                                <div class="example-table-cell-verb-b-b cell-a table-text-c animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-verb-b-b cell-b table-text-d animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-verb-b-b">
+                                                <div class="example-table-cell-verb-b-b cell-a table-text-e animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-verb-b-b cell-b table-text-f animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-verb-b-b">
+                                                <div class="example-table-cell-verb-b-b cell-a table-text-g animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-verb-b-b cell-b table-text-h animated floating-right" sound=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="accordion">مبني على السكون</button>
+                                    <div class="panel">
+                                        <div class="example-table-container-verb-b-c">
+                                            <div class="example-table-row-verb-b-c">
+                                                <div class="example-table-cell-verb-b-c cell-a table-text-a animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-verb-b-c cell-b table-text-b animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-verb-b-c">
+                                                <div class="example-table-cell-verb-b-c cell-a table-text-c animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-verb-b-c cell-b table-text-d animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-verb-b-c">
+                                                <div class="example-table-cell-verb-b-c cell-a table-text-e animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-verb-b-c cell-b table-text-f animated floating-right" sound=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="accordion">حذف حرف العلة</button>
+                                    <div class="panel">
+                                        <div class="example-table-container-verb-b-d">
+                                            <div class="example-table-row-verb-b-d">
+                                                <div class="example-table-cell-verb-b-d cell-a table-text-a animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-verb-b-d cell-b table-text-b animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-verb-b-d">
+                                                <div class="example-table-cell-verb-b-d cell-a table-text-c animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-verb-b-d cell-b table-text-d animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-verb-b-d">
+                                                <div class="example-table-cell-verb-b-d cell-a table-text-e animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-verb-b-d cell-b table-text-f animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-verb-b-d">
+                                                <div class="example-table-cell-verb-b-d cell-a table-text-g animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-verb-b-d cell-b table-text-h animated floating-right" sound=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="name-container">
+                    <div id="tabs-containerName">
+                        <ul class="name-tabs-menu">
+                            <li class="current"><a class="tab-9" href="#tab-9" onclick="nameTabs(this)"><i></i></a></li>
+                            <li><a class="tab-10" href="#tab-10" onclick="nameTabs(this)"><i></i></a></li>
+                        </ul>
+                        <div class="tab">
+                            <div id="tab-9" class="tab-content">
+                                <div class="accordion-container">
+                                    <button class="accordion">مبني على الفتح</button>
+                                    <div class="panel">
+                                        <div class="example-table-container-name-a-a">
+                                            <div class="example-table-row-name-a-a">
+                                                <div class="example-table-cell-name-a-a cell-a table-text-a animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-name-a-a cell-b table-text-b animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-name-a-a">
+                                                <div class="example-table-cell-name-a-a cell-a table-text-c animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-name-a-a cell-b table-text-d animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-name-a-a">
+                                                <div class="example-table-cell-name-a-a cell-a table-text-e animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-name-a-a cell-b table-text-f animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-name-a-a">
+                                                <div class="example-table-cell-name-a-a cell-a table-text-g animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-name-a-a cell-b table-text-h animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-name-a-a">
+                                                <div class="example-table-cell-name-a-a cell-a table-text-i animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-name-a-a cell-b table-text-j animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-name-a-a">
+                                                <div class="example-table-cell-name-a-a cell-a table-text-k animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-name-a-a cell-b table-text-l animated floating-right" sound=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="accordion">مبني على الضم</button>
+                                    <div class="panel">
+                                        <div class="example-table-container-name-a-b">
+                                            <div class="example-table-inner-container-name-a-b">
+                                                <div class="example-table-row-name-a-b">
+                                                    <div class="example-table-cell-name-a-b cell-a table-text-a animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-a-b cell-b table-text-b animated floating-right" sound=""></div>
+                                                </div>
+                                                <div class="example-table-row-name-a-b">
+                                                    <div class="example-table-cell-name-a-b cell-a table-text-c animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-a-b cell-b table-text-d animated floating-right" sound=""></div>
+                                                </div>
+                                                <div class="example-table-row-name-a-b">
+                                                    <div class="example-table-cell-name-a-b cell-a table-text-e animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-a-b cell-b table-text-f animated floating-right" sound=""></div>
+                                                </div>
+                                                <div class="example-table-row-name-a-b">
+                                                    <div class="example-table-cell-name-a-b cell-a table-text-g animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-a-b cell-b table-text-h animated floating-right" sound=""></div>
+                                                </div>
+                                                <div class="example-table-row-name-a-b">
+                                                    <div class="example-table-cell-name-a-b cell-a table-text-i animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-a-b cell-b table-text-j animated floating-right" sound=""></div>
+                                                </div>
+                                                <div class="example-table-row-name-a-b">
+                                                    <div class="example-table-cell-name-a-b cell-a table-text-k animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-a-b cell-b table-text-l animated floating-right" sound=""></div>
+                                                </div>
+                                                <div class="example-table-row-name-a-b">
+                                                    <div class="example-table-cell-name-a-b cell-a table-text-m animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-a-b cell-b table-text-n animated floating-right" sound=""></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <button class="accordion">مبني على السكون</button>
+                                    <div class="panel">
+                                        <div class="example-table-container-name-a-c">
+                                            <div class="example-table-row-name-a-c">
+                                                <div class="example-table-cell-name-a-c cell-a table-text-a animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-name-a-c cell-b table-text-b animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-name-a-c">
+                                                <div class="example-table-cell-name-a-c cell-a table-text-c animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-name-a-c cell-b table-text-d animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-name-a-c">
+                                                <div class="example-table-cell-name-a-c cell-a table-text-e animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-name-a-c cell-b table-text-f animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-name-a-c">
+                                                <div class="example-table-cell-name-a-c cell-a table-text-g animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-name-a-c cell-b table-text-h animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-name-a-c">
+                                                <div class="example-table-cell-name-a-c cell-a table-text-i animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-name-a-c cell-b table-text-j animated floating-right" sound=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="accordion">مبنيٌّ على الكسرْ</button>
+                                    <div class="panel">
+                                        <div class="example-table-container-name-a-d">
+                                            <div class="example-table-row-name-a-d">
+                                                <div class="example-table-cell-name-a-d cell-a table-text-a animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-name-a-d cell-b table-text-b animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-name-a-d">
+                                                <div class="example-table-cell-name-a-d cell-a table-text-c animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-name-a-d cell-b table-text-d animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-name-a-d">
+                                                <div class="example-table-cell-name-a-d cell-a table-text-e animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-name-a-d cell-b table-text-f animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-name-a-d">
+                                                <div class="example-table-cell-name-a-d cell-a table-text-g animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-name-a-d cell-b table-text-h animated floating-right" sound=""></div>
+                                            </div>
+                                            <div class="example-table-row-name-a-d">
+                                                <div class="example-table-cell-name-a-d cell-a table-text-i animated floating-right" sound=""></div>
+                                                <div class="example-table-cell-name-a-d cell-b table-text-j animated floating-right" sound=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-10" class="tab-content">
+                                <div class="menu-container">
+                                    <div class="name-link floating-right"><a class="name-link-a"></a></div>
+                                    <div class="name-link floating-right"><a class="name-link-b"></a></div>
+                                    <div class="name-link floating-right"><a class="name-link-c"></a></div>
+                                </div>
+                                <div class="inner-tab typ-a">
+                                    <div class="accordion-container">
+                                        <button class="accordion">الضمة</button>
+                                        <div class="panel">
+                                            <div class="example-table-container-name-b-a-a">
+                                                <div class="example-table-inner-container-name-b-a-a">
+                                                    <div class="example-table-row-name-b-a-a">
+                                                        <div class="example-table-cell-name-b-a-a cell-a table-text-a animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-b table-text-b animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-c table-text-c animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-d table-text-d animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-a-a">
+                                                        <div class="example-table-cell-name-b-a-a cell-a table-text-e animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-b table-text-f animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-c table-text-g animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-d table-text-h animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-a-a">
+                                                        <div class="example-table-cell-name-b-a-a cell-a table-text-i animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-b table-text-j animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-c table-text-k animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-d table-text-l animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-a-a">
+                                                        <div class="example-table-cell-name-b-a-a cell-a table-text-m animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-b table-text-n animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-c table-text-o animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-d table-text-p animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-a-a">
+                                                        <div class="example-table-cell-name-b-a-a cell-a table-text-q animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-b table-text-r animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-c table-text-s animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-d table-text-t animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-a-a">
+                                                        <div class="example-table-cell-name-b-a-a cell-a table-text-u animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-b table-text-w animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-c table-text-x animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-d table-text-y animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-a-a">
+                                                        <div class="example-table-cell-name-b-a-a cell-a table-text-z animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-b table-text-z-a animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-c table-text-z-b animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-d table-text-z-c animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-a-a">
+                                                        <div class="example-table-cell-name-b-a-a cell-a table-text-z-d animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-b table-text-z-e animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-c table-text-z-f animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-d table-text-z-g animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-a-a">
+                                                        <div class="example-table-cell-name-b-a-a cell-a table-text-z-h animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-b table-text-z-i animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-c table-text-z-j animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-d table-text-z-k animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-a-a">
+                                                        <div class="example-table-cell-name-b-a-a cell-a table-text-z-l animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-b table-text-z-m animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-c table-text-z-n animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-a-a cell-d table-text-z-o animated floating-right" sound=""></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button class="accordion">الألف</button>
+                                        <div class="panel">
+                                            <div class="example-table-container-name-b-a-b">
+                                                <div class="example-table-row-name-b-a-b">
+                                                    <div class="example-table-cell-name-b-a-b cell-a table-text-a animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-b-a-b cell-b table-text-b animated floating-right" sound=""></div>
+                                                </div>
+                                                <div class="example-table-row-name-b-a-b">
+                                                    <div class="example-table-cell-name-b-a-b cell-a table-text-c animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-b-a-b cell-b table-text-d animated floating-right" sound=""></div>
+                                                </div>
+                                                <div class="example-table-row-name-b-a-b">
+                                                    <div class="example-table-cell-name-b-a-b cell-a table-text-e animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-b-a-b cell-b table-text-f animated floating-right" sound=""></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button class="accordion">الواو</button>
+                                        <div class="panel">
+                                            <div class="example-table-container-name-b-a-c">
+                                                <div class="example-table-row-name-b-a-c">
+                                                    <div class="example-table-cell-name-b-a-c cell-a table-text-a animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-b-a-c cell-b table-text-b animated floating-right" sound=""></div>
+                                                </div>
+                                                <div class="example-table-row-name-b-a-c">
+                                                    <div class="example-table-cell-name-b-a-c cell-a table-text-c animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-b-a-c cell-b table-text-d animated floating-right" sound=""></div>
+                                                </div>
+                                                <div class="example-table-row-name-b-a-c">
+                                                    <div class="example-table-cell-name-b-a-c cell-a table-text-e animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-b-a-c cell-b table-text-f animated floating-right" sound=""></div>
+                                                </div>
+                                                <div class="example-table-row-name-b-a-c">
+                                                    <div class="example-table-cell-name-b-a-c cell-a table-text-g animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-b-a-c cell-b table-text-h animated floating-right" sound=""></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inner-tab typ-b">
+                                    <div class="accordion-container">
+                                        <button class="accordion">الفتحة</button>
+                                        <div class="panel">
+                                            <div class="example-table-container-name-b-b-a">
+                                                <div class="example-table-inner-container-name-b-b-a">
+                                                    <div class="example-table-row-name-b-b-a">
+                                                        <div class="example-table-cell-name-b-b-a cell-a table-text-a animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-b table-text-b animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-c table-text-c animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-d table-text-d animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-b-a">
+                                                        <div class="example-table-cell-name-b-b-a cell-a table-text-e animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-b table-text-f animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-c table-text-g animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-d table-text-h animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-b-a">
+                                                        <div class="example-table-cell-name-b-b-a cell-a table-text-i animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-b table-text-j animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-c table-text-k animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-d table-text-l animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-b-a">
+                                                        <div class="example-table-cell-name-b-b-a cell-a table-text-m animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-b table-text-n animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-c table-text-o animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-d table-text-p animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-b-a">
+                                                        <div class="example-table-cell-name-b-b-a cell-a table-text-q animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-b table-text-r animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-c table-text-s animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-d table-text-t animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-b-a">
+                                                        <div class="example-table-cell-name-b-b-a cell-a table-text-u animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-b table-text-w animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-c table-text-x animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-d table-text-y animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-b-a">
+                                                        <div class="example-table-cell-name-b-b-a cell-a table-text-z animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-b table-text-z-a animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-c table-text-z-b animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-d table-text-z-c animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-b-a">
+                                                        <div class="example-table-cell-name-b-b-a cell-a table-text-z-d animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-b table-text-z-e animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-c table-text-z-f animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-d table-text-z-g animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-b-a">
+                                                        <div class="example-table-cell-name-b-b-a cell-a table-text-z-h animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-b table-text-z-i animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-c table-text-z-j animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-d table-text-z-k animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-b-a">
+                                                        <div class="example-table-cell-name-b-b-a cell-a table-text-z-l animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-b table-text-z-m animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-c table-text-z-n animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-d table-text-z-o animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-b-a">
+                                                        <div class="example-table-cell-name-b-b-a cell-a table-text-z-p animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-b table-text-z-q animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-c table-text-z-r animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-b-a cell-d table-text-z-s animated floating-right" sound=""></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button class="accordion">الألف</button>
+                                        <div class="panel">
+                                            <div class="example-table-container-name-b-b-b">
+                                                <div class="example-table-row-name-b-b-b">
+                                                    <div class="example-table-cell-name-b-b-b cell-a table-text-a animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-b-b-b cell-b table-text-b animated floating-right" sound=""></div>
+                                                </div>
+                                                <div class="example-table-row-name-b-b-b">
+                                                    <div class="example-table-cell-name-b-b-b cell-a table-text-c animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-b-b-b cell-b table-text-d animated floating-right" sound=""></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button class="accordion">الياء</button>
+                                        <div class="panel">
+                                            <div class="example-table-container-name-b-b-c">
+                                                <div class="example-table-row-name-b-b-c">
+                                                    <div class="example-table-cell-name-b-b-c cell-a table-text-a animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-b-b-c cell-b table-text-b animated floating-right" sound=""></div>
+                                                </div>
+                                                <div class="example-table-row-name-b-b-c">
+                                                    <div class="example-table-cell-name-b-b-c cell-a table-text-c animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-b-b-c cell-b table-text-d animated floating-right" sound=""></div>
+                                                </div>
+                                                <div class="example-table-row-name-b-b-c">
+                                                    <div class="example-table-cell-name-b-b-c cell-a table-text-e animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-b-b-c cell-b table-text-f animated floating-right" sound=""></div>
+                                                </div>
+                                                <div class="example-table-row-name-b-b-c">
+                                                    <div class="example-table-cell-name-b-b-c cell-a table-text-g animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-b-b-c cell-b table-text-h animated floating-right" sound=""></div>
+                                                </div>
+                                                <div class="example-table-row-name-b-b-c">
+                                                    <div class="example-table-cell-name-b-b-c cell-a table-text-i animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-b-b-c cell-b table-text-j animated floating-right" sound=""></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="accordion">الكسرة</button>
+                                        <div class="panel">
+                                            <div class="example-table-container-name-b-b-d">
+                                                <div class="example-table-row-name-b-b-d">
+                                                    <div class="example-table-cell-name-b-b-d cell-a table-text-a animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-b-b-d cell-b table-text-b animated floating-right" sound=""></div>
+                                                </div>
+                                                <div class="example-table-row-name-b-b-d">
+                                                    <div class="example-table-cell-name-b-b-d cell-a table-text-c animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-b-b-d cell-b table-text-d animated floating-right" sound=""></div>
+                                                </div>
+                                                <div class="example-table-row-name-b-b-d">
+                                                    <div class="example-table-cell-name-b-b-d cell-a table-text-e animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-b-b-d cell-b table-text-f animated floating-right" sound=""></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inner-tab typ-c">
+                                    <div class="accordion-container">
+                                        <button class="accordion">الفتحة</button>
+                                        <div class="panel">
+                                            <div class="example-table-container-name-b-c-a">
+                                                <div class="example-table-row-name-b-c-a">
+                                                    <div class="example-table-cell-name-b-c-a cell-a table-text-a animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-b-c-a cell-b table-text-b animated floating-right" sound=""></div>
+                                                </div>
+                                                <div class="example-table-row-name-b-c-a">
+                                                    <div class="example-table-cell-name-b-c-a cell-a table-text-c animated floating-right" sound=""></div>
+                                                    <div class="example-table-cell-name-b-c-a cell-b table-text-d animated floating-right" sound=""></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button class="accordion">الكسرة</button>
+                                        <div class="panel">
+                                            <div class="example-table-container-name-b-c-b">
+                                                <div class="example-table-inner-container-name-b-c-b">
+                                                    <div class="example-table-row-name-b-c-b">
+                                                        <div class="example-table-cell-name-b-c-b cell-a table-text-a animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-c-b cell-b table-text-b animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-c-b">
+                                                        <div class="example-table-cell-name-b-c-b cell-a table-text-c animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-c-b cell-b table-text-d animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-c-b">
+                                                        <div class="example-table-cell-name-b-c-b cell-a table-text-e animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-c-b cell-b table-text-f animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-c-b">
+                                                        <div class="example-table-cell-name-b-c-b cell-a table-text-g animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-c-b cell-b table-text-h animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-c-b">
+                                                        <div class="example-table-cell-name-b-c-b cell-a table-text-i animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-c-b cell-b table-text-j animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-c-b">
+                                                        <div class="example-table-cell-name-b-c-b cell-a table-text-k animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-c-b cell-b table-text-l animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-c-b">
+                                                        <div class="example-table-cell-name-b-c-b cell-a table-text-m animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-c-b cell-b table-text-n animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-c-b">
+                                                        <div class="example-table-cell-name-b-c-b cell-a table-text-o animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-c-b cell-b table-text-p animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-c-b">
+                                                        <div class="example-table-cell-name-b-c-b cell-a table-text-q animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-c-b cell-b table-text-r animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-c-b">
+                                                        <div class="example-table-cell-name-b-c-b cell-a table-text-s animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-c-b cell-b table-text-t animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-c-b">
+                                                        <div class="example-table-cell-name-b-c-b cell-a table-text-u animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-c-b cell-b table-text-w animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-c-b">
+                                                        <div class="example-table-cell-name-b-c-b cell-a table-text-x animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-c-b cell-b table-text-y animated floating-right" sound=""></div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <button class="accordion">الياء</button>
+                                        <div class="panel">
+                                            <div class="example-table-container-name-b-c-c">
+                                                <div class="example-table-inner-container-name-b-c-c">
+                                                    <div class="example-table-row-name-b-c-c">
+                                                        <div class="example-table-cell-name-b-c-c cell-a table-text-a animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-c-c cell-b table-text-b animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-c-c">
+                                                        <div class="example-table-cell-name-b-c-c cell-a table-text-c animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-c-c cell-b table-text-d animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-c-c">
+                                                        <div class="example-table-cell-name-b-c-c cell-a table-text-e animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-c-c cell-b table-text-f animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-c-c">
+                                                        <div class="example-table-cell-name-b-c-c cell-a table-text-g animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-c-c cell-b table-text-h animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-c-c">
+                                                        <div class="example-table-cell-name-b-c-c cell-a table-text-i animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-c-c cell-b table-text-j animated floating-right" sound=""></div>
+                                                    </div>
+                                                    <div class="example-table-row-name-b-c-c">
+                                                        <div class="example-table-cell-name-b-c-c cell-a table-text-k animated floating-right" sound=""></div>
+                                                        <div class="example-table-cell-name-b-c-c cell-b table-text-l animated floating-right" sound=""></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="pin-left"></span>
+            <span class="pin-right"></span>
+            <a class="poweredBy" href="https://www.manhal.com/"></a>
+            <a class="home-icon"></a>
+        </div>
+    </div>
+</div>
+</body>
+
+<!-- Mirrored from 192.168.100.27/app/Word-Character/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 May 2019 09:49:50 GMT -->
+</html>
